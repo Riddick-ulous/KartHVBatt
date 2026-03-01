@@ -84,6 +84,6 @@ Empfehlung fuer alle RDIAG:
 
 ## Related
 
-- `ADR/ADR-003_Temp_FaultContainment_ProtoA.md`
-- `ADR/ADR-004_Filtering_and_Sampling.md`
-- `SCHEMATIC_NOTES/Temp_MUX_NTC_TLE9012.md`
+- `ADR-003_Temp_FaultContainment_ProtoA.md`
+- `ADR-004_Filtering_and_Sampling.md`
+- `../SCHEMATIC_NOTES/Temp_MUX_NTC_TLE9012.md`

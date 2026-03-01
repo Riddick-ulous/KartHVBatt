@@ -1,4 +1,4 @@
-# ADR-007: Controller Topology LV vs LV+HV Supervisor
+# ADR-004: Controller Topology LV vs LV+HV Supervisor
 
 - Status: Proposed (offen)
 - Datum: 2026-02-24
@@ -97,5 +97,5 @@ Begruendung:
 ## Related
 
 - `../ARCHITECTURE.md`
-- `ADR-006_Control_Layers_Stack_Pack_ESS.md`
-- `../SAFETY/Functional_Safety_ProtoA.md`
+- `ADR-003_Control_Layers_Stack_Pack_ESS.md`
+- `../subsystems/SAFETY/Functional_Safety_ProtoA.md`

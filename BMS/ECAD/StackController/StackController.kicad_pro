@@ -279,7 +279,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "Bot_IsoSPI_H"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -412,6 +417,58 @@
     [
       "81fa8634-d989-41ca-b28a-cfa8917c7dfc",
       "Root"
+    ],
+    [
+      "ce760526-3704-4f7c-965d-30be593b58ad",
+      "NTC_MUX"
+    ],
+    [
+      "2afa5b1c-2a69-47fd-810e-37bdeabfceb9",
+      "Balancing_0"
+    ],
+    [
+      "e7c3a6c4-56df-4759-ac85-b5713d407d2e",
+      "Balancing_1"
+    ],
+    [
+      "c65c7816-5a5c-4f96-9aa7-043da9ec35d5",
+      "Balancing_2"
+    ],
+    [
+      "e650ad23-fcff-4a26-82a3-266499a99586",
+      "Balancing_3"
+    ],
+    [
+      "2a6e3c41-8516-4854-a604-053fae9da35d",
+      "Balancing_4"
+    ],
+    [
+      "46a44a88-4abf-4b49-9ee9-83c34e44b126",
+      "Balancing_5"
+    ],
+    [
+      "8aae86b5-910e-4863-8b0f-080846fc3a1d",
+      "Balancing_6"
+    ],
+    [
+      "aa7fe300-45c4-4594-bb2b-efc2858aeca5",
+      "Balancing_7"
+    ],
+    [
+      "e6d1d2b6-d01d-46f8-b1dc-2d3473e54b7e",
+      "Balancing_8"
+    ],
+    [
+      "19941705-0439-4d3a-9cee-3201740b84cb",
+      "Balancing_9"
+    ],
+    [
+      "0f279e95-6582-4e8a-8be9-f4bbcae83ffc",
+      "Balancing_10"
+    ],
+    [
+      "29469ee6-58f4-4718-b14a-6bfb9c4405a6",
+      "Balancing_11"
     ]
   ],
   "text_variables": {}

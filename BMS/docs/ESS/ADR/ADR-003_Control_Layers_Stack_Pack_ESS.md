@@ -1,4 +1,4 @@
-# ADR-006: Control Layers Stack / Pack / ESS
+# ADR-003: Control Layers Stack / Pack / ESS
 
 - Status: Accepted
 - Datum: 2026-02-24
@@ -60,6 +60,6 @@ Die Funktionszuordnung ist fix auf drei Ebenen:
 ## Related
 
 - `../ARCHITECTURE.md`
-- `ADR-007_Controller_Topology_LV_vs_LV+HV.md`
-- `../PACK/Pack_Controller_Overview.md`
-- `../SAFETY/Functional_Safety_ProtoA.md`
+- `ADR-004_Controller_Topology_LV_vs_LV+HV.md`
+- `../subsystems/PACK_CONTROLLER/ARCHITECTURE.md`
+- `../subsystems/SAFETY/Functional_Safety_ProtoA.md`

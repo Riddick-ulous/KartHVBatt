@@ -53,6 +53,6 @@ Die ProtoA-Systemarchitektur wird wie folgt festgelegt:
 ## Related
 
 - `../ARCHITECTURE.md`
-- `../STACK/Stack_Architecture_18S2P.md`
-- `../PACK/Pack_Controller_Overview.md`
-- `ADR-005_isoUART_Ring_Enumeration.md`
+- `../subsystems/STACK_CONTROLLER/ARCHITECTURE.md`
+- `../subsystems/PACK_CONTROLLER/ARCHITECTURE.md`
+- `ADR-002_isoUART_Ring_Enumeration.md`

@@ -1,4 +1,4 @@
-# ADR-005: isoUART Ringtopologie und Enumeration
+# ADR-002: isoUART Ringtopologie und Enumeration
 
 - Status: Accepted
 - Datum: 2026-02-24

@@ -1,11 +1,12 @@
-# BMS Architekturuebersicht (ProtoA)
+# ESS Architektur (ProtoA)
 
 ## Zweck
 
-Systemweite Architektur fuer ProtoA mit klarer Zuordnung der Funktionen auf drei
-Steuerebenen: Stack Controller, Pack Controller, ESS Controller.
+Dieses Dokument ist die systemweite Source of Truth fuer die ESS-Ebene.
+Es beschreibt nur die uebergreifende Architektur, Safety-Signalfluesse und
+verweist auf die Subsystem-Spezifikationen.
 
-## 3-Level Control Architecture (Stack/Pack/ESS)
+## 3-Level Control Architecture
 
 ### Ebene 1: Stack Controller (pro Stack)
 
@@ -17,28 +18,28 @@ Steuerebenen: Stack Controller, Pack Controller, ESS Controller.
 ### Ebene 2: Pack Controller (pro Pack, 2x)
 
 - Lokale Schuetz-Ansteuerung `HV+` / `HV-`
-- Lokale Fuse-Ueberwachung (falls Fuse-Sense bestueckt)
+- Lokale Fuse-Ueberwachung (falls Sense bestueckt)
 - HVIL-Segment (pack-intern + pack-connector)
-- Pack-interne Feuchtigkeitssensorik (`2` Sensoren gesamt, Verteilung offen)
+- Packinterne Feuchtigkeitssensorik (`2` Sensoren gesamt, Verteilung offen)
+- Kommunikationsknoten zum ESS Controller
 
 ### Ebene 3: ESS Controller (systemweit, 1x)
 
-- Zentraler Orchestrator fuer beide Packs
-- TSAL-Logik + TSAL-Treiber
+- Systemorchestrierung fuer beide Packs
+- TSAL-Logik + Treiber
 - HV-Bus-Spannungsmessung
-- HV-Strommessung `HV+` und `HV-` inkl. Kalibrierpfad (Hochlast-Widerstaende)
-- Precharge-System (bestehendes Design referenziert)
-- Wasserkuehlungssteuerung (Pumpe + Sensorik)
-- Akustische Signalisierung (Piezo/Buzzer)
-- Crash-Sensor Eingang (systemkritisch)
+- HV-Strommessung `HV+` und `HV-` inkl. Kalibrierpfad
+- Precharge-System (bestehendes Design)
+- Wasserkuehlungssteuerung
+- Akustische Signalisierung (Buzzer)
+- Crash-Sensor Eingang
 - Isolationswaechter-Integration
 - CCS2 Ladeinterface
 - Fahrzeug-I/O (Medical/Red/Green/Rain/Ready-to-move)
-- HV DC/DC Anbindung fuer LV (offen, ProtoB)
+- Zeroing/Kalibrierung zentral
+- HV DC/DC Einbindung (offen, ProtoB)
 
-## Blockdiagramme (Textform)
-
-### System-Blockdiagramm
+## System-Blockdiagramm (Text)
 
 ```text
 Pack Links (HV+/- Schuetze, Fuse, Stack 1..N) ----\
@@ -52,7 +53,7 @@ ESS Controller
   `- erfasst HV-Bus U/I + Kuehlung + Ladepfad
 ```
 
-### Kommunikationsdiagramm
+## Kommunikationsdiagramm (Text)
 
 ```text
 ESS Controller
@@ -60,33 +61,33 @@ ESS Controller
   <-> Pack Controller Rechts
 
 Pack Controller
-  <-> isoUART Ring zu lokalen TLE9012 (Bottom->Top default, Top->Bottom fallback)
+  <-> lokale TLE9012-Chains via isoUART Ring
 ```
 
-### Safety Signal Flow
+## Safety Signal Flow (Text)
 
 ```text
 Crash Sensor ----\
 HVIL Kette -------> Schuetzfreigabe-Logik -> HV+ / HV- Schuetze (beide Packs)
 Iso-Waechter ----/
 
-ESS Controller bewertet Signale und setzt Fault-Status, TSAL und Buzzer.
-Hardwarepfad Crash/HVIL bleibt sicherheitskritisch priorisiert.
+ESS Controller setzt Fault-Status, TSAL und Buzzer.
+Crash/HVIL Hardwarepfade bleiben priorisiert.
 ```
 
-## isoUART Ring und Enumeration (ProtoA)
+## isoUART Ring und Enumeration
 
-- Topologie: Ring
+- Ringtopologie
 - Physische Reihenfolge: Bottom -> Top
 - Default Enumeration: Bottom -> Top
-- Fallback Enumeration: Top -> Bottom (Richtungsumschaltung)
-- TLE9012 Verhalten: `Node-ID=0` forwardet nicht, `Node-ID!=0` forwardet
+- Fallback Enumeration: Top -> Bottom
+- TLE9012: `Node-ID=0` forwardet nicht, `Node-ID!=0` aktiviert Forwarding
 
-Detail:
+Details:
 
-- `ADR/ADR-005_isoUART_Ring_Enumeration.md`
+- `ADR/ADR-002_isoUART_Ring_Enumeration.md`
 
-## Schnittstellenliste (Stack/Pack/ESS)
+## Schnittstellenliste
 
 | Ebene | Signal / Interface | Richtung | Domaene | Protokoll | Kritikalitaet |
 | --- | --- | --- | --- | --- | --- |
@@ -111,40 +112,34 @@ Detail:
 
 ## ProtoA vs ProtoB
 
-ProtoA (fix):
+ProtoA:
 
 - 2 Packs (links/rechts), verbunden ueber verschraubtes HV-Kabel
 - je Pack eigene HV+ und HV- Schuetze und eigene HV Fuse
-- Stack-Messkette analog NTC/MUX/TLE mit 3tau Settling und RDIAG pro Kanal
-- Zeroing zentral im ESS Controller
+- Stack-Messkette analog NTC/MUX/TLE mit `3tau` Settling und RDIAG pro Kanal
 
-ProtoB (Ausblick):
+ProtoB:
 
-- Optionale Zweicontroller-Topologie LV + HV Supervisor
+- Optionale Topologie LV + HV Supervisor
 - HV DC/DC Integration fuer LV-Versorgung
-- CCS2 Detailimplementation und finale Sensorauswahl
+- CCS2 Detailumsetzung und finale Sensorauswahl
 
-## Referenzdokumente
+## Referenzen
 
 - `ADR/ADR-001_System_Overview_ProtoA.md`
-- `ADR/ADR-006_Control_Layers_Stack_Pack_ESS.md`
-- `ADR/ADR-007_Controller_Topology_LV_vs_LV+HV.md`
-- `STACK/Stack_Architecture_18S2P.md`
-- `PACK/Pack_Controller_Overview.md`
-- `SAFETY/Functional_Safety_ProtoA.md`
-- `IO/Vehicle_Lighting_and_Signals.md`
-- `SENSORS/Moisture_and_Cooling.md`
+- `ADR/ADR-003_Control_Layers_Stack_Pack_ESS.md`
+- `ADR/ADR-004_Controller_Topology_LV_vs_LV+HV.md`
+- `subsystems/STACK_CONTROLLER/ARCHITECTURE.md`
+- `subsystems/PACK_CONTROLLER/ARCHITECTURE.md`
+- `subsystems/SAFETY/Functional_Safety_ProtoA.md`
+- `subsystems/VEHICLE_IO/Vehicle_Lighting_and_Signals.md`
+- `subsystems/SENSORS/Moisture_and_Cooling.md`
+- `CALIBRATION/Temp_Zeroing_PackController.md`
 
 ## Offene Punkte / TODO
 
-1. Feuchtigkeitssensor-Verteilung final entscheiden: `1+1` pro Pack vs `2+0`.
+1. Feuchtigkeitssensor-Verteilung final entscheiden: `1+1` vs `2+0`.
 2. ESS<->Pack Protokoll final festlegen (UART/CAN, galvanische Trennung).
-3. HV DC/DC Architektur und Schutzkette fuer ProtoB festlegen.
-4. CCS2 Stackup fuer Hardware/Firmware finalisieren.
-5. Controller-Topologie Option A/B durch Lab-Validierung schliessen.
-
-
-
-https://www.mouser.de/ProductDetail/Adam-Tech/EC2-05D12P3?qs=ZcfC38r4Pou03elb1ikkgg%3D%3D
-
-EC2-05D12P3 als standard supply für HV meas und Precharge mit nachgeschaltetem LDO auf 5V bzw. 10V oder so
+3. HV DC/DC Architektur fuer ProtoB festlegen.
+4. CCS2 Hardware/Firmware Stack finalisieren.
+5. Controller-Topologie Option A/B per Lab validieren.

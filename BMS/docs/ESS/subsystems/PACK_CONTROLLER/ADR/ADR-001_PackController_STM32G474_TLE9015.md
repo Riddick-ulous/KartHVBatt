@@ -38,8 +38,8 @@ Der Pack Controller uebernimmt zentral die Koordination von:
 ## Related Spec
 
 - `../ARCHITECTURE.md`
-- `../../../DATASHEETS/STM32G474/`
-- `../../../DATASHEETS/TLE9015/`
-- `../../../DATASHEETS/Isowaechter/`
-- `../../../DATASHEETS/Current_Sensor/`
-- `../../../DATASHEETS/Contactors_Precharge/`
+- `../../../../DATASHEETS/STM32G474/`
+- `../../../../DATASHEETS/TLE9015/`
+- `../../../../DATASHEETS/Isowaechter/`
+- `../../../../DATASHEETS/Current_Sensor/`
+- `../../../../DATASHEETS/Contactors_Precharge/`

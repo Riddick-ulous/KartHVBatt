@@ -27,4 +27,4 @@ Der Stack nutzt als BMS-AFE durchgaengig den **Infineon TLE9012**.
 ## Related Spec
 
 - `../ARCHITECTURE.md`
-- `../../../DATASHEETS/Infineon_TLE9012/`
+- `../../../../DATASHEETS/Infineon_TLE9012/`
