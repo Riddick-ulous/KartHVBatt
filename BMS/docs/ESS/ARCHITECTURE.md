@@ -6,6 +6,16 @@ Dieses Dokument ist die systemweite Source of Truth fuer die ESS-Ebene.
 Es beschreibt nur die uebergreifende Architektur, Safety-Signalfluesse und
 verweist auf die Subsystem-Spezifikationen.
 
+## Generelles Batterie Design
+Zelle = Reliance-RS50
+Maximale SPannung = 672V max
+minimale SPannung = 400V min
+Energiemenge = 5,792kWh
+Verschaltung = 160S 2P
+Aktive Masse = 21,12kg
+Dauerleistung = 35,55kW 
+Peakleistung = 53,76kW 
+
 ## 3-Level Control Architecture
 
 ### Ebene 1: Stack Controller (pro Stack)
@@ -18,10 +28,11 @@ verweist auf die Subsystem-Spezifikationen.
 ### Ebene 2: Pack Controller (pro Pack, 2x)
 
 - Lokale Schuetz-Ansteuerung `HV+` / `HV-`
-- Lokale Fuse-Ueberwachung (falls Sense bestueckt)
+- Lokale Fuse-Ueberwachung
 - HVIL-Segment (pack-intern + pack-connector)
-- Packinterne Feuchtigkeitssensorik (`2` Sensoren gesamt, Verteilung offen)
+- Packinterne Feuchtigkeitssensorik (`2` Sensoren gesamt, einer pro pack)
 - Kommunikationsknoten zum ESS Controller
+- HVIndicator
 
 ### Ebene 3: ESS Controller (systemweit, 1x)
 

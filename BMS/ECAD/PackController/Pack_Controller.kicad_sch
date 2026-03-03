@@ -11,6 +11,26 @@
 		(company "Lukas Elektronik")
 	)
 	(lib_symbols)
+	(text_box "HV activation Flow:\n\nDMS1 (LV System Active)\n- SDC / Interlock closed up until AMS in primary pack (last Point)\n- secondary pack switches AIRN & AIRP sequentially with small delay. No precharging since next to no capacitance in connection from secondary pack to primary pack\n- Reqirement: Primary packs ready to switch secondary HV batt on bit is set on CAN and we are getting the alive counter from the primary pack\n- Reqirement: SDC is closed up until primary pack, end of SDC loped back to secondary pack (wires plugged in etc.)\n- Then secondary pack sets HV on Bit with regard to the actual contactor states\n- Then we wait for 3 successfull isolation measurements in a row if sucessful HV system stays on , otherwise all contactors are opened again\n\nif isolation is already low due to issue with prim pack we dont switch anything\nIf any humidity sensor is shwing water inside any pack nothing is switched on\n\nDMS2 (Turn HV System On)\n- With the go from the secondary pack the primary packs switches the negative contactor and starts the precharge\n- when the precharge is done the positive contactor is switched on\n- requirement: the HV measured voltage has to increase when the secondary pack is connected in series total system voltage has to match the voltage measured from both backs stack controllers +- tolerance\n"
+		(exclude_from_sim no)
+		(at 317.5 10.16 0)
+		(size 143.51 68.58)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d4b5fb96-a679-4dc0-b4ce-0c64b10b95d9")
+	)
 	(sheet
 		(at 22.86 106.68)
 		(size 29.21 20.32)
