@@ -11,6 +11,368 @@
 		(company "Lukas Deeken Elektronik")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2116,9 +2478,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "connectors\nacttivity leds\ntestpads\n\nERR LED done\npower LEDs done\nIsolation? IsoSPI CSer auf 1000V done\nFuses for cell connection done"
+	(text_box "connectors\nacttivity leds\ntermiabte unsed pins\n\ntestpads done\n\nERR LED done\npower LEDs done\nIsolation? IsoSPI CSer auf 1000V done\nFuses for cell connection done"
 		(exclude_from_sim no)
-		(at 13.97 12.7 0)
+		(at 60.96 -48.26 0)
 		(size 45.72 29.21)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2138,7 +2500,7 @@
 	)
 	(text_box "RC Filter NTC\nBasis Infineo Refrenzdesign angepasst auf ~160Hz\nSettle Time klein genug das keine probleme mit abtastung auftreten sollten\nGrenzfrequenz klein genug das bei höhren frequenzen höhere dämpfung vorhanden ist"
 		(exclude_from_sim no)
-		(at 41.91 110.49 0)
+		(at -45.72 81.28 0)
 		(size 34.29 20.32)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2199,6 +2561,12 @@
 		(uuid "0cdecc51-9447-4865-a69b-3faf252ec7c1")
 	)
 	(junction
+		(at 224.79 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14baf92e-3b82-45c4-be63-bee98dbbe00b")
+	)
+	(junction
 		(at 209.55 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2211,7 +2579,7 @@
 		(uuid "27ab93fb-3eda-45d1-ba9e-06563817abbd")
 	)
 	(junction
-		(at 149.86 29.21)
+		(at 52.07 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28d64e64-75f6-4ec9-8c87-1f3d6fc07c96")
@@ -2253,7 +2621,7 @@
 		(uuid "45473999-6950-4336-a959-4d4a9464a408")
 	)
 	(junction
-		(at 227.33 77.47)
+		(at 231.14 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f7e17f7-4e01-4b4f-82b3-2248752eadd1")
@@ -2265,10 +2633,28 @@
 		(uuid "5042234f-f411-4a52-8031-41234480bb7d")
 	)
 	(junction
+		(at 259.08 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54cabd2e-3c38-4607-a5cb-994e1eb803a1")
+	)
+	(junction
+		(at 248.92 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57ce30be-3cbd-4ed7-b742-f60939d919b2")
+	)
+	(junction
 		(at 127 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c46b7b1-ceb1-40ab-9f6d-81672e671012")
+	)
+	(junction
+		(at 228.6 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f0f0b0d-39f0-4700-aa2a-3c0d65a062ae")
 	)
 	(junction
 		(at 142.24 121.92)
@@ -2287,6 +2673,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6305887e-d03e-49ff-940d-7d4075516996")
+	)
+	(junction
+		(at 256.54 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65bd6b10-7560-4369-aaf6-2be779338ed6")
 	)
 	(junction
 		(at 68.58 107.95)
@@ -2319,7 +2711,7 @@
 		(uuid "7b940790-d3c3-4822-887c-858d4d766ebe")
 	)
 	(junction
-		(at 149.86 33.02)
+		(at 52.07 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7caa27d5-8a22-432b-a7e9-27e0051f6273")
@@ -2329,12 +2721,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84177b3d-9b04-4a02-8ea2-8f0492c6669d")
-	)
-	(junction
-		(at 229.87 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "890dc721-84d0-45da-a641-6e204da443e9")
 	)
 	(junction
 		(at 168.91 134.62)
@@ -2347,6 +2733,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "90d1e1bb-84fe-40d6-84a3-bad04b01fe77")
+	)
+	(junction
+		(at 105.41 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "994b3757-e2a6-4680-b39f-94c327f9e41f")
 	)
 	(junction
 		(at 158.75 107.95)
@@ -2373,6 +2765,18 @@
 		(uuid "b079a218-4289-4a86-ba61-a69674d9aa07")
 	)
 	(junction
+		(at 233.68 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b358a547-9bf9-4bed-a4ea-35c1b6671913")
+	)
+	(junction
+		(at 222.25 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4ea6236-d2ed-4cea-a771-f2776cd3c8cf")
+	)
+	(junction
 		(at 104.14 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2395,12 +2799,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c2da3f39-4be8-4aae-bd2c-78df506e598e")
-	)
-	(junction
-		(at 224.79 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cfeb80c1-6b6b-4e4f-9400-d1eda04851ce")
 	)
 	(junction
 		(at 111.76 96.52)
@@ -2528,6 +2926,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 29.21) (xy 270.51 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0156db31-51b6-4229-ac43-a663e971a010")
+	)
+	(wire
+		(pts
 			(xy 168.91 134.62) (xy 171.45 134.62)
 		)
 		(stroke
@@ -2608,6 +3016,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 64.77) (xy 242.57 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0832a3b1-490f-4397-9b4f-255e99ee95b1")
+	)
+	(wire
+		(pts
 			(xy 158.75 107.95) (xy 160.02 107.95)
 		)
 		(stroke
@@ -2678,6 +3096,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 27.94) (xy 259.08 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11311219-0e47-457f-83ea-cd07fda42cb7")
+	)
+	(wire
+		(pts
 			(xy 139.7 107.95) (xy 134.62 107.95)
 		)
 		(stroke
@@ -2695,6 +3123,16 @@
 			(type default)
 		)
 		(uuid "128c03e7-9938-482f-a326-3db314eed009")
+	)
+	(wire
+		(pts
+			(xy 259.08 29.21) (xy 259.08 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1296097e-16ff-4192-82cb-e10ac6635cf6")
 	)
 	(wire
 		(pts
@@ -2798,7 +3236,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 25.4) (xy 149.86 29.21)
+			(xy 52.07 46.99) (xy 52.07 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2838,16 +3276,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 64.77) (xy 242.57 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f4ba85e-0d81-4576-b8fc-776b50e82e3e")
-	)
-	(wire
-		(pts
 			(xy 146.05 49.53) (xy 171.45 49.53)
 		)
 		(stroke
@@ -2858,7 +3286,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 29.21) (xy 128.27 29.21)
+			(xy 29.21 50.8) (xy 30.48 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2918,6 +3346,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 68.58) (xy 242.57 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "294f8b93-864c-4e52-9861-29889083372c")
+	)
+	(wire
+		(pts
 			(xy 148.59 78.74) (xy 170.18 78.74)
 		)
 		(stroke
@@ -2928,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 68.58) (xy 229.87 68.58)
+			(xy 219.71 68.58) (xy 224.79 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2975,6 +3413,16 @@
 			(type default)
 		)
 		(uuid "2dcac67f-087f-43d1-b410-5eaecfe4ca40")
+	)
+	(wire
+		(pts
+			(xy 105.41 33.02) (xy 105.41 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfdeb36-f48b-42ff-acd4-4928e03b5d92")
 	)
 	(wire
 		(pts
@@ -3078,6 +3526,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 60.96) (xy 224.79 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3628fdfa-09d0-4ca0-bb1d-89af48f5c6ff")
+	)
+	(wire
+		(pts
 			(xy 208.28 114.3) (xy 208.28 113.03)
 		)
 		(stroke
@@ -3088,6 +3546,26 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 180.34) (xy 29.21 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37038a9f-d347-4144-a652-73097280480f")
+	)
+	(wire
+		(pts
+			(xy 104.14 25.4) (xy 105.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b48e57-b807-4b1e-a1c2-b23e7226a338")
+	)
+	(wire
+		(pts
 			(xy 209.55 100.33) (xy 241.3 100.33)
 		)
 		(stroke
@@ -3095,6 +3573,26 @@
 			(type default)
 		)
 		(uuid "38af0ce8-dde8-4399-920e-69c780ad274c")
+	)
+	(wire
+		(pts
+			(xy 87.63 172.72) (xy 86.36 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ac38670-38fe-46fb-abc8-a5a9076ee0c9")
+	)
+	(wire
+		(pts
+			(xy 27.94 177.8) (xy 29.21 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b3a576e-87e7-46be-9e5a-109a804626fa")
 	)
 	(wire
 		(pts
@@ -3138,6 +3636,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 38.1) (xy 243.84 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d979de0-fb4a-425b-9d2c-b8abd035752a")
+	)
+	(wire
+		(pts
+			(xy 27.94 142.24) (xy 29.21 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ddb76f7-9982-4100-bac0-56fbcb5cb8ca")
+	)
+	(wire
+		(pts
 			(xy 212.09 134.62) (xy 210.82 134.62)
 		)
 		(stroke
@@ -3158,6 +3676,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 190.5) (xy 29.21 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41dd35f1-c650-49a9-8f95-8334903d105d")
+	)
+	(wire
+		(pts
 			(xy 127 91.44) (xy 127 100.33)
 		)
 		(stroke
@@ -3175,6 +3703,16 @@
 			(type default)
 		)
 		(uuid "423fcc33-d7db-4e81-b0e8-7a933058e759")
+	)
+	(wire
+		(pts
+			(xy 27.94 154.94) (xy 29.21 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4501f0a7-e955-4a2e-beb5-d5e665f4ab0e")
 	)
 	(wire
 		(pts
@@ -3268,7 +3806,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 29.21) (xy 149.86 33.02)
+			(xy 52.07 50.8) (xy 52.07 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3288,7 +3826,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 33.02) (xy 148.59 33.02)
+			(xy 95.25 34.29) (xy 96.52 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c167b38-23b0-4e02-a9a5-411a3f0f64a6")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61) (xy 50.8 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3308,6 +3856,36 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 83.82) (xy 171.45 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e92ce80-4c0f-4271-8005-4f46f82ff4d5")
+	)
+	(wire
+		(pts
+			(xy 256.54 38.1) (xy 254 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed4b5fa-39b3-4e64-9f78-8fd78e607650")
+	)
+	(wire
+		(pts
+			(xy 87.63 182.88) (xy 86.36 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed774e8-02f6-46a0-a40b-cec24e3dcfc7")
+	)
+	(wire
+		(pts
 			(xy 219.71 143.51) (xy 222.25 143.51)
 		)
 		(stroke
@@ -3315,6 +3893,16 @@
 			(type default)
 		)
 		(uuid "4f464736-0ac2-4ae5-b4c0-719ff9d65dcf")
+	)
+	(wire
+		(pts
+			(xy 222.25 55.88) (xy 222.25 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "512f95a3-52b3-4af2-80dd-2b55bddce56a")
 	)
 	(wire
 		(pts
@@ -3338,7 +3926,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 80.01) (xy 160.02 81.28)
+			(xy 160.02 80.01) (xy 160.02 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3375,6 +3963,16 @@
 			(type default)
 		)
 		(uuid "54d1e5e0-10e1-417d-b4e8-9e0977d05876")
+	)
+	(wire
+		(pts
+			(xy 87.63 162.56) (xy 86.36 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5504d03d-3e93-43fa-9d3b-b6303e0cc5e4")
 	)
 	(wire
 		(pts
@@ -3428,7 +4026,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 68.58) (xy 229.87 69.85)
+			(xy 233.68 68.58) (xy 233.68 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3445,6 +4043,26 @@
 			(type default)
 		)
 		(uuid "5cca6166-9aad-440e-916b-1810593ec26e")
+	)
+	(wire
+		(pts
+			(xy 27.94 165.1) (xy 29.21 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d319bb3-d5f8-41df-bfaa-e070273dc768")
+	)
+	(wire
+		(pts
+			(xy 256.54 40.64) (xy 256.54 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d9bcff2-c331-419b-8188-50b7fa26e9e4")
 	)
 	(wire
 		(pts
@@ -3465,6 +4083,16 @@
 			(type default)
 		)
 		(uuid "5ee808a9-946a-49d7-bcda-cb30aff11fdc")
+	)
+	(wire
+		(pts
+			(xy 87.63 167.64) (xy 86.36 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602ea8a5-64e8-4aa2-a1bb-f04f49988b53")
 	)
 	(wire
 		(pts
@@ -3508,6 +4136,26 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 133.35) (xy 29.21 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624b1bc7-5354-4ecf-8779-49baca143def")
+	)
+	(wire
+		(pts
+			(xy 87.63 157.48) (xy 86.36 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63299826-3673-427d-9cca-b05dd6b549c5")
+	)
+	(wire
+		(pts
 			(xy 139.7 127) (xy 148.59 127)
 		)
 		(stroke
@@ -3528,7 +4176,17 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 25.4) (xy 149.86 25.4)
+			(xy 87.63 147.32) (xy 86.36 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ee6e08-b50c-4267-b716-efe4890004a6")
+	)
+	(wire
+		(pts
+			(xy 50.8 46.99) (xy 52.07 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3728,6 +4386,26 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 135.89) (xy 29.21 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74a7a051-3e3b-42bd-b8cf-380e57279dc1")
+	)
+	(wire
+		(pts
+			(xy 27.94 193.04) (xy 29.21 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "750fdc07-2528-4934-a3f7-43b8a0c0ccfe")
+	)
+	(wire
+		(pts
 			(xy 133.35 46.99) (xy 171.45 46.99)
 		)
 		(stroke
@@ -3735,6 +4413,26 @@
 			(type default)
 		)
 		(uuid "75159cff-ece2-44f9-bca9-c54a906b8e5a")
+	)
+	(wire
+		(pts
+			(xy 257.81 29.21) (xy 259.08 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7611db00-edb6-4c59-b464-b3ed8ef966f7")
+	)
+	(wire
+		(pts
+			(xy 27.94 161.29) (xy 29.21 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77490ce0-2720-42ee-9040-3bcf9ce77f89")
 	)
 	(wire
 		(pts
@@ -3768,6 +4466,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 127) (xy 29.21 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78ed8c5d-7fec-4bea-b559-44977064c50f")
+	)
+	(wire
+		(pts
 			(xy 130.81 121.92) (xy 132.08 121.92)
 		)
 		(stroke
@@ -3785,6 +4493,16 @@
 			(type default)
 		)
 		(uuid "7d5b09a5-3e3f-403d-b92a-2246857cac6e")
+	)
+	(wire
+		(pts
+			(xy 39.37 34.29) (xy 38.1 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e365acd-db09-4f29-a681-0a11bbee5e6a")
 	)
 	(wire
 		(pts
@@ -3808,7 +4526,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 77.47) (xy 227.33 77.47)
+			(xy 228.6 77.47) (xy 231.14 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3845,6 +4563,16 @@
 			(type default)
 		)
 		(uuid "820166e3-8cbb-4f04-802b-2573c9504d7b")
+	)
+	(wire
+		(pts
+			(xy 27.94 171.45) (xy 29.21 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82c04470-e9f7-4c4d-b966-514b5fe74544")
 	)
 	(wire
 		(pts
@@ -3888,6 +4616,26 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 38.1) (xy 259.08 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83dacef3-5370-491a-a8b3-489a80f6d378")
+	)
+	(wire
+		(pts
+			(xy 105.41 44.45) (xy 105.41 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ada249-40ba-4215-97bd-1def675b4028")
+	)
+	(wire
+		(pts
 			(xy 208.28 121.92) (xy 210.82 121.92)
 		)
 		(stroke
@@ -3928,6 +4676,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 81.28) (xy 171.45 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8618142a-4ab6-49d2-86ae-3bfcf7932b01")
+	)
+	(wire
+		(pts
 			(xy 146.05 109.22) (xy 146.05 107.95)
 		)
 		(stroke
@@ -3945,6 +4703,16 @@
 			(type default)
 		)
 		(uuid "8681ea18-df2c-4b72-bb0d-d76a557dbc15")
+	)
+	(wire
+		(pts
+			(xy 222.25 38.1) (xy 223.52 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f2f19d-4d0b-460d-bca4-f106d179f583")
 	)
 	(wire
 		(pts
@@ -3988,6 +4756,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 146.05) (xy 29.21 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef6ece3-a34b-4b60-9ca6-1367f99be40a")
+	)
+	(wire
+		(pts
 			(xy 111.76 107.95) (xy 119.38 107.95)
 		)
 		(stroke
@@ -4018,6 +4796,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 38.1) (xy 232.41 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94db3197-bf5a-4b8c-8dd1-3f9dcd74132a")
+	)
+	(wire
+		(pts
 			(xy 212.09 124.46) (xy 210.82 124.46)
 		)
 		(stroke
@@ -4038,7 +4826,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 29.21) (xy 149.86 29.21)
+			(xy 50.8 50.8) (xy 52.07 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4058,7 +4846,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 77.47) (xy 229.87 77.47)
+			(xy 231.14 77.47) (xy 233.68 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4128,6 +4916,26 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 123.19) (xy 29.21 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e65d13e-68d6-4902-b22a-8a8fd492249e")
+	)
+	(wire
+		(pts
+			(xy 105.41 34.29) (xy 107.95 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f490b78-7d5f-4601-941d-81b4c728d276")
+	)
+	(wire
+		(pts
 			(xy 242.57 68.58) (xy 242.57 69.85)
 		)
 		(stroke
@@ -4155,6 +4963,16 @@
 			(type default)
 		)
 		(uuid "a2189d6d-d9de-489a-8144-8db02ed53f16")
+	)
+	(wire
+		(pts
+			(xy 27.94 186.69) (xy 29.21 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a7a20f-c8c9-437e-9490-b1c4fe7fe974")
 	)
 	(wire
 		(pts
@@ -4228,6 +5046,26 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 34.29) (xy 105.41 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8586c14-7c96-4735-b175-37704cfb8411")
+	)
+	(wire
+		(pts
+			(xy 27.94 129.54) (xy 29.21 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a971e17c-b01e-4e96-8f61-c221a8e6043c")
+	)
+	(wire
+		(pts
 			(xy 242.57 69.85) (xy 243.84 69.85)
 		)
 		(stroke
@@ -4255,6 +5093,16 @@
 			(type default)
 		)
 		(uuid "acd22c22-716b-4ad4-aa0a-48b5400a51de")
+	)
+	(wire
+		(pts
+			(xy 248.92 30.48) (xy 248.92 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adf4b098-d632-49ad-98c9-39e3214a3303")
 	)
 	(wire
 		(pts
@@ -4288,6 +5136,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 68.58) (xy 233.68 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af19105a-7a48-41c2-b04f-d42f372d08cb")
+	)
+	(wire
+		(pts
 			(xy 209.55 82.55) (xy 209.55 90.17)
 		)
 		(stroke
@@ -4308,7 +5166,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 33.02) (xy 149.86 34.29)
+			(xy 87.63 152.4) (xy 86.36 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b37a5b3d-2908-44ab-95ad-917759518831")
+	)
+	(wire
+		(pts
+			(xy 52.07 54.61) (xy 52.07 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4338,7 +5206,37 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 29.21) (xy 140.97 29.21)
+			(xy 105.41 34.29) (xy 105.41 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b58e5a63-2a66-4f8b-b166-9fbc716e5faa")
+	)
+	(wire
+		(pts
+			(xy 27.94 152.4) (xy 29.21 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d0ab1c-c95d-4e25-84a5-0b70ccfb23d7")
+	)
+	(wire
+		(pts
+			(xy 27.94 167.64) (xy 29.21 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f69925-bcb2-4ca7-92af-95667bc34c80")
+	)
+	(wire
+		(pts
+			(xy 38.1 50.8) (xy 43.18 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4388,6 +5286,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 64.77) (xy 228.6 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf74e852-8bf7-4198-bea1-cf8cf993ea1a")
+	)
+	(wire
+		(pts
 			(xy 167.64 135.89) (xy 171.45 135.89)
 		)
 		(stroke
@@ -4395,6 +5303,16 @@
 			(type default)
 		)
 		(uuid "c032647c-92c8-49f8-b349-c7f4d7511056")
+	)
+	(wire
+		(pts
+			(xy 39.37 31.75) (xy 38.1 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c10a6623-6cb4-49cd-bb3e-7ca1ee0e6ff6")
 	)
 	(wire
 		(pts
@@ -4418,7 +5336,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 25.4) (xy 128.27 25.4)
+			(xy 29.21 46.99) (xy 30.48 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4435,6 +5353,16 @@
 			(type default)
 		)
 		(uuid "c6cca007-44cd-44ce-b56f-4f6a9e717bcb")
+	)
+	(wire
+		(pts
+			(xy 257.81 20.32) (xy 259.08 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c718d40d-55b6-4069-a860-fa54d8e8216e")
 	)
 	(wire
 		(pts
@@ -4498,13 +5426,23 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 64.77) (xy 224.79 64.77)
+			(xy 219.71 64.77) (xy 222.25 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "caaa0c7c-bbb5-4d07-8797-d44ec04f40d6")
+	)
+	(wire
+		(pts
+			(xy 27.94 184.15) (xy 29.21 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cafa22b8-894c-41cc-90d4-eb0d4a4c6a9c")
 	)
 	(wire
 		(pts
@@ -4538,6 +5476,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 137.16) (xy 86.36 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce3e124e-0572-48b4-9d23-e41c2539dd9e")
+	)
+	(wire
+		(pts
 			(xy 130.81 127) (xy 132.08 127)
 		)
 		(stroke
@@ -4548,6 +5496,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 22.86) (xy 38.1 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf483d61-0f0d-454e-8719-ff3914a83e9c")
+	)
+	(wire
+		(pts
 			(xy 167.64 127) (xy 168.91 127)
 		)
 		(stroke
@@ -4555,6 +5513,16 @@
 			(type default)
 		)
 		(uuid "cf57f5f2-1afc-4f02-98d2-c7a8d6833528")
+	)
+	(wire
+		(pts
+			(xy 247.65 29.21) (xy 248.92 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf93f30c-e4c8-4947-b16a-c3449f7ae5ed")
 	)
 	(wire
 		(pts
@@ -4588,6 +5556,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 148.59) (xy 29.21 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2406a22-e0b6-42af-81cc-6b8810b3c37c")
+	)
+	(wire
+		(pts
 			(xy 142.24 107.95) (xy 142.24 121.92)
 		)
 		(stroke
@@ -4615,6 +5593,26 @@
 			(type default)
 		)
 		(uuid "d3f9e26d-3cee-43df-8d9e-132e39ac3702")
+	)
+	(wire
+		(pts
+			(xy 27.94 158.75) (xy 29.21 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d41fd7c0-3708-47d3-8ec0-15cc31b1b8ce")
+	)
+	(wire
+		(pts
+			(xy 87.63 127) (xy 86.36 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4917ac1-59ee-47b8-9bec-e7e60b3b4220")
 	)
 	(wire
 		(pts
@@ -4658,6 +5656,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 139.7) (xy 29.21 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3b9442-1e0b-4840-9548-eedaafcd758b")
+	)
+	(wire
+		(pts
 			(xy 160.02 77.47) (xy 161.29 77.47)
 		)
 		(stroke
@@ -4675,6 +5683,16 @@
 			(type default)
 		)
 		(uuid "dbdb1511-42ba-49e2-8fc7-423aa017a1f8")
+	)
+	(wire
+		(pts
+			(xy 27.94 120.65) (xy 29.21 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc99b60a-414d-4154-8485-819cd3ccd71e")
 	)
 	(wire
 		(pts
@@ -4705,6 +5723,16 @@
 			(type default)
 		)
 		(uuid "decdad89-c5c7-4afe-b8e9-42560012f586")
+	)
+	(wire
+		(pts
+			(xy 87.63 187.96) (xy 86.36 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e071efef-4fce-4e02-ab81-4d84440982bf")
 	)
 	(wire
 		(pts
@@ -4798,7 +5826,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 64.77) (xy 224.79 69.85)
+			(xy 228.6 64.77) (xy 228.6 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4858,6 +5886,26 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 177.8) (xy 86.36 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb4b9995-fafe-40d3-8a9c-171ddd9c0bb9")
+	)
+	(wire
+		(pts
+			(xy 87.63 132.08) (xy 86.36 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb64ee7e-1dbb-4970-993c-4c988dc1b7bd")
+	)
+	(wire
+		(pts
 			(xy 240.03 119.38) (xy 251.46 119.38)
 		)
 		(stroke
@@ -4888,7 +5936,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 33.02) (xy 140.97 33.02)
+			(xy 38.1 54.61) (xy 43.18 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4915,6 +5963,16 @@
 			(type default)
 		)
 		(uuid "ef039865-adcc-4c25-9996-00a5ad5c48f7")
+	)
+	(wire
+		(pts
+			(xy 39.37 25.4) (xy 38.1 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef407e74-3665-4579-a07e-c67618cd17f6")
 	)
 	(wire
 		(pts
@@ -4948,7 +6006,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 25.4) (xy 140.97 25.4)
+			(xy 38.1 46.99) (xy 43.18 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4958,13 +6016,13 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 68.58) (xy 242.57 68.58)
+			(xy 248.92 29.21) (xy 250.19 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2b9d88d-035a-453b-9cf1-d874ffe4c81e")
+		(uuid "f2ab5652-e361-4fb8-ae4e-5313036b317a")
 	)
 	(wire
 		(pts
@@ -4988,7 +6046,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 33.02) (xy 128.27 33.02)
+			(xy 29.21 54.61) (xy 30.48 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5038,6 +6096,26 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 142.24) (xy 86.36 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fde4c3ab-c0a6-49c7-8568-c7686258c332")
+	)
+	(wire
+		(pts
+			(xy 27.94 173.99) (xy 29.21 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff77c948-62f3-4469-8086-3c6ff6481288")
+	)
+	(wire
+		(pts
 			(xy 240.03 134.62) (xy 251.46 134.62)
 		)
 		(stroke
@@ -5057,7 +6135,7 @@
 		(uuid "ffd25c50-7b18-4552-9606-4933d8a1f9ed")
 	)
 	(image
-		(at 39.37 -6.35)
+		(at 26.67 -30.48)
 		(uuid "405d9825-8803-489b-9ed1-12cfe3d35ed1")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAokAAAE1CAIAAAAEVe3lAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdd1wTyfs48ElCEggEkN4JTREFRFEBBcQueGLD3ns5jvM8u55n73LWAz09FXs77zzFggXlFA8V"
@@ -5587,6 +6665,94 @@
 			)
 		)
 	)
+	(global_label "Top_IsoUART_H"
+		(shape input)
+		(at 38.1 22.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "054034c1-ad58-4174-a6bd-aeb93027d9b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.1449 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Bot_IsoUART_L"
+		(shape input)
+		(at 38.1 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "088b529f-2eef-40b5-88b0-cd8fbcf7ab81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.5682 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C10"
+		(shape input)
+		(at 86.36 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09468078-1c39-4bb0-8bdc-ae325ae9a904")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.6858 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 186.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0bd037d0-86ce-4e48-9d88-fc6e841584a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C8"
 		(shape input)
 		(at 129.54 137.16 180)
@@ -5627,6 +6793,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C0_N"
+		(shape input)
+		(at 86.36 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "13aadde2-aaa4-4351-95cc-523cc08c8de5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.5972 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5697,6 +6885,116 @@
 			)
 		)
 	)
+	(global_label "GPIO3"
+		(shape input)
+		(at 153.67 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "265b2701-5b7e-4a37-9b6d-2e1d5219bec7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27014170-7ff6-40dc-bffe-93fb6ae1399b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC08"
+		(shape input)
+		(at 27.94 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2727cd61-cf4a-4c0e-801f-b9323f3e301d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 193.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "28206566-01b0-4e09-a3d5-de31fbbf108c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC05"
+		(shape input)
+		(at 27.94 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2b7b38a7-76ac-400a-b52a-4dcc3c8933ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C0"
 		(shape input)
 		(at 251.46 139.7 0)
@@ -5719,7 +7017,29 @@
 			)
 		)
 	)
-	(global_label "Top_IsoSPI_H"
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "307153ae-932c-4b1e-865d-8be0834e246b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Top_IsoUART_H"
 		(shape input)
 		(at 87.63 63.5 180)
 		(fields_autoplaced yes)
@@ -5731,7 +7051,7 @@
 		)
 		(uuid "36ae157f-3068-4420-b4e6-f1d5eb39b39d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.2473 63.5 0)
+			(at 70.6749 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5743,7 +7063,7 @@
 	)
 	(global_label "TMP0"
 		(shape input)
-		(at 265.43 16.51 180)
+		(at 154.94 184.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5753,7 +7073,51 @@
 		)
 		(uuid "3afa3e50-02c3-4c07-bda5-5e1e5d63aa87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.5463 16.51 0)
+			(at 147.0563 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C3"
+		(shape input)
+		(at 86.36 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ce42901-7f16-492d-8edb-8b7a64a004da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C8"
+		(shape input)
+		(at 86.36 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ea04b2e-64dd-4a59-8413-a31e64428040")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +7129,7 @@
 	)
 	(global_label "TMP_MUX1"
 		(shape input)
-		(at 280.67 20.32 180)
+		(at 170.18 187.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5775,7 +7139,117 @@
 		)
 		(uuid "3ea18b21-84c5-4f99-8046-e87c86729fb2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.8273 20.32 0)
+			(at 157.3373 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Bot_IsoUART_H"
+		(shape input)
+		(at 38.1 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "44bacd92-bd4b-45c9-bdb7-a483aa55f6ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.2658 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC09"
+		(shape input)
+		(at 27.94 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b483f31-a794-42fc-a921-9b8d217cb3e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C2"
+		(shape input)
+		(at 86.36 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "507e1805-f652-42fe-866b-a64526942f71")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 148.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5e5c5e13-0ff3-405a-8dae-4ca4eb028cd3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C7"
+		(shape input)
+		(at 86.36 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "63f52aea-062a-4f18-a2bf-8146958889b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5807,9 +7281,31 @@
 			)
 		)
 	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6799a1e4-cbd3-44d2-b661-27152cd26e3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TMP2"
 		(shape input)
-		(at 265.43 21.59 180)
+		(at 154.94 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5819,7 +7315,139 @@
 		)
 		(uuid "6abee9af-a1e2-445d-b33b-7b6d75249d02")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.5463 21.59 0)
+			(at 147.0563 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C4"
+		(shape input)
+		(at 86.36 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6cd19cff-ac0e-4821-bf02-cb1f4a5fed7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C9"
+		(shape input)
+		(at 86.36 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6fc98057-d398-4ba8-9f77-6b6db7d6ee15")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "713c9333-f9e1-4ac8-9551-d696c924f017")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76478606-6975-446c-abec-9d6c94d08b0e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 135.89 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "771d439c-f708-479a-98b9-bc9328243145")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC00"
+		(shape input)
+		(at 27.94 120.65 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "786a1ce7-950f-40c9-b760-1df878b301bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5831,7 +7459,7 @@
 	)
 	(global_label "TMP_MUX0"
 		(shape input)
-		(at 280.67 17.78 180)
+		(at 170.18 185.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5841,7 +7469,29 @@
 		)
 		(uuid "792343ff-03b9-4563-afd2-b82ace515fca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.8273 17.78 0)
+			(at 157.3373 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Top_IsoUART_L"
+		(shape input)
+		(at 38.1 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b09d18c-01b4-4a50-aad3-334acc10d0c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.4473 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5873,9 +7523,31 @@
 			)
 		)
 	)
+	(global_label "GPIO2"
+		(shape input)
+		(at 270.51 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "816fbde4-03bd-401b-a116-6d806d5be25d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.18 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TMP3"
 		(shape input)
-		(at 265.43 24.13 180)
+		(at 154.94 191.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5885,7 +7557,51 @@
 		)
 		(uuid "877379ae-dbf8-4acc-8d02-d00fe2909cc2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.5463 24.13 0)
+			(at 147.0563 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C1"
+		(shape input)
+		(at 86.36 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87eabe74-148c-4750-a8f2-2f905d00e22c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC01"
+		(shape input)
+		(at 27.94 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "898db23a-09b4-42c2-8e17-307d6450a1c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,6 +7633,72 @@
 			)
 		)
 	)
+	(global_label "C11"
+		(shape input)
+		(at 86.36 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8eb5abbc-a5bd-4ec5-93b0-2ffa3bd5fb07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.6858 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC06"
+		(shape input)
+		(at 27.94 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92bbb62d-ba19-4ef7-8216-845d90bcff69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC10"
+		(shape input)
+		(at 27.94 184.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "954e0317-16dc-40eb-b436-47af0494ff54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C10"
 		(shape input)
 		(at 130.81 127 180)
@@ -5939,7 +7721,51 @@
 			)
 		)
 	)
-	(global_label "Bot_IsoSPI_L"
+	(global_label "NTC02"
+		(shape input)
+		(at 27.94 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a476faf6-b915-4a61-9248-f0d2df2c2a13")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 173.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a57341b1-11f5-49a4-b01e-2519772612c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Bot_IsoUART_L"
 		(shape input)
 		(at 254 69.85 0)
 		(fields_autoplaced yes)
@@ -5951,7 +7777,7 @@
 		)
 		(uuid "b8f3f305-38a7-44cd-bf6a-bc21af5ecfb1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.9594 69.85 0)
+			(at 270.5318 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5961,7 +7787,7 @@
 			)
 		)
 	)
-	(global_label "Top_IsoSPI_L"
+	(global_label "Top_IsoUART_L"
 		(shape input)
 		(at 87.63 69.85 180)
 		(fields_autoplaced yes)
@@ -5973,7 +7799,7 @@
 		)
 		(uuid "bf6ec42b-c23b-4d76-bea0-11297870e4b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.5497 69.85 0)
+			(at 70.9773 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6005,7 +7831,51 @@
 			)
 		)
 	)
-	(global_label "Bot_IsoSPI_H"
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 161.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c5f8ee40-d94b-4b56-a35a-64e5f61cda95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC03"
+		(shape input)
+		(at 27.94 139.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c63a646f-0e27-48b9-bb8f-7fe9caa10f74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Bot_IsoUART_H"
 		(shape input)
 		(at 254 63.5 0)
 		(fields_autoplaced yes)
@@ -6017,7 +7887,7 @@
 		)
 		(uuid "c9244a08-ea26-4571-b1a1-fd5d425a7f13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.2618 63.5 0)
+			(at 270.8342 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6071,6 +7941,72 @@
 			)
 		)
 	)
+	(global_label "NTC11"
+		(shape input)
+		(at 27.94 190.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dab0c675-a888-4ae0-bff4-de6b979ff2f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TPM_GND"
+		(shape input)
+		(at 27.94 180.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de707bc3-ccf4-4c45-9f04-f4b6f61d336f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C5"
+		(shape input)
+		(at 86.36 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de7cec3f-b0ee-4a06-b7af-e3b3f398f4aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C5"
 		(shape input)
 		(at 251.46 114.3 0)
@@ -6089,6 +8025,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "NTC04"
+		(shape input)
+		(at 27.94 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7855ed6-6dd8-42b4-b766-23468ca1f1fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6159,6 +8117,28 @@
 			)
 		)
 	)
+	(global_label "NTC07"
+		(shape input)
+		(at 27.94 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f6336cd0-61a2-40d5-ba96-eb6f34b9633b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.9677 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C3"
 		(shape input)
 		(at 251.46 124.46 0)
@@ -6181,9 +8161,53 @@
 			)
 		)
 	)
+	(global_label "C6"
+		(shape input)
+		(at 86.36 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7ddd060-1efb-4e50-9e2f-a1d4a8cddfe8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPIO3"
+		(shape input)
+		(at 107.95 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fafdbdf7-2158-4b72-b0c7-e4cade77c939")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.62 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TMP1"
 		(shape input)
-		(at 265.43 19.05 180)
+		(at 154.94 186.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6193,7 +8217,7 @@
 		)
 		(uuid "fe3828a0-610b-4c59-a95e-0f8819dae021")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 257.5463 19.05 0)
+			(at 147.0563 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6216,6 +8240,50 @@
 		(uuid "feb598d2-a810-4157-9ecc-7b4ae63bf2bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 20.0563 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C0"
+		(shape input)
+		(at 86.36 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fecb6114-a46b-4d36-b04c-7bbba7c09552")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.8953 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPIO2"
+		(shape input)
+		(at 153.67 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff2ec2ed-33c2-494f-9a68-c2efc01b1096")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 145 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6293,6 +8361,139 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 105.41 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "030e97c8-244a-4dd9-aa3a-791bc825b835")
+		(property "Reference" "#PWR044"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.934 46.482 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d74ede3-8320-417f-a8ec-32f94508f96f")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "043762e1-911e-47d2-b64c-ea6cf0e780ac")
+		(property "Reference" "Solderpad_Cell5"
+			(at 95.25 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67e76155-3777-4de8-aaab-9ef9cb3307fa")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 160.02 104.14 270)
 		(unit 1)
@@ -6353,6 +8554,81 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC846")
+		(at 248.92 35.56 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "089857cd-7f45-4087-a73f-d9b354a7d3da")
+		(property "Reference" "Q1"
+			(at 253.873 34.163 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC846"
+			(at 251.841 41.021 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 250.825 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf"
+			(at 248.92 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e49e4fa-04c2-4bf8-9047-8b231f77c44b")
+		)
+		(pin "2"
+			(uuid "b0aa9b8b-03c0-48c3-a0aa-e7eb23fb53ca")
+		)
+		(pin "3"
+			(uuid "ceafda46-0d82-4ba7-92fa-4acb2931fdd9")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6562,16 +8838,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 229.87 73.66 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0fb04383-9291-4056-993b-93fcacbcdcfd")
-		(property "Reference" "C63"
-			(at 225.806 71.628 0)
+		(uuid "0f8a493b-ec39-4146-830a-9e42e6d69167")
+		(property "Reference" "SolderPad_GND_NTC1"
+			(at 48.006 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6579,8 +8855,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1nC 1000V"
-			(at 230.124 75.946 0)
+		(property "Value" "Conn_01x01"
+			(at 35.814 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6588,8 +8864,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 230.8352 77.47 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6598,7 +8874,73 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 229.87 73.66 0)
+			(at 34.29 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1052525-c4b5-432c-a088-45bc31ac483a")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233.68 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0fb04383-9291-4056-993b-93fcacbcdcfd")
+		(property "Reference" "C63"
+			(at 229.616 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nC 1000V"
+			(at 233.934 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 234.6452 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,7 +8949,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 229.87 73.66 0)
+			(at 233.68 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6701,6 +9043,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "145169f6-1439-47ff-a2c2-a5e8c445ebb9")
+		(property "Reference" "Solderpad_Cell11"
+			(at 95.25 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6444916d-933b-480a-a2c6-dfdcd7cb6226")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 215.9 143.51 270)
 		(unit 1)
@@ -6762,6 +9171,142 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15658814-dd48-4c7a-a368-326cce82b112")
+		(property "Reference" "SolderPad_GND_NTC2"
+			(at 48.006 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ecc8243e-7501-4dbd-bf21-818028ae7409")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 44.45 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "180eb9bc-2dce-4a35-b553-b45eed0c9cb2")
+		(property "Reference" "Bot_IsoUART"
+			(at 46.99 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 46.99 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal"
+			(at 44.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 44.45 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "130ecd8f-f231-4ef4-a268-98ea451b9beb")
+		)
+		(pin "1"
+			(uuid "56b5a80e-48eb-4643-87e7-cd1830aeec34")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Bot_IsoUART")
 					(unit 1)
 				)
 			)
@@ -6835,6 +9380,404 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a959728-98e9-42fa-9f40-4b570b46803a")
+		(property "Reference" "SolderPad_Sig_NTC1"
+			(at 48.006 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6019e482-faec-434a-bddf-3f97dfc125db")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ad5b41c-8365-4724-b929-ec6c67d6280d")
+		(property "Reference" "SolderPad_GND_NTC5"
+			(at 48.006 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50472acb-9cc7-467d-ad21-380ae5eb84bd")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c36daae-ee26-43a4-ae3c-164d8becddc1")
+		(property "Reference" "SolderPad_Sig_NTC8"
+			(at 48.006 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ab1c1c-f352-431a-bc7e-3b4402baaf3f")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d9e154a-9b53-429a-a6f5-2f89d8376616")
+		(property "Reference" "Solderpad_Cell10"
+			(at 95.25 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b318d90-f4ac-474c-ae1b-a5577a0a8f7b")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ddf694d-1506-4f48-ad0a-fbe9acc87899")
+		(property "Reference" "Solderpad_Cell1"
+			(at 95.25 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53172e1e-c9c0-4e97-9e63-25eedeaa2f31")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e3bd024-bca7-4685-83e1-fcb0b3d8b23f")
+		(property "Reference" "SolderPad_Sig_NTC10"
+			(at 48.006 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8970e622-0503-4b10-a45a-ea4e3909666e")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Fuse")
 		(at 236.22 129.54 90)
 		(unit 1)
@@ -6896,6 +9839,72 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 256.54 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21f8b038-4c70-4b05-8e4d-2905e573e845")
+		(property "Reference" "#PWR042"
+			(at 256.54 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 258.064 42.672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a2a3366-0c5e-49e1-9eff-4e334cf2bbcf")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -6972,6 +9981,206 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 254 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "2a6d5bde-02f4-47f7-8802-d99b58b23ea8")
+		(property "Reference" "R57"
+			(at 254 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 254 31.496 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 254 30.988 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 254 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "427adbed-7305-43ff-9136-ee649cd4ccd0")
+		)
+		(pin "1"
+			(uuid "71fe129f-b108-4ad6-a9bd-9a9f5a264069")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ea6bce6-6dcc-4683-b66d-46aedbbf89a6")
+		(property "Reference" "SolderPad_Sig_NTC0"
+			(at 48.006 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d143b06-58fd-4a67-ac21-561a829b5281")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "312baa33-d8bc-4097-a25d-b989d07ea0a6")
+		(property "Reference" "Solderpad_Cell0_Negative"
+			(at 95.25 186.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 189.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffa98637-da34-4598-8312-f20ab85f727f")
+		)
+		(instances
+			(project ""
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell0_Negative")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 91.44 96.52 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7039,6 +10248,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32d66183-54a4-40c8-863b-5d188a20f93b")
+		(property "Reference" "Solderpad_Cell9"
+			(at 95.25 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ef5a180-89bb-43d2-9da5-489a18210b76")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 20.32 109.22 0)
 		(unit 1)
@@ -7100,6 +10376,137 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33fc2023-6aa4-410b-9b56-bf070b797d4f")
+		(property "Reference" "Solderpad_Cell7"
+			(at 95.25 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25e30e9b-e010-42c7-a0b1-0238eb8ddf7f")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 95.25 34.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "344e9e88-34c8-4685-a48a-ce3de7ef6536")
+		(property "Reference" "GPIO3"
+			(at 90.678 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 86.36 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 95.25 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 95.25 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3616c041-b56f-41d3-9af7-277cf6e2ea1c")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "GPIO3")
 					(unit 1)
 				)
 			)
@@ -7241,6 +10648,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "376c1c36-ea10-4325-9933-c44805387ac1")
+		(property "Reference" "Solderpad_Cell8"
+			(at 95.25 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2684e8be-72a9-4776-9191-d638fb70f001")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a5ce8ed-5655-46e3-8338-e39186a3430c")
+		(property "Reference" "SolderPad_GND_NTC6"
+			(at 48.006 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d97d9e9-7dd4-4d4d-a9e9-669ae96d9047")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 127 104.14 0)
 		(unit 1)
@@ -7319,7 +10859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d6f485b-679a-413c-b171-dd3af6147d7a")
-		(property "Reference" "Error1"
+		(property "Reference" "Error"
 			(at 244.094 82.55 0)
 			(effects
 				(font
@@ -7370,7 +10910,74 @@
 		(instances
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
-					(reference "Error1")
+					(reference "Error")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4000b37b-cc56-4c22-b49f-7a54b614e052")
+		(property "Reference" "Solderpad_Cell6"
+			(at 95.25 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2b7bb04-bf7a-47b6-b36e-1c1e2dedda21")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell6")
 					(unit 1)
 				)
 			)
@@ -7445,7 +11052,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 127 33.02 90)
+		(at 29.21 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7454,7 +11061,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a1ec203-c514-45d0-8acf-56f771d8eedd")
 		(property "Reference" "#PWR039"
-			(at 130.81 33.02 0)
+			(at 33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7463,7 +11070,7 @@
 			)
 		)
 		(property "Value" "+2,5V"
-			(at 123.19 33.0199 90)
+			(at 25.4 54.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7472,7 +11079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 33.02 0)
+			(at 29.21 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7481,7 +11088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 33.02 0)
+			(at 29.21 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7490,7 +11097,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 127 33.02 0)
+			(at 29.21 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7511,8 +11118,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cae3728-a88e-4a41-be14-74adafab8d90")
+		(property "Reference" "SolderPad_Sig_NTC2"
+			(at 48.006 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22b80c38-d1d1-4846-aad0-07936ad71248")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 127 29.21 90)
+		(at 29.21 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7521,7 +11194,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d17d94a-46e0-472a-aa67-09be38291639")
 		(property "Reference" "#PWR038"
-			(at 130.81 29.21 0)
+			(at 33.02 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7530,7 +11203,7 @@
 			)
 		)
 		(property "Value" "+3.45V"
-			(at 123.19 29.2099 90)
+			(at 25.4 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,7 +11212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 29.21 0)
+			(at 29.21 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7548,7 +11221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 29.21 0)
+			(at 29.21 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7557,7 +11230,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 127 29.21 0)
+			(at 29.21 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7849,15 +11522,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 144.78 29.21 180)
+		(at 46.99 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "52c74764-6ea8-46a0-a7d6-b786b8f3d1ef")
-		(property "Reference" "Error3"
-			(at 162.814 27.94 0)
+		(property "Reference" "VReg"
+			(at 65.024 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7865,7 +11538,7 @@
 			)
 		)
 		(property "Value" "LED Green"
-			(at 154.94 27.94 0)
+			(at 57.15 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7873,7 +11546,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 144.78 29.21 0)
+			(at 46.99 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7882,7 +11555,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 29.21 0)
+			(at 46.99 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7891,7 +11564,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 29.21 0)
+			(at 46.99 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7907,7 +11580,7 @@
 		(instances
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
-					(reference "Error3")
+					(reference "VReg")
 					(unit 1)
 				)
 			)
@@ -8193,15 +11866,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 144.78 33.02 180)
+		(at 46.99 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6397a77c-d0b3-4bd8-abd7-2db29466835d")
-		(property "Reference" "Error4"
-			(at 162.814 31.75 0)
+		(property "Reference" "VDDC"
+			(at 65.024 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8209,7 +11882,7 @@
 			)
 		)
 		(property "Value" "LED Green"
-			(at 154.94 31.75 0)
+			(at 57.15 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8217,7 +11890,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 144.78 33.02 0)
+			(at 46.99 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8226,7 +11899,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 33.02 0)
+			(at 46.99 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8235,7 +11908,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 33.02 0)
+			(at 46.99 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8251,7 +11924,7 @@
 		(instances
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
-					(reference "Error4")
+					(reference "VDDC")
 					(unit 1)
 				)
 			)
@@ -8319,6 +11992,73 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64dea10e-c3e9-45fd-b219-564b9139bc98")
+		(property "Reference" "Solderpad_Cell4"
+			(at 95.25 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bc523ff-03cf-4d36-8d82-a5c67c23c0c9")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell4")
 					(unit 1)
 				)
 			)
@@ -8452,6 +12192,73 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 259.08 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "6941c320-dc38-489f-a9ae-0d779cdd0c43")
+		(property "Reference" "R58"
+			(at 259.08 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 261.62 38.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 260.858 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 259.08 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "15ad131f-560a-4405-9a36-fb8af78879ea")
+		)
+		(pin "1"
+			(uuid "5110b139-f06a-4ebf-8266-5adb0bf13235")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -8593,15 +12400,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 25.4 90)
+		(at 34.29 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6be0a51b-a890-4917-a9c0-6bfe4662cbaf")
 		(property "Reference" "R53"
-			(at 132.08 25.4 90)
+			(at 34.29 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8609,7 +12416,7 @@
 			)
 		)
 		(property "Value" "10kR"
-			(at 137.16 24.384 90)
+			(at 39.37 45.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8617,7 +12424,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 132.08 27.178 90)
+			(at 34.29 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8626,7 +12433,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 25.4 0)
+			(at 34.29 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8635,7 +12442,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 25.4 0)
+			(at 34.29 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8726,6 +12533,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 257.81 20.32 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e10497a-0378-468a-8255-3e59ba0e9c86")
+		(property "Reference" "#PWR043"
+			(at 261.62 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.45V"
+			(at 254 20.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 257.81 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb25bd2f-783e-4e8b-9f9b-83c75321b91e")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 151.13 107.95 270)
 		(unit 1)
@@ -8787,6 +12661,139 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7381d232-8d44-4510-808d-349da322c175")
+		(property "Reference" "SolderPad_GND_NTC9"
+			(at 48.006 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0876c97-6e91-4d86-96c1-6eb43556a0a1")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73ceb593-7b96-4d60-b278-7187094c76c4")
+		(property "Reference" "Solderpad_Cell2"
+			(at 95.25 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1fadf34-dd7e-423b-a779-d52b2221c0dd")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell2")
 					(unit 1)
 				)
 			)
@@ -8860,8 +12867,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74a9d904-ea9e-4074-a4d8-c5061d78aa26")
+		(property "Reference" "SolderPad_GND_NTC3"
+			(at 48.006 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8b2d693-84ed-4f4c-9e84-b8dcca9620e2")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 127 25.4 90)
+		(at 29.21 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8870,7 +12943,7 @@
 		(fields_autoplaced yes)
 		(uuid "74e4f496-a065-495e-a4cd-894ba159b7dd")
 		(property "Reference" "#PWR037"
-			(at 130.81 25.4 0)
+			(at 33.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8879,7 +12952,7 @@
 			)
 		)
 		(property "Value" "VStack"
-			(at 123.19 25.3999 90)
+			(at 25.4 46.9899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8888,7 +12961,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 25.4 0)
+			(at 29.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8897,7 +12970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 25.4 0)
+			(at 29.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8906,7 +12979,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 127 25.4 0)
+			(at 29.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9125,6 +13198,205 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7deaf8b5-1422-4b2b-89cd-e24837015e84")
+		(property "Reference" "SolderPad_Sig_NTC3"
+			(at 48.006 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ead49ab-73d1-4cc1-921c-a68daa9d98d9")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 224.79 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e3c5761-8f9e-4e51-ace4-4896dcc6c6b9")
+		(property "Reference" "Bot_IsoUART_L"
+			(at 227.33 56.3879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 227.33 58.9279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 229.87 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 224.79 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14b43d36-d2a9-4f11-9f89-b7d3e420614e")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Bot_IsoUART_L")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fa6023a-1f9a-4979-a188-e96334a5ab45")
+		(property "Reference" "SolderPad_Sig_NTC11"
+			(at 48.006 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d77e4cb-57f4-4fa6-8311-6b63f3185b74")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC11")
 					(unit 1)
 				)
 			)
@@ -9409,6 +13681,337 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8322337a-69ca-4bd8-ae8a-22ba4b6329c0")
+		(property "Reference" "SolderPad_GND_NTC7"
+			(at 48.006 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19e21ae7-e89b-40f6-a583-b65a61cf1d10")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "843a118c-af14-483c-ac68-014e0ebc34ea")
+		(property "Reference" "SolderPad_GND_NTC10"
+			(at 48.006 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a675610-702c-44e7-8df3-183afb3a130a")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86896c72-dd2c-48f6-bedb-08ba19dd771b")
+		(property "Reference" "SolderPad_Sig_NTC4"
+			(at 48.006 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bf559b3-6f13-4a39-8414-1c4edb30af4d")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 104.14 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "869fbc50-79a3-4b8f-bd6b-ace155ecda13")
+		(property "Reference" "#PWR045"
+			(at 107.95 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.45V"
+			(at 100.33 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 104.14 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eca6de99-7684-47e8-8318-c0f292ee01a7")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 134.62 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "899302ea-a861-4fcd-9bd2-3228d25c5ddc")
+		(property "Reference" "TMP0"
+			(at 135.128 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 125.222 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4195fa81-7294-4a80-a813-7c5f59e69166")
+		)
+		(instances
+			(project ""
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "TMP0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 209.55 53.34 0)
 		(unit 1)
@@ -9469,6 +14072,138 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c269d10-6235-4812-92e1-e6b47f73b83a")
+		(property "Reference" "SolderPad_GND_NTC4"
+			(at 48.006 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5b98be0-11bd-4583-b57d-05834b860f8c")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93a52275-c91f-4879-b054-c48e9c9b487c")
+		(property "Reference" "SolderPad_GND_NTC8"
+			(at 48.006 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b17d36d-d1d4-4600-9e21-21af5b88afb4")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC8")
 					(unit 1)
 				)
 			)
@@ -9615,7 +14350,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 224.79 73.66 0)
+		(at 228.6 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9623,7 +14358,7 @@
 		(dnp no)
 		(uuid "990192c0-40f4-49e0-a408-250efe7040d1")
 		(property "Reference" "C62"
-			(at 220.726 71.628 0)
+			(at 224.536 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9632,7 +14367,7 @@
 			)
 		)
 		(property "Value" "1nC 1000V"
-			(at 213.868 76.2 0)
+			(at 217.678 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9641,7 +14376,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 225.7552 77.47 0)
+			(at 229.5652 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9650,7 +14385,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.79 73.66 0)
+			(at 228.6 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9659,7 +14394,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 224.79 73.66 0)
+			(at 228.6 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9677,6 +14412,139 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "C62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a31f83e-de3a-43e8-9c7c-153fa9966185")
+		(property "Reference" "SolderPad_Sig_NTC9"
+			(at 48.006 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d989c512-f932-4360-8f21-64da49446a42")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a57616e-fc01-4922-a72a-0a41e7569736")
+		(property "Reference" "Solderpad_Cell3"
+			(at 95.25 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7900a939-e57c-4d68-aca9-c100f9a5fa07")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell3")
 					(unit 1)
 				)
 			)
@@ -9886,6 +14754,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 236.22 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "9eeb7bae-9102-4d40-be0a-7e1345f1b783")
+		(property "Reference" "Test"
+			(at 236.347 35.433 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED Blue"
+			(at 237.363 40.767 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ae4a5a5-7845-4b22-bd61-c3ef5bf428c1")
+		)
+		(pin "2"
+			(uuid "f650697d-355b-4cc7-ab60-cc2353ee65b8")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Test")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 146.05 113.03 0)
 		(unit 1)
@@ -9955,8 +14889,138 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 247.65 29.21 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1b15bbf-f561-4e4e-aeac-d2c5777e48c6")
+		(property "Reference" "GPIO2"
+			(at 244.094 27.178 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 238.76 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 247.65 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c54fe285-23e8-439c-bb13-8e679ca0ca48")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "GPIO2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1d80cb6-594a-4c6c-af1b-5c0fd5caad09")
+		(property "Reference" "SolderPad_Sig_NTC5"
+			(at 48.006 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec4b3804-9148-4720-827c-d54ae75a2221")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 227.33 77.47 0)
+		(at 231.14 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9964,7 +15028,7 @@
 		(dnp no)
 		(uuid "a1fc4e78-1f9a-438f-9932-fb341550d349")
 		(property "Reference" "#PWR034"
-			(at 227.33 83.82 0)
+			(at 231.14 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9973,7 +15037,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 225.298 75.946 0)
+			(at 229.108 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9982,7 +15046,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 77.47 0)
+			(at 231.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9991,7 +15055,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 77.47 0)
+			(at 231.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10000,7 +15064,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 77.47 0)
+			(at 231.14 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10293,6 +15357,138 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a63f463e-9618-449d-bc03-f385bb77630b")
+		(property "Reference" "SolderPad_GND_NTC11"
+			(at 48.006 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc48200b-faa2-4268-a97c-02d924926d62")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a76291b6-429d-4236-b0b7-c8f665127996")
+		(property "Reference" "SolderPad_GND_NTC0"
+			(at 48.006 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c29be0fe-bf00-4356-a087-c00318b11a37")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_GND_NTC0")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 163.83 107.95 270)
 		(unit 1)
@@ -10425,6 +15621,73 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 92.71 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9c58dd0-0609-47a2-b335-5c97ad6607b1")
+		(property "Reference" "Solderpad_Cell0"
+			(at 95.25 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 95.25 184.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D3.0mm"
+			(at 92.71 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 92.71 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40fe28bf-08d3-41f1-82cf-48527c558080")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Solderpad_Cell0")
 					(unit 1)
 				)
 			)
@@ -10840,15 +16103,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 132.08 33.02 90)
+		(at 34.29 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b3bf9cdc-741f-4300-a6e9-a8bf1567247b")
 		(property "Reference" "R55"
-			(at 132.08 33.02 90)
+			(at 34.29 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10856,7 +16119,7 @@
 			)
 		)
 		(property "Value" "62R"
-			(at 137.414 32.004 90)
+			(at 39.624 53.594 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10864,7 +16127,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 132.08 34.798 90)
+			(at 34.29 56.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10873,7 +16136,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 33.02 0)
+			(at 34.29 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10882,7 +16145,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 33.02 0)
+			(at 34.29 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11040,32 +16303,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 132.08 29.21 90)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf1bd5b2-c171-4fe1-b225-9eaae72ba171")
-		(property "Reference" "R54"
-			(at 132.08 29.21 90)
+		(uuid "bab34c5f-f17f-4790-bb0c-673bb5816285")
+		(property "Reference" "SolderPad_Sig_NTC7"
+			(at 48.006 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "270R"
-			(at 137.414 28.194 90)
+		(property "Value" "Conn_01x01"
+			(at 35.814 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 132.08 30.988 90)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11074,7 +16339,71 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 29.21 0)
+			(at 34.29 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a149c3bf-dc6e-4a1e-9d67-e0c2bb6f4676")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 34.29 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "bf1bd5b2-c171-4fe1-b225-9eaae72ba171")
+		(property "Reference" "R54"
+			(at 34.29 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "270R"
+			(at 39.624 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 34.29 52.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11083,7 +16412,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 132.08 29.21 0)
+			(at 34.29 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11108,7 +16437,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 34.29 0)
+		(at 52.07 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11117,7 +16446,7 @@
 		(fields_autoplaced yes)
 		(uuid "c0653f07-fe86-4af0-ba2b-a34831b1322e")
 		(property "Reference" "#PWR040"
-			(at 149.86 40.64 0)
+			(at 52.07 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11126,7 +16455,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 39.37 0)
+			(at 52.07 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11134,7 +16463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 34.29 0)
+			(at 52.07 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11143,7 +16472,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 34.29 0)
+			(at 52.07 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11152,7 +16481,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 34.29 0)
+			(at 52.07 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11174,15 +16503,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 144.78 25.4 180)
+		(at 46.99 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c0856eb4-5015-4775-8a23-aecacd4d17d4")
-		(property "Reference" "Error2"
-			(at 162.814 24.13 0)
+		(property "Reference" "StackPower"
+			(at 68.072 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11190,7 +16519,7 @@
 			)
 		)
 		(property "Value" "LED Green"
-			(at 154.686 24.13 0)
+			(at 56.896 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11198,7 +16527,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 144.78 25.4 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11207,7 +16536,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 25.4 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11216,7 +16545,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 25.4 0)
+			(at 46.99 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11232,7 +16561,7 @@
 		(instances
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
-					(reference "Error2")
+					(reference "StackPower")
 					(unit 1)
 				)
 			)
@@ -11373,7 +16702,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 81.28 0)
+		(at 160.02 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11381,7 +16710,7 @@
 		(dnp no)
 		(uuid "c5eb293d-b728-4d0c-82b3-afa9781ec91b")
 		(property "Reference" "#PWR08"
-			(at 160.02 87.63 0)
+			(at 160.02 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11390,7 +16719,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.544 83.312 0)
+			(at 161.544 87.122 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11399,7 +16728,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 81.28 0)
+			(at 160.02 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11408,7 +16737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 81.28 0)
+			(at 160.02 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11417,7 +16746,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 81.28 0)
+			(at 160.02 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11574,6 +16903,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 105.41 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "c84893af-d144-4a93-97f6-c8678725f2b1")
+		(property "Reference" "R60"
+			(at 105.41 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 107.696 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 107.188 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64af526d-573b-434c-887c-30840ee0110a")
+		)
+		(pin "1"
+			(uuid "ce3db7b7-799a-47b7-9dcb-1283f5930136")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 146.05 116.84 0)
 		(unit 1)
@@ -11701,6 +17097,73 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "F10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 39.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "d086c91a-3e31-4de4-8e0a-971841859434")
+		(property "Reference" "R61"
+			(at 105.41 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 107.95 43.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 107.188 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 105.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8a3434f-d70a-4932-8baa-dc431546c7a6")
+		)
+		(pin "1"
+			(uuid "e0eab0ae-eeb0-4307-8c6b-c28ebe96f623")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -11839,6 +17302,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 222.25 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8389be3-ea9d-4a39-9ba1-321ed5471e8c")
+		(property "Reference" "Bot_IsoUART_H"
+			(at 224.79 51.3079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 224.79 53.8479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 222.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc97f284-f764-4cf4-855b-a6443e690a25")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Bot_IsoUART_H")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 31.75 99.06 90)
 		(unit 1)
@@ -11900,6 +17430,142 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 44.45 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dacd75e6-4194-458a-a447-474db742cdba")
+		(property "Reference" "Top_IsoUART"
+			(at 46.99 22.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 46.99 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal"
+			(at 44.45 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 44.45 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3366fb32-bc87-42e8-9b83-85ebd726f47a")
+		)
+		(pin "1"
+			(uuid "53025a2e-37e1-43dc-90d6-ad6dca004ecb")
+		)
+		(instances
+			(project ""
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "Top_IsoUART")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 34.29 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dcda1f91-9f91-487e-8248-3382d0ed6cf9")
+		(property "Reference" "SolderPad_Sig_NTC6"
+			(at 48.006 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01"
+			(at 35.814 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78361ebb-55c8-405b-be46-3f73d703b1ea")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "SolderPad_Sig_NTC6")
 					(unit 1)
 				)
 			)
@@ -11973,6 +17639,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 259.08 24.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "df579d5e-e1b3-4e0b-ba81-c2c06886ece6")
+		(property "Reference" "R59"
+			(at 259.08 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 261.366 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 260.858 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 259.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dd3e1c90-ee9e-4cfa-8d0e-d2d791a8fb2d")
+		)
+		(pin "1"
+			(uuid "99bbafe2-7385-4078-b910-4a42042502ce")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 227.33 38.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "e2c9c312-2998-46c9-8bb8-3480bcccd5cb")
+		(property "Reference" "R56"
+			(at 227.33 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330R"
+			(at 227.457 40.513 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 227.33 36.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 227.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2abd57d-36a2-4497-83f8-60d1d07a26f8")
+		)
+		(pin "1"
+			(uuid "0f82e885-cccb-4d70-a617-84747df361cf")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 93.98 63.5 270)
 		(unit 1)
@@ -12036,6 +17836,71 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 222.25 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb5920ca-925e-42b1-b968-45e71cc0c012")
+		(property "Reference" "#PWR041"
+			(at 226.06 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.45V"
+			(at 215.265 37.973 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 222.25 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4008b811-88eb-44c0-8d3e-0585cfbd5b0b")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -12305,6 +18170,73 @@
 			(project "StackController"
 				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
 					(reference "F11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 34.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f87dab6e-38fc-4c4d-bcfe-f95fbd54654d")
+		(property "Reference" "R62"
+			(at 100.33 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kR"
+			(at 100.33 36.576 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 100.33 36.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 100.33 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67acd205-0a05-49bc-b327-ba129118173e")
+		)
+		(pin "1"
+			(uuid "2c73ddb7-c6fd-4f8a-8311-a5b0e50f19fd")
+		)
+		(instances
+			(project "StackController"
+				(path "/81fa8634-d989-41ca-b28a-cfa8917c7dfc"
+					(reference "R62")
 					(unit 1)
 				)
 			)
@@ -13123,7 +19055,7 @@
 		)
 	)
 	(sheet
-		(at 255.27 15.24)
+		(at 144.78 182.88)
 		(size 27.94 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13139,7 +19071,7 @@
 		)
 		(uuid "ce760526-3704-4f7c-965d-30be593b58ad")
 		(property "Sheetname" "NTC_MUX"
-			(at 255.27 14.5284 0)
+			(at 144.78 182.1684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13148,7 +19080,7 @@
 			)
 		)
 		(property "Sheetfile" "NTC_MUX.kicad_sch"
-			(at 255.27 25.9846 0)
+			(at 144.78 193.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)

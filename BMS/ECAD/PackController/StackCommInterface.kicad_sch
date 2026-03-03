@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "55147d3f-39a4-46e0-b810-695239b3d34d")
+	(paper "A4")
+	(title_block
+		(date "2026-03-03")
+		(rev "V0.9")
+		(company "Lukas Elektronik")
+	)
+	(lib_symbols)
+)

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "a8e78dc6-fbfe-4d1f-b9fc-5443b6ceae94")
 	(paper "A4")
+	(title_block
+		(title "Stack Controller")
+		(date "2026-02-27")
+		(rev "1.0")
+		(company "Lukas Deeken Elektronik")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers

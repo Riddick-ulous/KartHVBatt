@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "f65f1c55-dc7b-4d7a-8eae-f33bd0fa54e3")
 	(paper "A4")
+	(title_block
+		(title "Stack Controller")
+		(date "2026-02-27")
+		(rev "1.0")
+		(company "Lukas Deeken Elektronik")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -4214,7 +4220,7 @@
 				)
 			)
 		)
-		(property "Value" "18R"
+		(property "Value" "39R"
 			(at 154.432 115.57 90)
 			(effects
 				(font
@@ -4231,7 +4237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "CRGH2512J47R"
+		(property "Datasheet" ""
 			(at 149.86 116.84 0)
 			(effects
 				(font
