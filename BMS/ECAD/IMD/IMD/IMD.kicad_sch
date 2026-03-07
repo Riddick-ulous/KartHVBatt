@@ -1,0 +1,344 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "fb588915-3862-4dbd-8b18-9f4897ee9cfe")
+	(paper "A3")
+	(title_block
+		(title "IMD")
+		(date "2026-03-04")
+		(rev "V0.9")
+		(company "Lukas Elektronik")
+	)
+	(lib_symbols)
+	(text_box "Power On\nreset fault line to low (POR)\n\nEnable \"Switch_POS\"\n\nwait 2s (RC Filter settles, tau 500ms)\nsend 10ms pulse to flip flop to take current comparator value -> SET ISO H OK Bit\nEnable \"Switch_NEG\" with logik connection to \"Switch_POS\" so that it only turns on when \"Switch_POS\" is Low\non falling edge of 10ms pulse Disable \"Switch_POS\"\n\nwait 2s (RC Filter settles, tau 500ms)\nsend 10ms pulse to flip flop to take current comparator value -> SET ISO L OK Bit\nEnable \"Switch_RTest_POS\" with logik connection to \"Switch_NEG\" so that it only turns on when \"Switch_NEG\" is Low\nminimal delay 10ms ( can be done locally with the flip flop pulse and small delay block )\nDisable \"Switch_NEG\"\n\nwait 2s (RC Filter settles, tau 500ms)\nsend 10ms pulse to flip flop to take current comparator value -> SET Test H OK Bit\nEnable \"Switch_RTest_NEG\" with logik connection to \"Switch_RTest_POS\" so that it only turns on when \"Switch_RTest_POS\" is Low\nminimal delay 10ms ( can be done locally with the flip flop pulse and small delay block )\nDisable \"Switch_RTest_POS\"\n\n\nwait 2s (RC Filter settles, tau 500ms)\nsend pulse to flip flop to take current comparator value -> SET Test L OK Bit\nEnable \"Switch_POS\" with logik connection to \"Switch_RTest_NEG\" so that it only turns on when \"Switch_RTest_NEG\" is Low\nminimal delay 10ms ( can be done locally with the flip flop pulse and small delay block )\nDisable \"Switch_RTest_NEG\"\n"
+		(exclude_from_sim no)
+		(at 490.22 -8.89 0)
+		(size 62.23 85.09)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "24781ffe-aca0-4e9c-9017-6537fc91a95a")
+	)
+	(text_box "IMD Logik - Ablaufplan mit Round-OK + Fail-dominant SYS_OK\nSignale / Flipflops\nZeitbasis\n\nTICK_2S : Rechteck, fallende Flanke alle 2 s\n\nP_SAMPLE : 10 ms Puls auf fallender Flanke von TICK_2S\n\nP_ADV : kurzer Puls (z.B. 5-20 ms) verzögert nach P_SAMPLE (z.B. 20-50 ms)\n\nState-Ringcounter (one-hot, 4 Zustände)\n\nFlipflops:\n\nFF_S0 → S0 (POS)\n\nFF_S1 → S1 (NEG)\n\nFF_S2 → S2 (RTEST_POS)\n\nFF_S3 → S3 (RTEST_NEG)\n\nDecode:\n\nEN_SP = S0\n\nEN_SN = S1\n\nEN_RTEST_P = S2\n\nEN_RTEST_N = S3\n\nComparator-OK aus Analogteil\n\nOK_500K : 1 = Iso > 500 kΩ (für POS/NEG)\n\nOK_330K : 1 = Iso im Fenster 330 kΩ ±5% (für RTest)\n\nRunden- und Systemstatus\n\nFF_ROUND_OK : \"diese Runde bisher fehlerfrei?\"\n\nFF_SYS_OK : \"System freigegeben?\" (hält, bis Fail)\n\nFault-Ausgang (low-active fault):\n\nFAULT_N = FF_SYS_OK\n(POR setzt SYS_OK=0 ⇒ FAULT_N=0 ⇒ Fault aktiv)\n\n0) Power-On Reset (POR aktiv)\n\nPOR setzt:\n\nState: S0=1, S1=S2=S3=0\n\nStatus: FF_SYS_OK=0\n\noptional: FF_ROUND_OK=0 (wird gleich sauber initialisiert)\n\ndadurch: FAULT_N=0 (Fault aktiv)\n\n1) Start einer Runde\n\nEine Runde beginnt immer, wenn ihr in S0 (POS) eintretet.\n\nDefinition:\n\nROUND_START wird ausgelöst beim Advance von S3 → S0, also:\n\nROUND_START = P_ADV AND S3 (weil wenn S3 aktiv war und ihr advanced, landet ihr in S0)\n\nAktion bei ROUND_START:\n\nFF_ROUND_OK := 1\n\nDamit startet jede neue Runde optimistisch als „bisher ok\".\n\n2) Pro State: 2 s settle\n\nSolange der State aktiv ist:\n\nentsprechender Switch ist geschlossen (EN_* = 1)\n\nRC-Filter (τ≈500 ms) settelt während der 2 s\n\n3) Auf fallender Flanke von TICK_2S → Sample dann Advance\n3.1 Sample (P_SAMPLE)\n\nAuf P_SAMPLE wird ein aktuelles Messergebnis gebildet:\n\nMEAS_OK Logik (one-hot, ohne MUX-IC):\n\nMEAS_OK = (S0 AND OK_500K) OR (S1 AND OK_500K) OR (S2 AND OK_330K) OR (S3 AND OK_330K)\n\nDann passieren drei Dinge:\n\nA) Round-Akkumulator (AND-Akkumulation)\n\nFF_ROUND_OK := FF_ROUND_OK AND MEAS_OK\n\n→ Ein einziger Fail macht ROUND_OK=0 bis zum nächsten ROUND_START.\n\nB) Fail-dominant: System sofort sperren\n\nWenn MEAS_OK == 0 ⇒ FF_SYS_OK := 0\n\n→ Fault wird sofort aktiv, sobald irgendeine Messung in irgendeiner Phase failt.\n\nC) Rundenende: wenn letzte Phase gesampelt und Runde ok → freigeben\n\nRundenende ist beim Sample in S3:\n\nROUND_END = P_SAMPLE AND S3\n\nBei ROUND_END:\n\nWenn FF_ROUND_OK == 1 ⇒ FF_SYS_OK := 1\n\nDamit gilt:\n\nnach genau 1 vollständigen OK-Runde ist SYS_OK=1 und bleibt es,\n\nbis später ein Fail kommt.\n\nWichtig: Die Reihenfolge in Hardware muss \"Fail dominates\" sauber abbilden.\nPraktisch: FF_SYS_OK synchron auf P_SAMPLE takten, und am D-Eingang so priorisieren:\n\nwenn MEAS_OK=0 ⇒ D=0\n\nelse wenn ROUND_END & FF_ROUND_OK ⇒ D=1\n\nelse D=Q (halten)\n\n3.2 Advance (P_ADV)\n\nAuf P_ADV rotiert der Ringcounter:\n\nS0_next = S3\n\nS1_next = S0\n\nS2_next = S1\n\nS3_next = S2\n\n→ POS → NEG → RTEST_POS → RTEST_NEG → POS → …\n\nSwitches schalten damit direkt nach dem Sample um."
+		(exclude_from_sim no)
+		(at 472.44 106.68 0)
+		(size 101.6 304.8)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9fa07036-9981-40c7-bb0c-0ccda4daae8a")
+	)
+	(text_box "Funktionsablauf\nPower On\nset fault line to low, Fault ist low active\nErste messung started\n\nEnable \"Switch_POS\"\nwait 500ms\nenable averaging of SE_VIso und SE_VDC\nwait 2000ms\nCompare if Iso Value is greater than threshold -> SET ISO H OK Bit\nDisable \"Switch_POS\"\n\nwait 50ms\n\nEnable \"Switch_ENG\"\nwait 500ms\nenable averaging of SE_VIso und SE_VDC\nwait 2000ms\nCompare if Iso Value is greater than threshold -> SET ISO L OK Bit\nDisable \"Switch_NEG\"\n\nwait 50ms\n\nEnable \"Switch_RTest_POS\"\nwait 500ms\nenable averaging of SE_VIso und SE_VDC\nwait 2000ms\nCompare if Iso Value is equal with tolerance to 330kOhm +- 5% -> SET Seltest H OK Bit\nDisable \"Switch_RTest_POS\"\n\nwait 50ms\n\nEnable \"Switch_RTest_NEG\"\nwait 500ms\nenable averaging of SE_VIso und SE_VDC\nwait 2000ms\nCompare if Iso Value is equal with tolerance to 330kOhm +- 5% -> SET Seltest L OK Bit\nDisable \"Switch_RTest_NEG\"\n\nIf all bits are set to 1 and fault output is low set fault line high (Fault not active) else set fault line low"
+		(exclude_from_sim no)
+		(at 554.99 -5.08 0)
+		(size 109.22 86.36)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "fdef6418-f9e6-48e1-93e1-86454ef38b46")
+	)
+	(wire
+		(pts
+			(xy 207.01 148.59) (xy 213.36 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed84327-d26d-4995-ac89-95c67d4dcaa2")
+	)
+	(wire
+		(pts
+			(xy 207.01 157.48) (xy 213.36 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6812f99f-5469-4db3-862d-9f89f8f05c2b")
+	)
+	(wire
+		(pts
+			(xy 207.01 165.1) (xy 213.36 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e8c7ca-93c7-409b-9459-5bf1ff039a15")
+	)
+	(wire
+		(pts
+			(xy 207.01 154.94) (xy 213.36 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815d56c2-f1fe-4b9f-a825-63d4589fa8bb")
+	)
+	(wire
+		(pts
+			(xy 207.01 151.13) (xy 213.36 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9bc6b8-aee5-4c2a-9149-864885911c2a")
+	)
+	(wire
+		(pts
+			(xy 207.01 162.56) (xy 213.36 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f527e0a2-c690-46f9-b1b4-a5f156d980fd")
+	)
+	(sheet
+		(at 162.56 146.05)
+		(size 44.45 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "26a6b2ee-986a-4234-a8b7-54b48ffd6b5d")
+		(property "Sheetname" "MCU"
+			(at 162.56 145.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 162.56 168.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SE_VDC" input
+			(at 207.01 165.1 0)
+			(uuid "7323f28d-4ae5-4104-a9a0-c17059f3fcd4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SE_VIso" input
+			(at 207.01 162.56 0)
+			(uuid "b5f2a9e5-f0ef-49f1-a66f-5658562702ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Switch_Neg" input
+			(at 207.01 148.59 0)
+			(uuid "cd5927e0-e203-4b67-b74c-0b5bf04618be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Switch_Pos" input
+			(at 207.01 154.94 0)
+			(uuid "538553d7-0ff8-455f-a087-682bf17ce037")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Switch_RTest_Neg" input
+			(at 207.01 151.13 0)
+			(uuid "b4524306-f419-4c86-a133-a106bddf3757")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Switch_RTest_Pos" input
+			(at 207.01 157.48 0)
+			(uuid "7855012b-8955-468f-8bea-4214dfca60d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "IMD"
+				(path "/fb588915-3862-4dbd-8b18-9f4897ee9cfe"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 213.36 146.05)
+		(size 31.75 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9ab6917b-ebd6-479a-86a4-32834d327cde")
+		(property "Sheetname" "IMD_Analog"
+			(at 213.36 145.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMD_Analog.kicad_sch"
+			(at 213.36 168.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SE_VDC" input
+			(at 213.36 165.1 180)
+			(uuid "d25849dc-3ed8-422d-95d2-63567263cf71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SE_VIso" input
+			(at 213.36 162.56 180)
+			(uuid "2aea7be0-8ce1-4f25-a46c-f18217f661da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Switch_Neg" input
+			(at 213.36 148.59 180)
+			(uuid "9d137142-d55f-4f97-a5f9-b3228e2f7e75")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Switch_Pos" input
+			(at 213.36 154.94 180)
+			(uuid "b34b6d58-c371-4474-b229-77dd72fab55d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Switch_RTest_Neg" input
+			(at 213.36 151.13 180)
+			(uuid "44a60e16-4fa8-4abb-b004-391516a3646d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Switch_RTest_Pos" input
+			(at 213.36 157.48 180)
+			(uuid "32b0f56a-8985-45d1-9458-c808b1703033")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "IMD"
+				(path "/fb588915-3862-4dbd-8b18-9f4897ee9cfe"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

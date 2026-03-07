@@ -74,8 +74,8 @@
 		)
 	)
 	(sheet
-		(at 24.13 72.39)
-		(size 29.21 22.86)
+		(at 86.36 57.15)
+		(size 33.02 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -90,7 +90,7 @@
 		)
 		(uuid "9e3af51c-36cf-42ea-bd79-21f3fecec64c")
 		(property "Sheetname" "AIR"
-			(at 24.13 71.6784 0)
+			(at 86.36 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -99,12 +99,82 @@
 			)
 		)
 		(property "Sheetfile" "AIR.kicad_sch"
-			(at 24.13 95.8346 0)
+			(at 86.36 74.2446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "AIR_N_Switch" input
+			(at 86.36 58.42 180)
+			(uuid "394a4ef6-a191-448a-8290-57acd9f897d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AIR_Error" input
+			(at 119.38 72.39 0)
+			(uuid "26c3ef66-f19f-4051-ac48-4b0bdff78b7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_N_Actual" input
+			(at 119.38 60.96 0)
+			(uuid "3cfa2a88-a567-4d6f-a5ff-22b5f25ef238")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_N_Intended" input
+			(at 119.38 58.42 0)
+			(uuid "65a1ceee-b3b9-4395-b6a7-a821474a21f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_P_Actual" input
+			(at 119.38 68.58 0)
+			(uuid "0b56ae88-58a8-4625-8fdc-3cc7ed848bc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_P_Intended" input
+			(at 119.38 66.04 0)
+			(uuid "e0c87bde-570b-415e-877e-4f31e825b185")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_P_Switch" input
+			(at 86.36 66.04 180)
+			(uuid "dcf3737c-f370-47fd-98d5-afe7b53d9f39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
