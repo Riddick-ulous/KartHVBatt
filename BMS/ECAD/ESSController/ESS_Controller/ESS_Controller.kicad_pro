@@ -250,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "IMD.kicad_pro",
+    "filename": "ESS_Controller.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -410,24 +410,12 @@
   },
   "sheets": [
     [
-      "fb588915-3862-4dbd-8b18-9f4897ee9cfe",
+      "69e80f33-da6e-49e1-959a-9ba4333ddd5f",
       "Root"
     ],
     [
-      "26a6b2ee-986a-4234-a8b7-54b48ffd6b5d",
-      "MCU"
-    ],
-    [
-      "9ab6917b-ebd6-479a-86a4-32834d327cde",
-      "IMD_HV"
-    ],
-    [
-      "982d1dea-9ffa-498a-a1d0-af8192dc3048",
-      "IMD_CTRL"
-    ],
-    [
-      "046efcde-a3c6-4d89-a7a2-a79160cf9f05",
-      "IMD_Analog"
+      "50d46e0b-1add-4e91-832a-5c9a9c3057f0",
+      "TSAL_Logic"
     ]
   ],
   "text_variables": {}

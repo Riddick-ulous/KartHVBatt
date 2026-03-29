@@ -15516,46 +15516,4 @@
 			)
 		)
 	)
-	(sheet
-		(at 232.41 80.01)
-		(size 31.75 16.51)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "a1c4e51f-c6a1-4edd-b070-2735fde4cd62")
-		(property "Sheetname" "IMU_CTRL"
-			(at 232.41 79.2984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "IMU_CTRL.kicad_sch"
-			(at 232.41 97.1046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "IMD"
-				(path "/fb588915-3862-4dbd-8b18-9f4897ee9cfe/26a6b2ee-986a-4234-a8b7-54b48ffd6b5d"
-					(page "4")
-				)
-			)
-		)
-	)
 )

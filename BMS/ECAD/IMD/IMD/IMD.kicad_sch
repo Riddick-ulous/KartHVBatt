@@ -132,6 +132,48 @@
 		(uuid "f527e0a2-c690-46f9-b1b4-a5f156d980fd")
 	)
 	(sheet
+		(at 217.17 187.96)
+		(size 34.29 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "046efcde-a3c6-4d89-a7a2-a79160cf9f05")
+		(property "Sheetname" "IMD_Analog"
+			(at 217.17 187.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMD_Analog.kicad_sch"
+			(at 217.17 199.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IMD"
+				(path "/fb588915-3862-4dbd-8b18-9f4897ee9cfe"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 162.56 146.05)
 		(size 44.45 21.59)
 		(exclude_from_sim no)
@@ -234,6 +276,48 @@
 		)
 	)
 	(sheet
+		(at 165.1 186.69)
+		(size 31.75 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "982d1dea-9ffa-498a-a1d0-af8192dc3048")
+		(property "Sheetname" "IMD_CTRL"
+			(at 165.1 185.9784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IMD_CTRL.kicad_sch"
+			(at 165.1 203.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "IMD"
+				(path "/fb588915-3862-4dbd-8b18-9f4897ee9cfe"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 213.36 146.05)
 		(size 31.75 21.59)
 		(exclude_from_sim no)
@@ -249,7 +333,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9ab6917b-ebd6-479a-86a4-32834d327cde")
-		(property "Sheetname" "IMD_Analog"
+		(property "Sheetname" "IMD_HV"
 			(at 213.36 145.3384 0)
 			(effects
 				(font
@@ -258,7 +342,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "IMD_Analog.kicad_sch"
+		(property "Sheetfile" "IMD_HV.kicad_sch"
 			(at 213.36 168.2246 0)
 			(effects
 				(font

@@ -228,48 +228,6 @@
 		)
 	)
 	(sheet
-		(at 25.4 134.62)
-		(size 31.75 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e8514211-52d5-43f3-98e2-a37bfdfd2c34")
-		(property "Sheetname" "HVIndicator"
-			(at 25.4 133.9084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "HVIndicator.kicad_sch"
-			(at 25.4 149.1746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 22.86 46.99)
 		(size 33.02 19.05)
 		(exclude_from_sim no)
