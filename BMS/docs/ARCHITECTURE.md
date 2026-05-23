@@ -1,27 +1,11 @@
-# ESS Architektur (ProtoA)
+# BMS Architekturuebersicht (ProtoA)
 
 ## Zweck
 
-Dieses Dokument ist die systemweite Source of Truth fuer die ESS-Ebene.
-Es beschreibt nur die uebergreifende Architektur, Safety-Signalfluesse und
-verweist auf die Subsystem-Spezifikationen.
+Systemweite Architektur fuer ProtoA mit klarer Zuordnung der Funktionen auf drei
+Steuerebenen: Stack Controller, Pack Controller, ESS Controller.
 
-## Generelles Batterie Design
-Zelle = Reliance-RS50
-Maximale SPannung = 672V max
-minimale SPannung = 400V min
-Energiemenge = 5,792kWh
-Verschaltung = 160S 2P
-Aktive Masse = 21,12kg
-Dauerleistung = 35,55kW 
-Daurstrom = 88,9A
-Peakleistung = 53,76kW 
-Peakstrom 134,4A
-
-Ziel Durchschnitts-Entladefaktor = 4C (AKA 15min 100% -> 0% SOC)
-Ziel Durschnittsstrom = 23,2A
-
-## 3-Level Control Architecture
+## 3-Level Control Architecture (Stack/Pack/ESS)
 
 ### Ebene 1: Stack Controller (pro Stack)
 
@@ -33,29 +17,28 @@ Ziel Durschnittsstrom = 23,2A
 ### Ebene 2: Pack Controller (pro Pack, 2x)
 
 - Lokale Schuetz-Ansteuerung `HV+` / `HV-`
-- Lokale Fuse-Ueberwachung
+- Lokale Fuse-Ueberwachung (falls Fuse-Sense bestueckt)
 - HVIL-Segment (pack-intern + pack-connector)
-- Packinterne Feuchtigkeitssensorik (`2` Sensoren gesamt, einer pro pack)
-- Kommunikationsknoten zum ESS Controller
-- HVIndicator
+- Pack-interne Feuchtigkeitssensorik (`2` Sensoren gesamt, Verteilung offen)
 
 ### Ebene 3: ESS Controller (systemweit, 1x)
 
-- Systemorchestrierung fuer beide Packs
-- TSAL-Logik + Treiber
+- Zentraler Orchestrator fuer beide Packs
+- TSAL-Logik + TSAL-Treiber
 - HV-Bus-Spannungsmessung
-- HV-Strommessung `HV+` und `HV-` inkl. Kalibrierpfad
-- Precharge-System (bestehendes Design)
-- Wasserkuehlungssteuerung
-- Akustische Signalisierung (Buzzer)
-- Crash-Sensor Eingang
+- HV-Strommessung `HV+` und `HV-` inkl. Kalibrierpfad (Hochlast-Widerstaende)
+- Precharge-System (bestehendes Design referenziert)
+- Wasserkuehlungssteuerung (Pumpe + Sensorik)
+- Akustische Signalisierung (Piezo/Buzzer)
+- Crash-Sensor Eingang (systemkritisch)
 - Isolationswaechter-Integration
 - CCS2 Ladeinterface
 - Fahrzeug-I/O (Medical/Red/Green/Rain/Ready-to-move)
-- Zeroing/Kalibrierung zentral
-- HV DC/DC Einbindung (offen, ProtoB)
+- HV DC/DC Anbindung fuer LV (offen, ProtoB)
 
-## System-Blockdiagramm (Text)
+## Blockdiagramme (Textform)
+
+### System-Blockdiagramm
 
 ```text
 Pack Links (HV+/- Schuetze, Fuse, Stack 1..N) ----\
@@ -69,7 +52,7 @@ ESS Controller
   `- erfasst HV-Bus U/I + Kuehlung + Ladepfad
 ```
 
-## Kommunikationsdiagramm (Text)
+### Kommunikationsdiagramm
 
 ```text
 ESS Controller
@@ -77,33 +60,33 @@ ESS Controller
   <-> Pack Controller Rechts
 
 Pack Controller
-  <-> lokale TLE9012-Chains via isoUART Ring
+  <-> isoUART Ring zu lokalen TLE9012 (Bottom->Top default, Top->Bottom fallback)
 ```
 
-## Safety Signal Flow (Text)
+### Safety Signal Flow
 
 ```text
 Crash Sensor ----\
 HVIL Kette -------> Schuetzfreigabe-Logik -> HV+ / HV- Schuetze (beide Packs)
 Iso-Waechter ----/
 
-ESS Controller setzt Fault-Status, TSAL und Buzzer.
-Crash/HVIL Hardwarepfade bleiben priorisiert.
+ESS Controller bewertet Signale und setzt Fault-Status, TSAL und Buzzer.
+Hardwarepfad Crash/HVIL bleibt sicherheitskritisch priorisiert.
 ```
 
-## isoUART Ring und Enumeration
+## isoUART Ring und Enumeration (ProtoA)
 
-- Ringtopologie
+- Topologie: Ring
 - Physische Reihenfolge: Bottom -> Top
 - Default Enumeration: Bottom -> Top
-- Fallback Enumeration: Top -> Bottom
-- TLE9012: `Node-ID=0` forwardet nicht, `Node-ID!=0` aktiviert Forwarding
+- Fallback Enumeration: Top -> Bottom (Richtungsumschaltung)
+- TLE9012 Verhalten: `Node-ID=0` forwardet nicht, `Node-ID!=0` forwardet
 
-Details:
+Detail:
 
-- `ADR/ADR-002_isoUART_Ring_Enumeration.md`
+- `ADR/ADR-005_isoUART_Ring_Enumeration.md`
 
-## Schnittstellenliste
+## Schnittstellenliste (Stack/Pack/ESS)
 
 | Ebene | Signal / Interface | Richtung | Domaene | Protokoll | Kritikalitaet |
 | --- | --- | --- | --- | --- | --- |
@@ -128,34 +111,43 @@ Details:
 
 ## ProtoA vs ProtoB
 
-ProtoA:
+ProtoA (fix):
 
 - 2 Packs (links/rechts), verbunden ueber verschraubtes HV-Kabel
 - je Pack eigene HV+ und HV- Schuetze und eigene HV Fuse
-- Stack-Messkette analog NTC/MUX/TLE mit `3tau` Settling und RDIAG pro Kanal
+- Stack-Messkette analog NTC/MUX/TLE mit 3tau Settling und RDIAG pro Kanal
+- Zeroing zentral im ESS Controller
 
-ProtoB:
+ProtoB (Ausblick):
 
-- Optionale Topologie LV + HV Supervisor
+- Optionale Zweicontroller-Topologie LV + HV Supervisor
 - HV DC/DC Integration fuer LV-Versorgung
-- CCS2 Detailumsetzung und finale Sensorauswahl
+- CCS2 Detailimplementation und finale Sensorauswahl
 
-## Referenzen
+## Referenzdokumente
 
 - `ADR/ADR-001_System_Overview_ProtoA.md`
-- `ADR/ADR-003_Control_Layers_Stack_Pack_ESS.md`
-- `ADR/ADR-004_Controller_Topology_LV_vs_LV+HV.md`
-- `subsystems/STACK_CONTROLLER/ARCHITECTURE.md`
-- `subsystems/PACK_CONTROLLER/ARCHITECTURE.md`
-- `subsystems/SAFETY/Functional_Safety_ProtoA.md`
-- `subsystems/VEHICLE_IO/Vehicle_Lighting_and_Signals.md`
-- `subsystems/SENSORS/Moisture_and_Cooling.md`
-- `CALIBRATION/Temp_Zeroing_PackController.md`
+- `ADR/ADR-006_Control_Layers_Stack_Pack_ESS.md`
+- `ADR/ADR-007_Controller_Topology_LV_vs_LV+HV.md`
+- `STACK/Stack_Architecture_18S2P.md`
+- `PACK/Pack_Controller_Overview.md`
+- `SAFETY/Functional_Safety_ProtoA.md`
+- `IO/Vehicle_Lighting_and_Signals.md`
+- `SENSORS/Moisture_and_Cooling.md`
 
 ## Offene Punkte / TODO
 
-1. Feuchtigkeitssensor-Verteilung final entscheiden: `1+1` vs `2+0`.
+1. Feuchtigkeitssensor-Verteilung final entscheiden: `1+1` pro Pack vs `2+0`.
 2. ESS<->Pack Protokoll final festlegen (UART/CAN, galvanische Trennung).
-3. HV DC/DC Architektur fuer ProtoB festlegen.
-4. CCS2 Hardware/Firmware Stack finalisieren.
-5. Controller-Topologie Option A/B per Lab validieren.
+3. HV DC/DC Architektur und Schutzkette fuer ProtoB festlegen.
+4. CCS2 Stackup fuer Hardware/Firmware finalisieren.
+5. Controller-Topologie Option A/B durch Lab-Validierung schliessen.
+
+
+
+https://www.mouser.de/ProductDetail/Adam-Tech/EC2-05D12P3?qs=ZcfC38r4Pou03elb1ikkgg%3D%3D
+
+EC2-05D12P3 als standard supply für HV meas und Precharge mit nachgeschaltetem LDO auf 5V bzw. 10V oder so
+
+https://shop.tinkerforge.com/de/warp/wallbox/warp3-charger-basic.html
+als charger
