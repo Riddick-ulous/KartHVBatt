@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
-	(uuid "cf76f27e-0bc5-4c4b-a5f9-c70b7b174bc4")
+	(generator_version "10.0")
+	(uuid "ac87e1f7-ef2e-4624-b09c-1c4e4adff623")
 	(paper "A4")
 	(lib_symbols)
 	(image
-		(at 382.27 97.79)
-		(uuid "19f41452-02e9-417c-9860-fc37c9003df8")
+		(at 375.92 106.68)
+		(uuid "5917ccc5-010b-4fd3-ae8d-da0e3e254eca")
 		(data "iVBORw0KGgoAAAANSUhEUgAABycAAAT0CAIAAABKH5lzAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdf1iT970//tftr9WfpFWmawUSwtlasCtl33W7kIjQsyZnnVPP3ETnKeEz6CRnm/2etfL1qhch"
 			"XLoe6HquurXBluwA/TDEzp5q3c5J3MoPia4/NqSnEl1HQgBnZbE2UK22Ve7vH299e5uEkIT8hOfj"

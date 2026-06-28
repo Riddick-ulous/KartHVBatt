@@ -1,52 +1,10 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "69e80f33-da6e-49e1-959a-9ba4333ddd5f")
 	(paper "A4")
 	(lib_symbols)
-	(sheet
-		(at 234.95 118.11)
-		(size 34.29 26.67)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "50d46e0b-1add-4e91-832a-5c9a9c3057f0")
-		(property "Sheetname" "TSAL_Logic"
-			(at 234.95 117.3984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "TSAL_Logic.kicad_sch"
-			(at 234.95 145.3646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "ESS_Controller"
-				(path "/69e80f33-da6e-49e1-959a-9ba4333ddd5f"
-					(page "2")
-				)
-			)
-		)
-	)
 	(sheet_instances
 		(path "/"
 			(page "1")
