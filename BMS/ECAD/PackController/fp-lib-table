@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "EKartParts") (type "KiCad") (uri "${KIPRJMOD}/EKartParts.pretty") (options "") (descr ""))
+)

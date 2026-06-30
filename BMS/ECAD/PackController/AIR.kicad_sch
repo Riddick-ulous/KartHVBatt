@@ -5,6 +5,7 @@
 	(uuid "91362e05-8ff8-4ca6-b9a8-1523e559bc9a")
 	(paper "A4")
 	(title_block
+		(title "PackController")
 		(date "2026-03-03")
 		(rev "V0.9")
 		(company "Lukas Elektronik")
@@ -1690,7 +1691,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_NPN_BEC"
+		(symbol "Transistor_BJT:BC846"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1701,7 +1702,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
-				(at 5.08 1.27 0)
+				(at 5.08 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1711,8 +1712,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BEC"
-				(at 5.08 -1.27 0)
+			(property "Value" "BC846"
+				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1722,18 +1723,20 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
+					(justify left)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1742,9 +1745,10 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Description" "NPN transistor, base/emitter/collector"
+			(property "Description" "0.1A Ic, 65V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1777,7 +1781,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "BJT"
+			(property "ki_keywords" "NPN Transistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1788,7 +1792,18 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BEC_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BC846_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -1825,7 +1840,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BEC_1_1"
+			(symbol "BC846_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -4319,54 +4334,6 @@
 		)
 		(uuid "feeaeb52-f342-4f11-930e-d49fb507a242")
 	)
-	(global_label "SC_END"
-		(shape input)
-		(at 118.11 148.59 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5a61a16d-6d0f-44de-90f6-b2f1a480f61a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 138.4082 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SC_END"
-		(shape input)
-		(at 52.07 148.59 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "95d82860-5768-4121-8b9e-b7cb2c85544a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.07 138.4082 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(hierarchical_label "AIR_P_Actual"
 		(shape input)
 		(at 191.77 85.09 0)
@@ -4378,6 +4345,17 @@
 		)
 		(uuid "083a0a17-f05f-4f55-a0b4-eaf9f2cae82d")
 	)
+	(hierarchical_label "SC_END"
+		(shape input)
+		(at 52.07 148.59 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ef24b42-cd63-42a6-a306-9232fe4bcb26")
+	)
 	(hierarchical_label "AIR_N_Actual"
 		(shape input)
 		(at 109.22 85.09 180)
@@ -4388,6 +4366,17 @@
 			(justify right)
 		)
 		(uuid "439d8b77-4458-4582-914a-a02b4a3d5a1f")
+	)
+	(hierarchical_label "SC_END"
+		(shape input)
+		(at 118.11 148.59 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d10f8af-f9bd-4354-a4d0-a3d610e83fc8")
 	)
 	(hierarchical_label "AIR_P_Switch"
 		(shape input)
@@ -5409,7 +5398,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "Transistor_BJT:BC846")
 		(at 115.57 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -5419,8 +5408,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "49073d13-078b-4c62-a894-8581deec5ec1")
-		(property "Reference" "Q403"
+		(uuid "460a3f0f-687e-454a-b089-57bf83954a0e")
+		(property "Reference" "Q4"
 			(at 120.65 173.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5431,7 +5420,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BC847C"
+		(property "Value" "BC846"
 			(at 120.65 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5442,18 +5431,20 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 120.65 172.72 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 120.65 177.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
+				(justify left)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf"
 			(at 115.57 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -5462,9 +5453,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Description" "NPN transistor, base/emitter/collector"
+		(property "Description" "0.1A Ic, 65V Vce, NPN Transistor, SOT-23"
 			(at 115.57 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -5498,18 +5490,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "2115b8e0-e1b1-4279-8f94-32ef04c12994")
-		)
-		(pin "3"
-			(uuid "fbab6015-ceb4-478a-a3a1-fea0573c322d")
+			(uuid "f309fe93-e0bc-4987-9f84-7d964d93e588")
 		)
 		(pin "1"
-			(uuid "187f7b8d-c89d-4bf6-8fec-b40ef420d5a4")
+			(uuid "9b5a4368-eb76-46c0-adf2-38d461f0e086")
+		)
+		(pin "3"
+			(uuid "98a65e17-02fd-4abf-b1be-fe718e336886")
 		)
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
-					(reference "Q403")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -6025,113 +6017,6 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
 					(reference "K402")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
-		(at 49.53 175.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e771a03-29f8-40f4-b397-bb53dd376fb3")
-		(property "Reference" "Q401"
-			(at 54.61 173.9899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC847C"
-			(at 54.61 176.5299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 54.61 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "NPN transistor, base/emitter/collector"
-			(at 49.53 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 49.53 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 49.53 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "81be40ba-c79e-400e-b6a6-8b9ec04aa92c")
-		)
-		(pin "3"
-			(uuid "cf2e19e8-bf0b-4aab-ada0-6a2977ddb4ee")
-		)
-		(pin "1"
-			(uuid "dcb0f316-7509-4e18-82f7-899aee3da1da")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
-					(reference "Q401")
 					(unit 1)
 				)
 			)
@@ -8079,6 +7964,116 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC846")
+		(at 49.53 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d920659c-79ae-4819-91d4-4205ea9be3f8")
+		(property "Reference" "Q3"
+			(at 54.61 173.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC846"
+			(at 54.61 176.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 54.61 177.165 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf"
+			(at 49.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 65V Vce, NPN Transistor, SOT-23"
+			(at 49.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 49.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 49.53 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d2e7a175-462c-4fbf-9b5c-36ab57393837")
+		)
+		(pin "1"
+			(uuid "fe551a1c-c474-4dbd-920d-f967b2f5581c")
+		)
+		(pin "3"
+			(uuid "df81b1d5-096b-48a7-bfb0-d78c98583577")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
+					(reference "Q3")
 					(unit 1)
 				)
 			)

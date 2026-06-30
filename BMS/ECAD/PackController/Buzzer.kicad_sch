@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "1cc4723d-273e-4841-a7c4-8cc4ca464ae7")
 	(paper "A4")
+	(title_block
+		(title "PackController")
+		(date "2026-03-03")
+		(rev "V0.9")
+		(company "Lukas Elektronik")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers
@@ -459,7 +465,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+BATT"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -480,7 +486,7 @@
 					)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+BATT"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -512,7 +518,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+BATT\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -523,7 +529,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "global power battery"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -534,7 +540,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+BATT_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -572,12 +578,12 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+BATT_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
 					(hide yes)
-					(name "+3.3V"
+					(name "+BATT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -708,15 +714,28 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Passive piezo buzzer driver.\nTarget part: CPT-2305-90PM, externally driven, 12 Vp-p, 4 kHz, typ. 24 nF.\n\nDrive with STM32 PWM:\nf_PWM ≈ 4 kHz\nduty ≈ 50 %\n\nQ15 is a low-side NMOS switch.\nR37 discharges the piezo during MOSFET off-time:\ntau = R37 * C_PIEZO ≈ 2.2k * 24nF ≈ 53us.\n\nR36 limits peak current and EMI.\nNo additional series coupling capacitor required."
+	(text_box "Passive piezo buzzer driver.\nTarget part: CPT-2305-90PM, externally driven, 12 Vp-p, 4 kHz, typ. 24 nF.\n\nDrive with STM32 PWM:\nf_PWM ≈ 4 kHz\nduty ≈ 50 %\n\nQ15 is a low-side NMOS switch.\nR37 discharges the piezo during MOSFET off-time:\ntau = R37 * C_PIEZO ≈ 2.2k * 24nF ≈ 53us.\n\nR36 limits peak current and EMI.\nNo additional series coupling capacitor required."
 		(exclude_from_sim no)
-		(at 222.25 90.424 0)
+		(at 167.64 78.7669 0)
+		(size 62.23 22.8331)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(color 0 0 0 1)
 			)
+			(justify left top)
 		)
-		(uuid "c12c1f7e-61bc-41b1-befd-181298bd8d62")
+		(uuid "7d12dc3f-be30-4df0-9bae-3221b578c0e1")
 	)
 	(junction
 		(at 144.78 85.09)
@@ -2473,8 +2492,8 @@
 				)
 			)
 		)
-		(property "Value" "100kR 0603"
-			(at 136.906 106.68 0)
+		(property "Value" "1kR 0603"
+			(at 136.144 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2525,82 +2544,6 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
 					(reference "R38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 130.81 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a2a3ae9-e7a2-47fa-98a7-a33e60a519f2")
-		(property "Reference" "#PWR014"
-			(at 130.81 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 130.81 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 130.81 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "080ae705-b071-4597-848c-47ed08db7e57")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -2997,6 +2940,83 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 130.81 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f72c7170-0156-4174-b2c4-ee403cb047bd")
+		(property "Reference" "#PWR038"
+			(at 130.81 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+BATT"
+			(at 130.81 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abddee9d-71c5-4f7f-abcc-1323fb65d867")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)

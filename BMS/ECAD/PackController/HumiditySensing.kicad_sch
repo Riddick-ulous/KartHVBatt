@@ -5,6 +5,7 @@
 	(uuid "7a53139b-556c-4f7b-bc91-6c5c18da7f34")
 	(paper "A4")
 	(title_block
+		(title "PackController")
 		(date "2026-03-03")
 		(rev "V0.9")
 		(company "Lukas Elektronik")
@@ -442,15 +443,28 @@
 		)
 		(uuid "5af4ade8-09b0-4e86-afd8-91c0f13935a6")
 	)
-	(text "Leakage sensor:\nFlex electrodes form R_LEAK. R_EOL = 10M is mounted on the flex sensor,\nparallel to the electrodes, for open-wire detection.\n\nR_SENSOR = R_LEAK || R_EOL\n\nMeasurement:\nPulse R_Leak_Supply HIGH, wait 10...50ms, sample ADC, then set supply LOW/Hi-Z.\nSuggested scan rate: 1Hz.\n\nADC conversion, assuming ADC reference = VDD and R_Leak_Supply = VDD:\nx = ADC_raw / ADC_max\nR_SENSOR = R_REF * (1/x - 1) - R_SER_SUPPLY\n\nNominal:\nR_SER_SUPPLY = 10k\nR_REF = 1M\nR_ADC_SER = 10k\nC_ADC = 1nF\nR_EOL = 10M on flex\n\nExpected:\ndisconnected/open: ADC ≈ 0\ndry connected:     R_SENSOR ≈ 10M\nwet/leakage:       R_SENSOR decreases\n\nInitial thresholds, validate with real coolant:\nwarning:      R_SENSOR < 3M\nleak:         R_SENSOR < 1M\nsevere leak:  R_SENSOR < 300k"
+	(text_box "Leakage sensor:\nFlex electrodes form R_LEAK. R_EOL = 10M is mounted on the flex sensor,\nparallel to the electrodes, for open-wire detection.\n\nR_SENSOR = R_LEAK || R_EOL\n\nMeasurement:\nPulse R_Leak_Supply HIGH, wait 10...50ms, sample ADC, then set supply LOW/Hi-Z.\nSuggested scan rate: 1Hz.\n\nADC conversion, assuming ADC reference = VDD and R_Leak_Supply = VDD:\nx = ADC_raw / ADC_max\nR_SENSOR = R_REF * (1/x - 1) - R_SER_SUPPLY\n\nNominal:\nR_SER_SUPPLY = 10k\nR_REF = 1M\nR_ADC_SER = 10k\nC_ADC = 1nF\nR_EOL = 10M on flex\n\nExpected:\ndisconnected/open: ADC ≈ 0\ndry connected:     R_SENSOR ≈ 10M\nwet/leakage:       R_SENSOR decreases\n\nInitial thresholds, validate with real coolant:\nwarning:      R_SENSOR < 3M\nleak:         R_SENSOR < 1M\nsevere leak:  R_SENSOR < 300k"
 		(exclude_from_sim no)
-		(at 60.452 50.8 0)
+		(at 36.83 51.0579 0)
+		(size 68.58 50.2022)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1 1)
+				(color 0 0 0 1)
 			)
+			(justify left top)
 		)
-		(uuid "a9443fd8-4b42-4ee8-bc87-68a3ac990889")
+		(uuid "d1f597da-3ebe-4ee6-87ad-8a221e989e03")
 	)
 	(junction
 		(at 205.74 87.63)

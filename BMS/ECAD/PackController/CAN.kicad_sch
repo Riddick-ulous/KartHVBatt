@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "c2e8cf3f-50f2-4dde-908e-261df6b81bab")
 	(paper "A4")
+	(title_block
+		(title "PackController")
+		(date "2026-03-03")
+		(rev "V0.9")
+		(company "Lukas Elektronik")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers

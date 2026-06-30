@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "8ed68102-cea8-41f1-94ef-c39102b788d3")
 	(paper "A4")
+	(title_block
+		(title "PackController")
+		(date "2026-03-03")
+		(rev "V0.9")
+		(company "Lukas Elektronik")
+	)
 	(lib_symbols)
 	(image
 		(at 447.04 116.84)

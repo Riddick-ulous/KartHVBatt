@@ -5,6 +5,7 @@
 	(uuid "e9c0b7f5-5b14-4f9f-b1e2-22f572000d87")
 	(paper "A4")
 	(title_block
+		(title "PackController")
 		(date "2026-03-03")
 		(rev "V0.9")
 		(company "Lukas Elektronik")
@@ -6260,6 +6261,16 @@
 		)
 		(uuid "019b876d-3dbb-449b-b0fa-027a9c249b93")
 	)
+	(text "VBatt = 12V"
+		(exclude_from_sim no)
+		(at 33.02 13.716 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4012a373-5dd1-477d-ad00-5a025e2a0ac6")
+	)
 	(text "Precharge, TSAl und HV Measuremeent müssen eigentlich mit drauf\n"
 		(exclude_from_sim no)
 		(at 127.508 -34.544 0)
@@ -6283,7 +6294,7 @@
 	)
 	(text_box "latching of watchdog error or MCU inducing an error?\ndo we want / need this?\n\nIMD error sould be latching but IMD is on ESS side\n\nIf we implement both we have the watchdog causing a latching error and the MCU can cause a latched or non latched error p think one should not bee needed, especially if we individually control the N contactors\n\n\nMCU SDC öffner fliegt raus, nur watchdog und latching. Wenn wir kontrolliert abschalten dann macht das der ESS kontroller ansonsten löst der Pack controller einen latching fehler aus"
 		(exclude_from_sim no)
-		(at 378.46 124.46 0)
+		(at 365.76 120.65 0)
 		(size 43.18 35.56)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -8488,7 +8499,7 @@
 		(uuid "ffb403cf-804a-481d-9a4f-b00d2ef18bd6")
 	)
 	(image
-		(at 325.12 113.03)
+		(at 330.2 114.3)
 		(uuid "870291dd-090f-42f8-b976-e8f32c43d217")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAvkAAARICAIAAAAXmFnFAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOzdd1wT9/8H8E9IAkFWQDaCYSOyFAUcCOIobhwVcdVRW5VWsVarbS2xflW0tmoVrW2ddeAEBxVH"
@@ -17032,7 +17043,7 @@
 				)
 			)
 		)
-		(property "Value" "3k3R 0603"
+		(property "Value" "2.2k 0603"
 			(at 40.64 19.05 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18720,28 +18731,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "57fca09f-e200-4375-adb7-1b9976c78ce3")
+			(uuid "57fca09f-e200-4375-adb7-1b9976c78ce4")
 		)
 		(pin "5"
-			(uuid "c0e60e8e-77bb-4753-b400-3c29c03b576c")
+			(uuid "c0e60e8e-77bb-4753-b400-3c29c03b576d")
 		)
 		(pin "7"
-			(uuid "e8a41d93-c096-4c23-9dbf-b7a4df94f817")
+			(uuid "e8a41d93-c096-4c23-9dbf-b7a4df94f818")
 		)
 		(pin "3"
-			(uuid "cd2e4b12-9061-4bc5-9a9b-c4bde52af73f")
+			(uuid "cd2e4b12-9061-4bc5-9a9b-c4bde52af740")
 		)
 		(pin "2"
-			(uuid "84c598b8-21de-4ad1-b181-263c36c7782f")
+			(uuid "84c598b8-21de-4ad1-b181-263c36c77830")
 		)
 		(pin "6"
-			(uuid "dd8f0aac-9e69-4085-b773-3eddd64e78b1")
+			(uuid "dd8f0aac-9e69-4085-b773-3eddd64e78b2")
 		)
 		(pin "4"
-			(uuid "a0156dbe-ffc1-4cd8-bd5e-9a6935aef409")
+			(uuid "a0156dbe-ffc1-4cd8-bd5e-9a6935aef40a")
 		)
 		(pin "8"
-			(uuid "58208431-b561-4f95-a6a8-3ce4e8fb4fdb")
+			(uuid "58208431-b561-4f95-a6a8-3ce4e8fb4fdc")
 		)
 		(instances
 			(project "Pack_Controller"
