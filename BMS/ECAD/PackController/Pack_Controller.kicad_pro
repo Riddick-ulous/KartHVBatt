@@ -661,7 +661,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "#PWR14,#PWR39-53,D7,U10-14,R49,R59-70,C28-42",
+    "used_designators": "5VGood1,#PWR5,#PWR7,#PWR34,#PWR39,#PWR54-77,#PWR416,3V3Good1,U15-18,C5,C18,C43-55,J2-6,R10-17,R30-31,R55-58,R71-84,R423-426,Q8,Q405,NTC4,J_HV1,ISOUART_H1,D10-11",
     "variants": []
   },
   "sheets": [
@@ -683,7 +683,11 @@
     ],
     [
       "84adcd49-ec80-4f4f-b04a-555786000b76",
-      "CAN"
+      "CAN1"
+    ],
+    [
+      "1032fa26-4bf0-4bb7-b030-07ff3a85bc00",
+      "CAN2"
     ],
     [
       "84895c30-1551-4ee7-9bdb-3f8b53d8ebdd",
@@ -694,16 +698,44 @@
       "Buzzer"
     ],
     [
-      "cb9e6c8f-992a-4002-a844-477e56b34f87",
-      "TSAL_Logik"
-    ],
-    [
       "c2a824fe-3a49-46ae-a81d-941022e1f8a3",
       "HV_Measurement"
     ],
     [
+      "cb9e6c8f-992a-4002-a844-477e56b34f87",
+      "TSAL_Logik"
+    ],
+    [
       "10db8ab2-a069-4c18-98c6-f1c7e2899a80",
       "Precharge"
+    ],
+    [
+      "45830960-bd48-4e73-a3a7-091edb18d6d3",
+      "TempMeas"
+    ],
+    [
+      "f34c3682-d9f6-426f-8996-e47c99f84a0f",
+      "NTC1"
+    ],
+    [
+      "71e65725-80b2-472c-8002-e08c907aa751",
+      "NTC2"
+    ],
+    [
+      "bb3a350a-a658-4971-83cd-58f1dca54bb5",
+      "NTC3"
+    ],
+    [
+      "4f74f959-10cb-474a-9e4a-07aad2d2b472",
+      "LeakSens1"
+    ],
+    [
+      "f4edf52c-f084-49c8-89dd-48baa523d797",
+      "LeakSens2"
+    ],
+    [
+      "967a6172-dcc3-4702-8f77-1a76e5d988cf",
+      "Supply"
     ]
   ],
   "text_variables": {},

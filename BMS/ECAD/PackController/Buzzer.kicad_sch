@@ -2492,7 +2492,7 @@
 				)
 			)
 		)
-		(property "Value" "1kR 0603"
+		(property "Value" "10kR 0603"
 			(at 136.144 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)

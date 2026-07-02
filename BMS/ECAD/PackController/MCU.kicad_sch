@@ -9075,6 +9075,17 @@
 		)
 		(uuid "0d3e91f0-2c52-4b90-ad65-d19def90ae44")
 	)
+	(hierarchical_label "NTC1_Sig"
+		(shape input)
+		(at -19.05 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12f47181-d96b-4e2c-b0b1-cf8bde066570")
+	)
 	(hierarchical_label "AIR_P_Intended"
 		(shape input)
 		(at -10.16 81.28 180)
@@ -9107,6 +9118,17 @@
 			(justify right)
 		)
 		(uuid "210a98eb-6ded-4ddc-b3dd-3c6baf3bea08")
+	)
+	(hierarchical_label "NTC2_Sig"
+		(shape input)
+		(at -19.05 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d503098-a48b-4c1f-a4c5-b9194637cf73")
 	)
 	(hierarchical_label "UART_LS_TX"
 		(shape input)
@@ -9163,6 +9185,17 @@
 		)
 		(uuid "62a9c0b9-6f00-402c-9cbb-d8dcc53c62cb")
 	)
+	(hierarchical_label "NTC3_Sig"
+		(shape input)
+		(at -19.05 187.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64b2e899-75c0-4a4c-92a1-2513ad6f1815")
+	)
 	(hierarchical_label "AIR_P_Actual"
 		(shape input)
 		(at -10.16 91.44 180)
@@ -9184,6 +9217,17 @@
 			(justify right)
 		)
 		(uuid "6f850298-1832-47e7-a484-ba949fcf26cd")
+	)
+	(hierarchical_label "PCHRG_SWITCH"
+		(shape input)
+		(at -17.78 173.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7114877a-98cd-4e20-bbc1-423601586057")
 	)
 	(hierarchical_label "Buzzer_CTRL"
 		(shape input)
@@ -9306,7 +9350,7 @@
 		)
 		(uuid "cf642f6d-bfc2-4788-9ad1-c1b863b6b170")
 	)
-	(hierarchical_label "DANGER_V"
+	(hierarchical_label "nDANGER_V"
 		(shape input)
 		(at -26.67 153.67 0)
 		(effects

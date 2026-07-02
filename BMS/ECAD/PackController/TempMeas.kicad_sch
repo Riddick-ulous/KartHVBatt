@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "7a53139b-556c-4f7b-bc91-6c5c18da7f34")
+	(uuid "b47a30f6-1c88-409a-ac99-a00d8c73212e")
 	(paper "A4")
 	(title_block
 		(title "PackController")
@@ -172,131 +172,130 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 57.15) (xy 128.27 57.15)
+			(xy 151.13 90.17) (xy 144.78 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23bdfa47-8561-42f0-99ff-51a4560b17dc")
+		(uuid "1852c488-43bd-4bf6-9494-9754f30ca255")
 	)
 	(wire
 		(pts
-			(xy 125.73 72.39) (xy 128.27 72.39)
+			(xy 116.84 91.44) (xy 123.19 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2fa72558-62a0-4412-97af-482825c53935")
+		(uuid "2e13eb27-9f20-4f65-afd3-9bb2adec2c66")
 	)
 	(wire
 		(pts
-			(xy 168.91 74.93) (xy 165.1 74.93)
+			(xy 151.13 76.2) (xy 144.78 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40c74d08-faad-4515-bb91-2a3780cef264")
+		(uuid "6cc0db0b-2bbb-4786-b9b7-6e99ebab99d9")
 	)
 	(wire
 		(pts
-			(xy 168.91 72.39) (xy 165.1 72.39)
+			(xy 116.84 77.47) (xy 123.19 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43c1afda-f7ce-4c3a-9f55-124c31201d7b")
+		(uuid "887d4dca-884e-493e-b1c3-388e99bd1dc6")
 	)
 	(wire
 		(pts
-			(xy 125.73 74.93) (xy 128.27 74.93)
+			(xy 151.13 78.74) (xy 144.78 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dded289f-dfec-4022-af70-f8b861b084bf")
+		(uuid "9cba3d52-8187-43d3-b8df-ae790999dd69")
 	)
 	(wire
 		(pts
-			(xy 125.73 59.69) (xy 128.27 59.69)
+			(xy 116.84 105.41) (xy 123.19 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e58dc277-c241-422a-95a1-5016509112ab")
+		(uuid "aa89cbe5-293d-4b97-a302-947d11cf747b")
 	)
 	(wire
 		(pts
-			(xy 168.91 59.69) (xy 165.1 59.69)
+			(xy 151.13 104.14) (xy 144.78 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e611993e-7ee8-4f7e-a607-7aa975a2ced5")
+		(uuid "bcddb6ed-0926-40e1-a40a-63f42c73d33e")
 	)
 	(wire
 		(pts
-			(xy 168.91 57.15) (xy 165.1 57.15)
+			(xy 151.13 92.71) (xy 144.78 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f93ca656-1900-46a4-9b7a-22beda9a9156")
+		(uuid "dd9b2c5f-4929-43a8-a824-bdb8d50138ae")
 	)
-	(hierarchical_label "R_Leak_Sig1"
+	(wire
+		(pts
+			(xy 151.13 106.68) (xy 144.78 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e092894e-f8b3-4d50-9847-d08119aaba99")
+	)
+	(hierarchical_label "NTC1_Sig"
 		(shape input)
-		(at 125.73 59.69 180)
+		(at 116.84 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "1fb8ecd8-f5cb-4587-95f2-41b67af2f261")
+		(uuid "643edce0-f360-44de-a7e7-635f7331449c")
 	)
-	(hierarchical_label "R_Leak_Sig2"
+	(hierarchical_label "NTC3_Sig"
 		(shape input)
-		(at 125.73 74.93 180)
+		(at 116.84 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "46e9cca6-79a2-4b5b-a8e1-f07edd12ace0")
+		(uuid "8934af23-f5ea-4568-a6c5-a92bdf79aa7f")
 	)
-	(hierarchical_label "R_Leak_Supply1"
+	(hierarchical_label "NTC2_Sig"
 		(shape input)
-		(at 125.73 57.15 180)
+		(at 116.84 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "83e16433-45e8-4035-8be8-b99158ec38cd")
-	)
-	(hierarchical_label "R_Leak_Supply2"
-		(shape input)
-		(at 125.73 72.39 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b3382083-132a-4e9e-a53e-0a8cac0f5dee")
+		(uuid "9cd0e9a0-7465-44a0-acb3-e07edbfbf410")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 173.99 72.39 0)
+		(at 156.21 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -305,9 +304,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "afe78409-0a08-4be0-a939-d89337628d01")
-		(property "Reference" "Leak2"
-			(at 176.53 72.3899 0)
+		(uuid "5e764227-ba88-4c01-b03d-31c61db07448")
+		(property "Reference" "NTC2"
+			(at 158.75 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -318,7 +317,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 176.53 74.9299 0)
+			(at 158.75 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -329,7 +328,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 72.39 0)
+			(at 156.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -340,7 +339,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 72.39 0)
+			(at 156.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -351,7 +350,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 72.39 0)
+			(at 156.21 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -362,15 +361,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "4be78ef7-2e37-4743-a30e-e5f124386f86")
+			(uuid "d9df4350-c153-4b0e-ba3b-75d8b6cc0223")
 		)
 		(pin "1"
-			(uuid "440372bf-b8e6-4bab-8f8a-01fd54def07b")
+			(uuid "a1835709-97c5-4cde-9c11-e6c6a70d4e98")
 		)
 		(instances
 			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak2")
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(reference "NTC2")
 					(unit 1)
 				)
 			)
@@ -378,7 +377,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 173.99 57.15 0)
+		(at 156.21 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -387,9 +386,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b0c098ec-00f5-4bea-86fa-7d898ad0ec54")
-		(property "Reference" "Leak1"
-			(at 176.53 57.1499 0)
+		(uuid "76aab938-264a-4bd0-ba83-90a32717f612")
+		(property "Reference" "NTC3"
+			(at 158.75 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -400,7 +399,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 176.53 59.6899 0)
+			(at 158.75 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -411,7 +410,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 57.15 0)
+			(at 156.21 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -422,7 +421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 57.15 0)
+			(at 156.21 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -433,7 +432,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 173.99 57.15 0)
+			(at 156.21 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -444,27 +443,110 @@
 			)
 		)
 		(pin "2"
-			(uuid "c51fe1e7-b20c-4b6c-bcea-f5319dc71318")
+			(uuid "62650136-6ae9-4d04-bc51-87a84b26a129")
 		)
 		(pin "1"
-			(uuid "ee21647d-1995-407d-b5e8-13d2dedb4ad6")
+			(uuid "4f6ee86c-cdca-46cf-bcd5-db41019f98eb")
 		)
 		(instances
 			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak1")
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(reference "NTC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 156.21 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3ca57e0-45db-4bd1-8df6-ff26f949de54")
+		(property "Reference" "NTC1"
+			(at 158.75 76.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 158.75 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 156.21 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "92121225-2f7e-4be5-9045-36d0591557b7")
+		)
+		(pin "1"
+			(uuid "374688da-bb3b-4a8b-b0c6-0310e047844a")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(reference "NTC1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 128.27 54.61)
-		(size 36.83 7.62)
+		(at 123.19 88.9)
+		(size 21.59 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -472,9 +554,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "4f74f959-10cb-474a-9e4a-07aad2d2b472")
-		(property "Sheetname" "LeakSens1"
-			(at 128.778 53.848 0)
+		(uuid "71e65725-80b2-472c-8002-e08c907aa751")
+		(property "Sheetname" "NTC2"
+			(at 123.19 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -484,8 +566,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "LeakSens.kicad_sch"
-			(at 128.524 63.246 0)
+		(property "Sheetfile" "NTC1.kicad_sch"
+			(at 123.19 97.1046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -495,29 +577,9 @@
 				(justify left top)
 			)
 		)
-		(pin "R_Leak_Supply" input
-			(at 128.27 57.15 180)
-			(uuid "b0e36eda-2d53-43a3-968f-c7f14d734662")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "R_Leak_Signal" input
-			(at 128.27 59.69 180)
-			(uuid "4cb783c7-c68f-4b27-9aa0-df195d55e6cf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "R_Leak_ElecOut" input
-			(at 165.1 59.69 0)
-			(uuid "486e3f49-a94d-4c73-8b76-753a36b8aef9")
+		(pin "NTC1_+" input
+			(at 144.78 90.17 0)
+			(uuid "104c837d-71eb-4d34-af3d-b2ff59da94b0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -525,9 +587,19 @@
 				(justify right)
 			)
 		)
-		(pin "R_Leak_ElecIn" input
-			(at 165.1 57.15 0)
-			(uuid "9ef323d7-4df9-4a42-b553-70af2f79fe08")
+		(pin "NTC1_Sig" input
+			(at 123.19 91.44 180)
+			(uuid "b6985e3a-ca41-4b7e-8771-2f7369cb6d44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NTC1_-" input
+			(at 144.78 92.71 0)
+			(uuid "0a44d67e-6d2a-4b4b-8e66-e78a13d8a574")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -537,19 +609,20 @@
 		)
 		(instances
 			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(page "16")
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(page "14")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 128.27 69.85)
-		(size 36.83 7.62)
+		(at 123.19 102.87)
+		(size 21.59 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -557,9 +630,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "f4edf52c-f084-49c8-89dd-48baa523d797")
-		(property "Sheetname" "LeakSens2"
-			(at 128.778 69.088 0)
+		(uuid "bb3a350a-a658-4971-83cd-58f1dca54bb5")
+		(property "Sheetname" "NTC3"
+			(at 123.19 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -569,8 +642,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "LeakSens.kicad_sch"
-			(at 128.524 78.486 0)
+		(property "Sheetfile" "NTC1.kicad_sch"
+			(at 123.19 111.0746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -580,29 +653,9 @@
 				(justify left top)
 			)
 		)
-		(pin "R_Leak_Supply" input
-			(at 128.27 72.39 180)
-			(uuid "e960213e-8bea-4cc2-a2dd-f4dae33f15f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "R_Leak_Signal" input
-			(at 128.27 74.93 180)
-			(uuid "accbebaa-dc09-4398-a7d2-fb99cb01ae4c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "R_Leak_ElecOut" input
-			(at 165.1 74.93 0)
-			(uuid "6de72a5f-8d24-4174-af38-945928b33626")
+		(pin "NTC1_+" input
+			(at 144.78 104.14 0)
+			(uuid "df0d328b-be70-462f-8025-0c1c95322311")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -610,9 +663,19 @@
 				(justify right)
 			)
 		)
-		(pin "R_Leak_ElecIn" input
-			(at 165.1 72.39 0)
-			(uuid "8fbfc42a-9fe2-43b8-ab71-51460a90ed39")
+		(pin "NTC1_Sig" input
+			(at 123.19 105.41 180)
+			(uuid "c500328c-7347-4a66-9a95-1fe1518aaa97")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NTC1_-" input
+			(at 144.78 106.68 0)
+			(uuid "32beda0a-2e44-445f-9ec2-cc6d8aed7b4a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -622,8 +685,84 @@
 		)
 		(instances
 			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(page "17")
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 74.93)
+		(size 21.59 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f34c3682-d9f6-426f-8996-e47c99f84a0f")
+		(property "Sheetname" "NTC1"
+			(at 123.19 74.2184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "NTC1.kicad_sch"
+			(at 123.19 83.1346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "NTC1_+" input
+			(at 144.78 76.2 0)
+			(uuid "833a2f29-a74c-491d-acb2-d1135f929d56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC1_Sig" input
+			(at 123.19 77.47 180)
+			(uuid "39878b56-ecee-4b7e-8b5b-8f3f4d416c99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NTC1_-" input
+			(at 144.78 78.74 0)
+			(uuid "f09a0243-2c09-40d8-a848-ee2990194046")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(page "13")
 				)
 			)
 		)
