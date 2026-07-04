@@ -305,7 +305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e764227-ba88-4c01-b03d-31c61db07448")
-		(property "Reference" "NTC2"
+		(property "Reference" "NTC1202"
 			(at 158.75 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -369,7 +369,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC2")
+					(reference "NTC1202")
 					(unit 1)
 				)
 			)
@@ -387,7 +387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76aab938-264a-4bd0-ba83-90a32717f612")
-		(property "Reference" "NTC3"
+		(property "Reference" "NTC1203"
 			(at 158.75 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -451,7 +451,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC3")
+					(reference "NTC1203")
 					(unit 1)
 				)
 			)
@@ -469,7 +469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3ca57e0-45db-4bd1-8df6-ff26f949de54")
-		(property "Reference" "NTC1"
+		(property "Reference" "NTC1201"
 			(at 158.75 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -533,7 +533,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC1")
+					(reference "NTC1201")
 					(unit 1)
 				)
 			)

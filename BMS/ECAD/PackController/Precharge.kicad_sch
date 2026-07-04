@@ -988,6 +988,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:BAT46"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT46"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BAT46_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT46_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "EKartParts:ADCMP393ARUZ"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3632,10 +3798,10 @@
 		)
 		(uuid "816e8db0-3ba4-47a9-961b-ba08f1726373")
 	)
-	(text_box "Haltezeit Relais K1\n\nR = 80Ohm\nC = 47uF (20%) min = 37,6uF\ntau = 3,008ms\nVt = 0,55V (Drop Out KTL12)\nVi = 5V\n\ntau = -R*C*ln(Vt/Vi)\ntau = -3,008ms*ln(0,55V/5V)\ntau = -3,008ms * -2,207\nt = 6,64ms\n\nQ6_t_off = 4,8ms"
+	(text_box "Haltezeit Relais K1\n\nR_coil = 475 Ω\nC_hold = 10 µF, -20% worst-case -> C_min = 8 µF\n\nVi = 12 V\nVt = 1.4 V conservative release threshold\n\ntau = R_coil * C_min\ntau = 475 Ω * 8 µF\ntau = 3.80 ms\n\nt_hold = -tau * ln(Vt / Vi)\nt_hold = -3.80 ms * ln(1.4 V / 12 V)\nt_hold ≈ 8.16 ms"
 		(exclude_from_sim no)
 		(at 111.76 166.0569 0)
-		(size 26.67 24.4431)
+		(size 44.45 26.053)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5300,7 +5466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0403f21a-9416-4723-937a-3ec17150eab5")
-		(property "Reference" "D9"
+		(property "Reference" "D1103"
 			(at 33.02 39.3699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5386,7 +5552,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D9")
+					(reference "D1103")
 					(unit 1)
 				)
 			)
@@ -5404,7 +5570,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06dc2c15-7ef5-4d40-bba5-18250e1a0fad")
-		(property "Reference" "C25"
+		(property "Reference" "C1106"
 			(at 96.774 187.452 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5467,7 +5633,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C25")
+					(reference "C1106")
 					(unit 1)
 				)
 			)
@@ -5485,7 +5651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0930902d-782c-4b49-a456-c9f6e0962493")
-		(property "Reference" "TH1"
+		(property "Reference" "TH1101"
 			(at 33.02 48.5774 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5550,7 +5716,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "TH1")
+					(reference "TH1101")
 					(unit 1)
 				)
 			)
@@ -5568,7 +5734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f1d319e-a752-4ae2-8b1e-ee23b71b224c")
-		(property "Reference" "Q7"
+		(property "Reference" "Q1102"
 			(at 34.29 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5635,7 +5801,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "Q7")
+					(reference "Q1102")
 					(unit 1)
 				)
 			)
@@ -5653,7 +5819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fbcd9c6-d0ee-4930-bd4b-ce15fb1dd86e")
-		(property "Reference" "U14"
+		(property "Reference" "U901"
 			(at 173.99 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5751,7 +5917,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "U14")
+					(reference "U901")
 					(unit 4)
 				)
 			)
@@ -5768,7 +5934,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "21cd8069-d073-4976-880d-f51612bb878a")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR01106"
 			(at 184.15 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5827,7 +5993,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR073")
+					(reference "#PWR01106")
 					(unit 1)
 				)
 			)
@@ -5845,7 +6011,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "28ea721c-74cb-4290-99d0-4a869fbd3601")
-		(property "Reference" "K1"
+		(property "Reference" "K1101"
 			(at 84.836 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +6082,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "K1")
+					(reference "K1101")
 					(unit 1)
 				)
 			)
@@ -5933,7 +6099,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "29002ce3-c036-454f-9fa5-32863595e43d")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR01102"
 			(at 93.98 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5992,7 +6158,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR035")
+					(reference "#PWR01102")
 					(unit 1)
 				)
 			)
@@ -6010,7 +6176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b2ea700-30c9-4c55-84ac-fb2e65cd8d24")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR01109"
 			(at 97.79 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -6070,7 +6236,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR036")
+					(reference "#PWR01109")
 					(unit 1)
 				)
 			)
@@ -6087,7 +6253,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "38b2ab04-3020-4ad9-b209-1702fc618196")
-		(property "Reference" "R48"
+		(property "Reference" "R1105"
 			(at 30.48 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6148,7 +6314,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R48")
+					(reference "R1105")
 					(unit 1)
 				)
 			)
@@ -6165,7 +6331,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3bc745b3-894b-41e2-87d4-0b66bc9203e9")
-		(property "Reference" "R54"
+		(property "Reference" "R1108"
 			(at 93.98 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,7 +6392,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R54")
+					(reference "R1108")
 					(unit 1)
 				)
 			)
@@ -6243,7 +6409,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47b25e16-d74d-41c0-b97e-4ccafbab4535")
-		(property "Reference" "R52"
+		(property "Reference" "R1109"
 			(at 73.66 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6304,7 +6470,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R52")
+					(reference "R1109")
 					(unit 1)
 				)
 			)
@@ -6322,7 +6488,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e43179c-d16f-45fb-9c7b-a6a55114116e")
-		(property "Reference" "C26"
+		(property "Reference" "C1105"
 			(at 62.484 187.452 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6385,7 +6551,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C26")
+					(reference "C1105")
 					(unit 1)
 				)
 			)
@@ -6403,7 +6569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d2c24ea-cfdc-42f9-a1b2-a035ca8c8c79")
-		(property "Reference" "D6"
+		(property "Reference" "D1102"
 			(at 76.2 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6489,7 +6655,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D6")
+					(reference "D1102")
 					(unit 1)
 				)
 			)
@@ -6507,7 +6673,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "615143c1-3294-40dd-8b54-181de138c14f")
-		(property "Reference" "C22"
+		(property "Reference" "C1102"
 			(at 53.34 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6570,7 +6736,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C22")
+					(reference "C1102")
 					(unit 1)
 				)
 			)
@@ -6588,7 +6754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65a72f88-de66-47ac-a9da-4059e41fcbe8")
-		(property "Reference" "D7"
+		(property "Reference" "D1104"
 			(at 76.2 40.6399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6674,7 +6840,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D7")
+					(reference "D1104")
 					(unit 1)
 				)
 			)
@@ -6692,7 +6858,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "673fbc42-c16c-45c5-887c-b0ecca6db348")
-		(property "Reference" "C24"
+		(property "Reference" "C1101"
 			(at 45.72 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6755,7 +6921,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C24")
+					(reference "C1101")
 					(unit 1)
 				)
 			)
@@ -6772,7 +6938,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7dbe178b-ebaf-431b-8ac9-764ce2c07b2d")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR01108"
 			(at 100.33 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -6831,7 +6997,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR037")
+					(reference "#PWR01108")
 					(unit 1)
 				)
 			)
@@ -6848,7 +7014,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "89eae8cf-927d-4ff4-959d-a09bb81a9741")
-		(property "Reference" "C27"
+		(property "Reference" "C1104"
 			(at 52.324 183.642 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6911,7 +7077,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C27")
+					(reference "C1104")
 					(unit 1)
 				)
 			)
@@ -6928,7 +7094,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b673d0d-e808-4cbe-a8d8-47b5a952bbb2")
-		(property "Reference" "R78"
+		(property "Reference" "R1111"
 			(at 153.67 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6989,7 +7155,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R78")
+					(reference "R1111")
 					(unit 1)
 				)
 			)
@@ -7007,7 +7173,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92efdfec-db4d-46b5-bada-9d7812c0f2d5")
-		(property "Reference" "Q405"
+		(property "Reference" "Q1101"
 			(at 162.56 58.4201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7074,7 +7240,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "Q405")
+					(reference "Q1101")
 					(unit 1)
 				)
 			)
@@ -7091,7 +7257,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93e60895-96dc-447e-b153-0e2d25f037e0")
-		(property "Reference" "R423"
+		(property "Reference" "R1104"
 			(at 130.81 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7155,7 +7321,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R423")
+					(reference "R1104")
 					(unit 1)
 				)
 			)
@@ -7173,7 +7339,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9708d5bf-b491-42c0-a56d-a5428395a775")
-		(property "Reference" "Q6"
+		(property "Reference" "Q1104"
 			(at 43.434 84.328 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7273,7 +7439,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "Q6")
+					(reference "Q1104")
 					(unit 1)
 				)
 			)
@@ -7290,7 +7456,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "970f5c79-8d79-4ce0-b8fe-91e0986fa2f1")
-		(property "Reference" "R51"
+		(property "Reference" "R1107"
 			(at 67.31 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7351,214 +7517,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 100.33 152.4 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "972ec733-b84b-4877-8563-c7936d8bc8a8")
-		(property "Reference" "D404"
-			(at 102.87 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAS16HT1G"
-			(at 97.79 146.812 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
-			(at 100.33 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 100.33 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 100.33 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 100.33 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "73877167-7a68-4a11-80df-bf7dd4abf6dc")
-		)
-		(pin "1"
-			(uuid "84571bbf-d786-4037-b770-98a22ac3929d")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D404")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 95.25 138.43 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "97f4075d-a7c8-4008-91c1-2c6229b42178")
-		(property "Reference" "D403"
-			(at 92.71 136.144 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAS16HT1G"
-			(at 89.916 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
-			(at 95.25 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 95.25 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 95.25 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 95.25 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1b19ab33-f0d1-49cb-9964-9ac35dd8fced")
-		)
-		(pin "1"
-			(uuid "a0919000-b32e-42cb-b979-21d51b619eb0")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D403")
+					(reference "R1107")
 					(unit 1)
 				)
 			)
@@ -7575,7 +7534,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a4de5be-5757-42b7-994e-b9b618a0a834")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR01107"
 			(at 151.13 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -7634,7 +7593,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR077")
+					(reference "#PWR01107")
 					(unit 1)
 				)
 			)
@@ -7652,7 +7611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b16e392-e2d3-4b9f-80bc-672ffcff8cca")
-		(property "Reference" "TH2"
+		(property "Reference" "TH1102"
 			(at 33.02 57.4674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7717,7 +7676,86 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "TH2")
+					(reference "TH1102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT46")
+		(at 100.33 152.4 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e99541c-b16d-4d8c-92c4-c08ebe8cafe7")
+		(property "Reference" "D1105"
+			(at 102.616 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT46"
+			(at 97.79 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 95.885 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
+			(at 100.33 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
+			(at 100.33 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3759cd03-2548-437f-891c-efda94c23bc4")
+		)
+		(pin "2"
+			(uuid "72bc4ffa-e19e-4f4c-be8f-18e2937c3ae1")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
+					(reference "D1105")
 					(unit 1)
 				)
 			)
@@ -7735,7 +7773,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a260fd7a-88f4-4c40-add3-bd89bd2a6a44")
-		(property "Reference" "U7"
+		(property "Reference" "U1101"
 			(at 83.82 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7806,7 +7844,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "U7")
+					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -7824,7 +7862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a304fd58-e2d4-4dbb-9b9f-57f33e312f8d")
-		(property "Reference" "#PWR0416"
+		(property "Reference" "#PWR01101"
 			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7884,7 +7922,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR0416")
+					(reference "#PWR01101")
 					(unit 1)
 				)
 			)
@@ -7902,7 +7940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9083b81-5ff1-4f50-8f0a-d5d51d300b1a")
-		(property "Reference" "Q8"
+		(property "Reference" "Q1103"
 			(at 152.4 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7994,7 +8032,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "Q8")
+					(reference "Q1103")
 					(unit 1)
 				)
 			)
@@ -8011,7 +8049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aae5f0fc-ddb7-4759-a212-27fe7bd2814d")
-		(property "Reference" "R425"
+		(property "Reference" "R1101"
 			(at 149.86 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8075,7 +8113,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R425")
+					(reference "R1101")
 					(unit 1)
 				)
 			)
@@ -8092,7 +8130,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1670a78-c661-4902-aede-4f919726138c")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR01103"
 			(at 93.98 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8151,7 +8189,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR033")
+					(reference "#PWR01103")
 					(unit 1)
 				)
 			)
@@ -8169,7 +8207,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b366775c-3527-4328-9baf-4951a3859dbf")
-		(property "Reference" "U9"
+		(property "Reference" "U1103"
 			(at 77.724 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8237,7 +8275,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "U9")
+					(reference "U1103")
 					(unit 1)
 				)
 			)
@@ -8254,7 +8292,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b812d065-162e-4b2f-bde8-3cb6afd9bb83")
-		(property "Reference" "R81"
+		(property "Reference" "R1110"
 			(at 146.05 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8315,7 +8353,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R81")
+					(reference "R1110")
 					(unit 1)
 				)
 			)
@@ -8332,7 +8370,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b975abc2-5450-4c66-9ef6-bdf26932e6de")
-		(property "Reference" "R80"
+		(property "Reference" "R1115"
 			(at 151.13 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8393,7 +8431,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R80")
+					(reference "R1115")
 					(unit 1)
 				)
 			)
@@ -8410,7 +8448,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "beeedf8e-79f9-4467-9975-98bc4af6363a")
-		(property "Reference" "C23"
+		(property "Reference" "C1103"
 			(at 112.776 154.432 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8421,7 +8459,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 1206 25V"
+		(property "Value" "10uF 0805 25V"
 			(at 105.664 159.766 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8432,7 +8470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 110.1852 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -8473,7 +8511,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "C23")
+					(reference "C1103")
 					(unit 1)
 				)
 			)
@@ -8490,7 +8528,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf476aa6-de83-411b-bacc-03871f97bd79")
-		(property "Reference" "R53"
+		(property "Reference" "R1112"
 			(at 93.98 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8551,7 +8589,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R53")
+					(reference "R1112")
 					(unit 1)
 				)
 			)
@@ -8568,7 +8606,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bfa8cf89-9072-4f60-b0ee-02b8a63ba0b3")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR01104"
 			(at 153.67 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -8627,7 +8665,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR074")
+					(reference "#PWR01104")
 					(unit 1)
 				)
 			)
@@ -8644,7 +8682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c20a597e-47b8-4491-9331-7e7154c178d8")
-		(property "Reference" "R83"
+		(property "Reference" "R1114"
 			(at 143.51 142.24 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8705,7 +8743,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R83")
+					(reference "R1114")
 					(unit 1)
 				)
 			)
@@ -8723,7 +8761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c36ebb2f-99a9-4fc3-b4e4-fc066aafdd60")
-		(property "Reference" "D8"
+		(property "Reference" "D1101"
 			(at 33.02 30.4799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8809,7 +8847,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "D8")
+					(reference "D1101")
 					(unit 1)
 				)
 			)
@@ -8826,7 +8864,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9cc5129-b84c-4f9a-96f7-53f664b05237")
-		(property "Reference" "U8"
+		(property "Reference" "U1102"
 			(at 83.82 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8897,7 +8935,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "U8")
+					(reference "U1102")
 					(unit 1)
 				)
 			)
@@ -8915,7 +8953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ceb0c053-1451-41d9-a586-da6d90d4950a")
-		(property "Reference" "U14"
+		(property "Reference" "U901"
 			(at 173.99 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9013,7 +9051,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "U14")
+					(reference "U901")
 					(unit 3)
 				)
 			)
@@ -9030,7 +9068,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0922257-a236-4a3a-9c72-97931db7eb0f")
-		(property "Reference" "R424"
+		(property "Reference" "R1103"
 			(at 139.7 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9094,7 +9132,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R424")
+					(reference "R1103")
 					(unit 1)
 				)
 			)
@@ -9111,7 +9149,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d66fd298-0763-4eaa-b2f6-7ad1ce5da908")
-		(property "Reference" "R426"
+		(property "Reference" "R1102"
 			(at 149.86 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9175,7 +9213,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R426")
+					(reference "R1102")
 					(unit 1)
 				)
 			)
@@ -9192,7 +9230,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d89b0454-e4cd-4c13-aa19-5b065f5a8a7b")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR01105"
 			(at 93.98 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -9251,7 +9289,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "#PWR032")
+					(reference "#PWR01105")
 					(unit 1)
 				)
 			)
@@ -9268,7 +9306,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e205e3e3-452e-4f27-90d6-e8525d09f918")
-		(property "Reference" "R84"
+		(property "Reference" "R1113"
 			(at 184.15 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9329,7 +9367,86 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R84")
+					(reference "R1113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT46")
+		(at 95.25 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efb51ed5-35dc-4664-9ba6-418c386f30b7")
+		(property "Reference" "D1107"
+			(at 95.25 136.144 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT46"
+			(at 95.25 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 95.25 142.875 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
+			(at 95.25 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
+			(at 95.25 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45eb0eee-c3f0-44ea-8a29-fc7271522547")
+		)
+		(pin "2"
+			(uuid "3128929f-6abf-4650-996d-18f73bd8c238")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
+					(reference "D1107")
 					(unit 1)
 				)
 			)
@@ -9346,7 +9463,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fe06e0e3-3cb4-4871-b100-85ee25fc87ca")
-		(property "Reference" "R50"
+		(property "Reference" "R1106"
 			(at 60.96 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9407,7 +9524,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
-					(reference "R50")
+					(reference "R1106")
 					(unit 1)
 				)
 			)

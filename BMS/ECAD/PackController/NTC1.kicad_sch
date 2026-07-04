@@ -166,6 +166,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -579,6 +745,12 @@
 		(uuid "523d94f4-f507-4055-b6bb-2ad2537977a6")
 	)
 	(junction
+		(at 124.46 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04f27416-9845-4198-89b9-59e0eae9354c")
+	)
+	(junction
 		(at 133.35 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -588,11 +760,17 @@
 		(at 133.35 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c12cb25f-a16f-4beb-9fd4-5f3a07f47381")
+		(uuid "e29e4c16-a44f-4bfa-a0ab-d749a7449af0")
+	)
+	(junction
+		(at 133.35 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea17f05e-dfae-4ceb-be81-f79f667629de")
 	)
 	(wire
 		(pts
-			(xy 110.49 85.09) (xy 110.49 83.82)
+			(xy 99.06 85.09) (xy 99.06 83.82)
 		)
 		(stroke
 			(width 0)
@@ -609,6 +787,26 @@
 			(type default)
 		)
 		(uuid "13c37ad9-c6f8-468b-a5db-67b25fa71350")
+	)
+	(wire
+		(pts
+			(xy 124.46 105.41) (xy 133.35 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42fdc413-600c-43d5-9a91-784551249311")
+	)
+	(wire
+		(pts
+			(xy 124.46 85.09) (xy 124.46 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44e33dd3-08f8-4f4c-977b-8b347e1bb09b")
 	)
 	(wire
 		(pts
@@ -642,7 +840,27 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 85.09) (xy 133.35 85.09)
+			(xy 124.46 85.09) (xy 133.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7833eced-fffa-40ce-a757-2a2a7256c22c")
+	)
+	(wire
+		(pts
+			(xy 133.35 106.68) (xy 133.35 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d569577-ae89-48d2-8421-7d01eae779aa")
+	)
+	(wire
+		(pts
+			(xy 114.3 85.09) (xy 124.46 85.09)
 		)
 		(stroke
 			(width 0)
@@ -672,7 +890,17 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 85.09) (xy 118.11 85.09)
+			(xy 124.46 93.98) (xy 124.46 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968f3b03-7ee5-48ab-a98d-496ef0caf2ec")
+	)
+	(wire
+		(pts
+			(xy 99.06 85.09) (xy 106.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -735,7 +963,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 121.92 85.09 90)
+		(at 110.49 85.09 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -744,8 +972,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "469c773f-e005-4f2d-b486-69ef328f9521")
-		(property "Reference" "R57"
-			(at 121.92 85.09 90)
+		(property "Reference" "R1301"
+			(at 110.49 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -755,7 +983,7 @@
 			)
 		)
 		(property "Value" "10k 0.1% 25ppm/K"
-			(at 122.174 82.55 90)
+			(at 110.744 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -765,7 +993,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 121.92 86.868 90)
+			(at 110.49 86.868 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -776,7 +1004,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 85.09 0)
+			(at 110.49 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -787,7 +1015,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 121.92 85.09 0)
+			(at 110.49 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -805,15 +1033,15 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "R71")
+					(reference "R1401")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "R73")
+					(reference "R1501")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "R57")
+					(reference "R1301")
 					(unit 1)
 				)
 			)
@@ -830,7 +1058,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53d82849-f4d2-4bb6-8a6f-d16fa779c0ce")
-		(property "Reference" "R58"
+		(property "Reference" "R1302"
 			(at 133.35 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -891,15 +1119,15 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "R72")
+					(reference "R1402")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "R74")
+					(reference "R1502")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "R58")
+					(reference "R1302")
 					(unit 1)
 				)
 			)
@@ -916,7 +1144,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82c92823-4c28-42f7-a162-86b9192d3d2e")
-		(property "Reference" "C49"
+		(property "Reference" "C1301"
 			(at 137.414 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -979,15 +1207,15 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "C50")
+					(reference "C1401")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "C51")
+					(reference "C1501")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "C49")
+					(reference "C1301")
 					(unit 1)
 				)
 			)
@@ -995,7 +1223,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 105.41 0)
+		(at 133.35 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1004,8 +1232,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "915f8689-8eb3-4a3f-8ca3-4191c0466980")
-		(property "Reference" "#PWR061"
-			(at 133.35 111.76 0)
+		(property "Reference" "#PWR01303"
+			(at 133.35 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1016,7 +1244,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 109.22 0)
+			(at 133.35 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1026,7 +1254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 105.41 0)
+			(at 133.35 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1037,7 +1265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 105.41 0)
+			(at 133.35 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1048,7 +1276,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 105.41 0)
+			(at 133.35 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1063,15 +1291,15 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "#PWR063")
+					(reference "#PWR01403")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "#PWR066")
+					(reference "#PWR01503")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "#PWR061")
+					(reference "#PWR01303")
 					(unit 1)
 				)
 			)
@@ -1079,7 +1307,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 110.49 83.82 0)
+		(at 99.06 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1089,8 +1317,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a80411b3-a006-46fa-96db-fe334ee85c5f")
-		(property "Reference" "#PWR059"
-			(at 110.49 87.63 0)
+		(property "Reference" "#PWR01301"
+			(at 99.06 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1101,7 +1329,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 110.49 78.74 0)
+			(at 99.06 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1111,7 +1339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 83.82 0)
+			(at 99.06 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1122,7 +1350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 83.82 0)
+			(at 99.06 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1133,7 +1361,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 110.49 83.82 0)
+			(at 99.06 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1148,15 +1376,15 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "#PWR062")
+					(reference "#PWR01401")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "#PWR065")
+					(reference "#PWR01501")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "#PWR059")
+					(reference "#PWR01301")
 					(unit 1)
 				)
 			)
@@ -1173,7 +1401,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a98aaa55-94b3-4524-ab0c-940f6f4cffed")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR01302"
 			(at 156.21 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1232,15 +1460,101 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
-					(reference "#PWR064")
+					(reference "#PWR01402")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
-					(reference "#PWR067")
+					(reference "#PWR01502")
 					(unit 1)
 				)
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
-					(reference "#PWR060")
+					(reference "#PWR01302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 124.46 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4f7b918-f3ba-4253-ab73-b76614efb8e2")
+		(property "Reference" "D1301"
+			(at 127 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DESD5V0S1BA-7"
+			(at 123.19 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 124.46 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "374f2d29-2f46-45c8-8eb7-4da1af30a07c")
+		)
+		(pin "1"
+			(uuid "c5959526-2ed5-43b2-8296-854c5ea03692")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/71e65725-80b2-472c-8002-e08c907aa751"
+					(reference "D1401")
+					(unit 1)
+				)
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/bb3a350a-a658-4971-83cd-58f1dca54bb5"
+					(reference "D1501")
+					(unit 1)
+				)
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3/f34c3682-d9f6-426f-8996-e47c99f84a0f"
+					(reference "D1301")
 					(unit 1)
 				)
 			)

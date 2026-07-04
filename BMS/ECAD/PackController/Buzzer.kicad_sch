@@ -2482,7 +2482,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f97f36e-dfbb-4ccc-816a-d216fca32af0")
-		(property "Reference" "R38"
+		(property "Reference" "R804"
 			(at 129.54 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2543,7 +2543,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "R38")
+					(reference "R804")
 					(unit 1)
 				)
 			)
@@ -2560,7 +2560,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e20fded-14cd-432f-821d-1008ad87ecf8")
-		(property "Reference" "Q15"
+		(property "Reference" "Q801"
 			(at 148.59 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2629,7 +2629,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "Q15")
+					(reference "Q801")
 					(unit 1)
 				)
 			)
@@ -2646,7 +2646,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "98a49408-de82-46d4-bd97-e7edc3249755")
-		(property "Reference" "R37"
+		(property "Reference" "R802"
 			(at 144.78 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2707,7 +2707,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "R37")
+					(reference "R802")
 					(unit 1)
 				)
 			)
@@ -2724,7 +2724,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a8a83bc-3afc-4220-8e5f-c2844d208be5")
-		(property "Reference" "R36"
+		(property "Reference" "R801"
 			(at 138.176 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2785,7 +2785,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "R36")
+					(reference "R801")
 					(unit 1)
 				)
 			)
@@ -2802,7 +2802,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d67ab2ff-a1b7-4fbd-a63f-3bde00f60e30")
-		(property "Reference" "R35"
+		(property "Reference" "R803"
 			(at 121.92 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2863,7 +2863,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "R35")
+					(reference "R803")
 					(unit 1)
 				)
 			)
@@ -2880,7 +2880,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec872448-7f0b-4bf1-a5f8-5c66486dbd53")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR0802"
 			(at 144.78 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2939,7 +2939,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "#PWR016")
+					(reference "#PWR0802")
 					(unit 1)
 				)
 			)
@@ -2957,7 +2957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f72c7170-0156-4174-b2c4-ee403cb047bd")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0801"
 			(at 130.81 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -3016,7 +3016,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e76a46f-aff0-416c-bf65-690935f0ea58"
-					(reference "#PWR038")
+					(reference "#PWR0801")
 					(unit 1)
 				)
 			)

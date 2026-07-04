@@ -306,7 +306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afe78409-0a08-4be0-a939-d89337628d01")
-		(property "Reference" "Leak2"
+		(property "Reference" "Leak702"
 			(at 176.53 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -370,7 +370,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak2")
+					(reference "Leak702")
 					(unit 1)
 				)
 			)
@@ -388,7 +388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0c098ec-00f5-4bea-86fa-7d898ad0ec54")
-		(property "Reference" "Leak1"
+		(property "Reference" "Leak701"
 			(at 176.53 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -452,7 +452,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak1")
+					(reference "Leak701")
 					(unit 1)
 				)
 			)
