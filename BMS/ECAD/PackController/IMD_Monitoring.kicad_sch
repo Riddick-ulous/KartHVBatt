@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "98622c0e-76fe-4c40-90fd-6185c190cb6b")
+	(uuid "991193f5-8e0b-49aa-b146-c5289c6e9b0b")
 	(paper "A4")
 	(title_block
 		(title "PackController")
@@ -1889,6 +1889,29 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "During IMD startup, nPRE and nCLR may overlap.\nSC_Out is forced disabled by IMD_OK low clamp.\nLatch becomes effective only after IMD_OK release."
+		(exclude_from_sim no)
+		(at 125.73 113.9163 0)
+		(size 44.45 6.7337)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "409a6eff-d652-4642-8072-83c30c8da4b4")
+	)
 	(text_box "Populate pullup/-down depending on IMD type:\nOpen-Collector: 10k Pullup + 0Ohm series resistor\nOpen-Emitter: 1k5 Pulldown + 10kOhm series resistor\n\n(Use Variants to see on schematic)"
 		(exclude_from_sim no)
 		(at 171.45 16.51 0)
@@ -1919,6 +1942,12 @@
 		(uuid "141f56e1-34e1-4898-9df3-1cbad61a4437")
 	)
 	(junction
+		(at 134.62 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "178c507a-4ced-42e4-93a7-ca705045971d")
+	)
+	(junction
 		(at 161.29 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1929,12 +1958,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30d94600-2165-4267-bf80-94f7052784b0")
-	)
-	(junction
-		(at 134.62 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d3447ce-8e60-4ebe-8b4c-25be5999e47f")
 	)
 	(junction
 		(at 41.91 24.13)
@@ -2154,6 +2177,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 106.68) (xy 160.02 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3137db14-a0c6-4388-aa5c-9949e664f4be")
+	)
+	(wire
+		(pts
 			(xy 90.17 96.52) (xy 90.17 97.79)
 		)
 		(stroke
@@ -2274,7 +2307,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 106.68) (xy 153.67 106.68)
+			(xy 134.62 106.68) (xy 152.4 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2564,6 +2597,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 91.44) (xy 161.29 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf17520a-c061-4db4-a47b-44b59fa0bfd0")
+	)
+	(wire
+		(pts
 			(xy 191.77 41.91) (xy 191.77 44.45)
 		)
 		(stroke
@@ -2624,16 +2667,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 91.44) (xy 161.29 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e05a2858-8ba9-43ed-938c-824de3776714")
-	)
-	(wire
-		(pts
 			(xy 41.91 24.13) (xy 41.91 25.4)
 		)
 		(stroke
@@ -2691,16 +2724,6 @@
 			(type default)
 		)
 		(uuid "eec18ebb-d7af-4b3a-b65f-c22fa48e0182")
-	)
-	(wire
-		(pts
-			(xy 161.29 111.76) (xy 161.29 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f42f241e-2c53-4416-a104-1bcaa65f1fcc")
 	)
 	(wire
 		(pts
@@ -3152,83 +3175,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 161.29 113.03 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "143476c1-17b7-48ee-8af3-bc1f02ff90e5")
-		(property "Reference" "#PWR02311"
-			(at 161.29 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 161.29 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 161.29 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "16b735e2-d18e-47fa-819d-97468af1c368")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/bb6d2c27-83db-4480-8c62-fedc9a39072f"
-					(reference "#PWR02311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "EKartParts:SN74LVC1G74")
 		(at 25.4 33.02 90)
 		(unit 2)
@@ -3322,124 +3268,6 @@
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/bb6d2c27-83db-4480-8c62-fedc9a39072f"
 					(reference "U2301")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PMOS")
-		(at 158.75 106.68 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "30c0bdce-14ff-4bb4-b8c5-ca49e0f23eb9")
-		(property "Reference" "Q2303"
-			(at 145.796 103.886 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DMP4065S-7"
-			(at 145.796 101.346 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 163.83 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 158.75 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "P-MOSFET transistor, drain/source/gate"
-			(at 158.75 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PMOS"
-			(at 158.75 89.535 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 158.75 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 158.75 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a4e9931e-cc88-45a2-915a-a8d1560ed24f")
-		)
-		(pin "1"
-			(uuid "e9a70ce1-4b2c-45cd-9bba-c1f989391b06")
-		)
-		(pin "3"
-			(uuid "8126b157-3da5-4247-af53-31d0aba5917c")
-		)
-		(instances
-			(project "Pack_Controller"
-				(path "/58a1c93e-baba-4d23-9191-955e00968735/bb6d2c27-83db-4480-8c62-fedc9a39072f"
-					(reference "Q2303")
-					(unit 1)
 				)
 			)
 		)
@@ -3542,7 +3370,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5MR"
+		(property "Value" "10kR"
 			(at 242.824 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3866,7 +3694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 89.2048 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4167,7 +3995,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5MR"
+		(property "Value" "39kR"
 			(at 238.76 42.164 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5220,6 +5048,85 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/bb6d2c27-83db-4480-8c62-fedc9a39072f"
 					(reference "#PWR02307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT46")
+		(at 156.21 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f20dfa3b-6e70-4214-a468-1ca3e6a52d52")
+		(property "Reference" "D2303"
+			(at 156.21 104.394 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT46"
+			(at 156.21 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 156.21 111.125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
+			(at 156.21 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
+			(at 156.21 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "26d7cb2f-19b7-49a3-a554-9e3f03589a60")
+		)
+		(pin "2"
+			(uuid "2244a6ef-8c5a-4d47-bda2-fec0471968ed")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/bb6d2c27-83db-4480-8c62-fedc9a39072f"
+					(reference "D2303")
 					(unit 1)
 				)
 			)

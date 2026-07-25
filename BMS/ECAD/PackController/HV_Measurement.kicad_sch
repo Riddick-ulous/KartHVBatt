@@ -2937,7 +2937,7 @@
 		)
 		(uuid "5c37812b-cb9b-4719-a2c6-77ce43cb8e79")
 	)
-	(text_box "V_VEHI/V_ACCU RC low pass:\n\nR = 10 kOhm\nC = 100 nF\n\ntau = R * C = 10 kOhm * 100 nF = 1.0 ms\n\nf_c = 1 / (2 * pi * R * C)\nf_c = 1 / (2 * pi * 10 kOhm * 100 nF)\nf_c = 159 Hz\n\nEAOUT2 drive check:\nI_peak ~= 5 V / 10 kOhm = 0.5 mA\n=> OK"
+	(text_box "V_VEHI/V_ACCU RC low pass:\n\nR = 10 kOhm\nC = 100 nF\n\ntau = R * C = 10 kOhm * 100 nF = 1.0 ms\n\nf_c = 1 / (2 * pi * R * C)\nf_c = 1 / (2 * pi * 10 kOhm * 100 nF)\nf_c = 159 Hz\n\nEAOUT2 drive check:\nI_peak ~= 3,3 V / 10 kOhm = 0.33 mA\n=> OK"
 		(exclude_from_sim no)
 		(at 142.24 78.4269 0)
 		(size 36.83 24.4431)
@@ -3028,6 +3028,29 @@
 			(justify left top)
 		)
 		(uuid "d03881c9-2f05-49f4-8be4-b9b2919c3072")
+	)
+	(text_box "DANGER_V is open-drain clamp only, not MCU logic.\nUse nDANGER_V for MCU diagnostics."
+		(exclude_from_sim no)
+		(at 229.87 46.9463 0)
+		(size 43.18 5.1237)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 194 1)
+		)
+		(effects
+			(font
+				(size 1 1)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "faaff9d8-5305-4edf-912d-6503f7ae4523")
 	)
 	(junction
 		(at 179.07 35.56)
@@ -5156,7 +5179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 65.0748 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -5392,7 +5415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 65.0748 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5637,7 +5660,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 42.672 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -6188,7 +6211,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADCMP393ARZ"
 			(at 265.43 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,7 +6221,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 265.43 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -6209,7 +6232,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP391_392_393.pdf"
 			(at 265.43 15.24 0)
 			(hide yes)
 			(show_name no)
@@ -6315,7 +6338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6697,7 +6720,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADUM3190"
 			(at 107.95 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6707,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm"
 			(at 107.95 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7785,7 +7808,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 42.672 55.88 90)
 			(hide yes)
 			(show_name no)
@@ -8474,7 +8497,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADUM3190"
 			(at 107.95 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8484,7 +8507,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:QSOP-16_3.9x4.9mm_P0.635mm"
 			(at 107.95 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -8495,7 +8518,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM3190.pdf"
 			(at 107.95 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -8607,7 +8630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.3352 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8760,7 +8783,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADCMP393ARZ"
 			(at 222.25 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8770,7 +8793,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 222.25 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -8781,7 +8804,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP391_392_393.pdf"
 			(at 222.25 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9034,7 +9057,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "ADCMP393ARZ"
 			(at 222.25 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9044,7 +9067,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 222.25 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9055,7 +9078,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADCMP391_392_393.pdf"
 			(at 222.25 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9161,7 +9184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 261.3152 29.21 0)
 			(hide yes)
 			(show_name no)

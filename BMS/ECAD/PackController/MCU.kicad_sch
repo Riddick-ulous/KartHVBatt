@@ -6256,8 +6256,8 @@
 	)
 	(text_box "SC latch / reset / watchdog logic:\n\nU201 MCP130 generates nPOR from +3.3V.\nnPOR is used only as power-on/brownout set signal for U203A.\n\nPower-up / brownout:\nnPOR = LOW\n-> U203A nPRE = LOW\n-> Q = HIGH\n-> Q202/Q201 enable SC_Out\n-> D201 also pulls nRES LOW and keeps MCU in reset\n\nAfter nPOR release:\nnPOR = HIGH\n-> U203A keeps previous Q state\n-> MCU starts via nRES release\n\nU202 watchdog:\nnWDO = LOW on watchdog fault\n-> D203 pulls nRES LOW\n-> D207 pulls U203A nCLR LOW\n-> Q = LOW\n-> SC_Out disabled / opened\n\nLatch_SC:\nMCU can pull Latch_SC LOW\n-> D206 pulls U203A nCLR LOW\n-> Q = LOW\n-> SC_Out disabled / opened\n\nImportant:\nnPOR, nRES and nWDO are diode-isolated.\nnRES must not pull nPOR or nCLR LOW.\nThis avoids simultaneous nPRE/nCLR activation of U203A.\n\nRe-closing SC after watchdog fault or Latch_SC clear requires power-cycle / nPOR event.\nSC_State is derived from U203A Q and indicates actual latch output state."
 		(exclude_from_sim no)
-		(at 269.24 33.02 0)
-		(size 74.93 63.0817)
+		(at 231.14 99.1383 0)
+		(size 52.07 64.6917)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -6416,7 +6416,7 @@
 		(uuid "5e7a29c5-780f-470c-a5af-44c555c2f7c1")
 	)
 	(junction
-		(at 260.35 138.43)
+		(at 165.1 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62bbc5af-f43d-4005-99a8-a82c56379037")
@@ -6548,7 +6548,7 @@
 		(uuid "cb2b9515-be86-462b-8206-74bba1f46572")
 	)
 	(junction
-		(at 241.3 134.62)
+		(at 146.05 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d51ab183-d824-40a4-8de8-a060e5042758")
@@ -6855,7 +6855,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 134.62) (xy 242.57 134.62)
+			(xy 146.05 185.42) (xy 147.32 185.42)
 		)
 		(stroke
 			(width 0)
@@ -6905,7 +6905,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 138.43) (xy 260.35 134.62)
+			(xy 165.1 189.23) (xy 165.1 185.42)
 		)
 		(stroke
 			(width 0)
@@ -7045,7 +7045,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 143.51) (xy 260.35 143.51)
+			(xy 158.75 194.31) (xy 165.1 194.31)
 		)
 		(stroke
 			(width 0)
@@ -7295,7 +7295,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 143.51) (xy 241.3 143.51)
+			(xy 151.13 194.31) (xy 146.05 194.31)
 		)
 		(stroke
 			(width 0)
@@ -7465,7 +7465,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 143.51) (xy 260.35 138.43)
+			(xy 165.1 194.31) (xy 165.1 189.23)
 		)
 		(stroke
 			(width 0)
@@ -7985,7 +7985,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 134.62) (xy 259.08 134.62)
+			(xy 165.1 185.42) (xy 163.83 185.42)
 		)
 		(stroke
 			(width 0)
@@ -8435,7 +8435,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 133.35) (xy 241.3 134.62)
+			(xy 146.05 184.15) (xy 146.05 185.42)
 		)
 		(stroke
 			(width 0)
@@ -9025,7 +9025,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 143.51) (xy 241.3 134.62)
+			(xy 146.05 194.31) (xy 146.05 185.42)
 		)
 		(stroke
 			(width 0)
@@ -11129,7 +11129,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1e81aa32-7b08-4fcf-a3f3-36ce6c19dc27")
 		(property "Reference" "U202"
 			(at 197.231 41.91 0)
@@ -11141,8 +11140,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 189.23 27.94 0)
+		(property "Value" "STWD100YNYWY"
+			(at 182.372 28.702 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11151,7 +11150,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 189.23 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11162,7 +11161,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stwd100.pdf"
 			(at 189.23 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11520,7 +11519,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 260.35 138.43 90)
+		(at 165.1 189.23 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11530,7 +11529,7 @@
 		(dnp no)
 		(uuid "39bb804c-067d-4016-ac04-cfc8e8f56f1d")
 		(property "Reference" "#PWR0223"
-			(at 266.7 138.43 0)
+			(at 171.45 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11541,7 +11540,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 138.43 0)
+			(at 168.91 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11551,7 +11550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 138.43 0)
+			(at 165.1 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11562,7 +11561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 138.43 0)
+			(at 165.1 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11573,7 +11572,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 138.43 0)
+			(at 165.1 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11751,7 +11750,7 @@
 	)
 	(symbol
 		(lib_id "EKartParts:SN74LVC1G74")
-		(at 251.46 118.11 0)
+		(at 156.21 168.91 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11761,7 +11760,7 @@
 		(dnp no)
 		(uuid "417454f3-5552-439f-9fe6-f202bd02b580")
 		(property "Reference" "U203"
-			(at 250.825 130.81 0)
+			(at 155.575 181.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11771,7 +11770,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1G74"
-			(at 250.952 137.16 0)
+			(at 155.702 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11781,7 +11780,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
-			(at 251.46 118.11 0)
+			(at 156.21 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11792,7 +11791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 118.11 0)
+			(at 156.21 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11803,7 +11802,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 118.11 0)
+			(at 156.21 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12919,7 +12918,7 @@
 				)
 			)
 		)
-		(property "Value" "MCP130-270"
+		(property "Value" "MCP130-270 ITT"
 			(at 148.59 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14928,7 +14927,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 250.19 143.51 270)
+		(at 154.94 194.31 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14938,7 +14937,7 @@
 		(dnp no)
 		(uuid "a693bc75-436c-4286-9d76-974d10f4d1d1")
 		(property "Reference" "C213"
-			(at 248.412 139.954 90)
+			(at 153.162 190.754 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14949,7 +14948,7 @@
 			)
 		)
 		(property "Value" "100nF 0603 6.3V"
-			(at 251.46 145.034 90)
+			(at 156.21 195.834 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14960,7 +14959,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 246.38 144.4752 0)
+			(at 151.13 195.2752 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14971,7 +14970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 143.51 0)
+			(at 154.94 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14982,7 +14981,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 250.19 143.51 0)
+			(at 154.94 194.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16603,7 +16602,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm_HandSoldering"
+		(property "Footprint" "Oscillator:Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm"
 			(at 25.4 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -17217,7 +17216,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 241.3 133.35 0)
+		(at 146.05 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17227,7 +17226,7 @@
 		(dnp no)
 		(uuid "ef4b2606-4b21-4d79-b3c5-40a3d2a4fe7a")
 		(property "Reference" "#PWR0222"
-			(at 241.3 137.16 0)
+			(at 146.05 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17238,7 +17237,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 241.3 129.54 0)
+			(at 146.05 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17248,7 +17247,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 133.35 0)
+			(at 146.05 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17259,7 +17258,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 133.35 0)
+			(at 146.05 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17270,7 +17269,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 133.35 0)
+			(at 146.05 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

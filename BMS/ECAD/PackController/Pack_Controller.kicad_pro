@@ -603,14 +603,50 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PartNr.",
+          "name": "PartNr.",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Beschreibung",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Referenz"
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -661,7 +697,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "D1001,D1502-1503,D1901-1906,D2301-2302,#PWR103-106,#PWR1004-1022,#PWR1504-1509,#PWR1901-1909,#PWR2001-2017,#PWR2301-2311,K1901,C1001-1008,C1502-1503,C1901-1906,C2001-2015,C2301-2302,Q1901-1904,Q2301-2303,R1004-1005,R1503-1506,R1901-1915,R2001-2015,R2301-2310,TH1901-1902,U1001-1007,U1901-1904,U2001-2005,U2301-2302,F1901,HV_ACCU101,HV_DCDC101,NTC1204-1205,BUZZ102,J101-103,HV_VEHI101",
+    "used_designators": "D1106,#PWR1110-1111,C1107-1109,R1116,U1104",
     "variants": []
   },
   "sheets": [

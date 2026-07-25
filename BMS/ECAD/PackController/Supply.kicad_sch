@@ -1533,7 +1533,7 @@
 		)
 		(uuid "2e41d4ab-cee1-4cf5-8f8c-c3fdd0446332")
 	)
-	(text_box "+5V Supply worst-case estimate:\n\nMain loads:\nTEA1-0505HI isolated DC/DC no-load, 3x:    ~84 mA\nTEA1 loads incl. ADuM3190 isolated sides:  ~25...30 mA\nMCP2562 CAN transceivers, 2x dominant:     ~140 mA\nMisc. reserve / startup / tolerance:       ~50 mA\n\nEstimated worst-case load:                 ~250...300 mA\nSelected supply: RECOM 5 V / 1 A DC/DC\n\nDesign margin:\n1 A / 300 mA ≈ 3.3x"
+	(text_box "+5V Supply worst-case estimate:\n\nMain loads:\nTEA1-0505HI isolated DC/DC no-load, 5x:    ~120 mA\nTEA1 loads incl. ADuM3190 isolated sides:  ~25...30 mA\nMCP2562 CAN transceivers, 2x dominant:     ~140 mA\nMisc. reserve / startup / tolerance:       ~50 mA\n\nEstimated worst-case load:                 ~330...400 mA\nSelected supply: RECOM 5 V / 1 A DC/DC\n\nDesign margin:\nDesign margin: 1A / 0.4A ≈ 2.5x"
 		(exclude_from_sim no)
 		(at 186.69 69.85 0)
 		(size 46.99 22.86)
@@ -2245,7 +2245,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 16V"
+		(property "Value" "10uF 0805 35V"
 			(at 175.26 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2558,7 +2558,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100uF 16V WE870025374007"
+		(property "Value" "100uF 35V WE870025374007"
 			(at 119.38 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2722,7 +2722,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 16V"
+		(property "Value" "10uF 0805 35V"
 			(at 53.34 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3036,7 +3036,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 16V"
+		(property "Value" "10uF 0805 35V"
 			(at 228.6 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3272,7 +3272,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470uF 16V WE870025374007"
+		(property "Value" "470uF 35V WE870025374007"
 			(at 22.86 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3353,7 +3353,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 16V"
+		(property "Value" "10uF 0805 35V"
 			(at 96.52 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)

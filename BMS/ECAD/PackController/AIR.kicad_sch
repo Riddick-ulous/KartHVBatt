@@ -4707,7 +4707,7 @@
 				)
 			)
 		)
-		(property "Value" "ADCMP393ARUZ"
+		(property "Value" "ADCMP393ARZ"
 			(at 176.53 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4717,7 +4717,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 171.45 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4904,7 +4904,7 @@
 				)
 			)
 		)
-		(property "Value" "ADCMP393ARUZ"
+		(property "Value" "ADCMP393ARZ"
 			(at 119.38 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4914,7 +4914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 124.46 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5020,7 +5020,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10kR"
+		(property "Value" "39kR"
 			(at 50.038 82.296 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5180,7 +5180,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "B120-13-F"
+		(property "Value" "B140-13-F"
 			(at 67.31 50.4824 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5339,7 +5339,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10kR"
+		(property "Value" "39kR"
 			(at 50.038 101.346 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6207,7 +6207,7 @@
 				)
 			)
 		)
-		(property "Value" "ADCMP393ARUZ"
+		(property "Value" "ADCMP393ARZ"
 			(at 119.38 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6217,7 +6217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 124.46 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6723,7 +6723,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k5R"
+		(property "Value" "10kR"
 			(at 53.34 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6966,7 +6966,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k5R"
+		(property "Value" "10kR"
 			(at 53.34 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7768,7 +7768,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "B120-13-F"
+		(property "Value" "B140-13-F"
 			(at 60.96 50.4824 90)
 			(hide yes)
 			(show_name no)
@@ -7919,7 +7919,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8b15f4f-996a-4830-882d-671fb4e47fc1")
-		(property "Reference" "AIR"
+		(property "Reference" "AIR401"
 			(at 19.05 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7999,7 +7999,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
-					(reference "AIR")
+					(reference "AIR401")
 					(unit 1)
 				)
 			)
@@ -8533,7 +8533,7 @@
 				)
 			)
 		)
-		(property "Value" "ADCMP393ARUZ"
+		(property "Value" "ADCMP393ARZ"
 			(at 111.125 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8543,7 +8543,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 116.84 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8806,7 +8806,7 @@
 				)
 			)
 		)
-		(property "Value" "ADCMP393ARUZ"
+		(property "Value" "ADCMP393ARZ"
 			(at 176.53 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8816,7 +8816,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 171.45 55.88 0)
 			(hide yes)
 			(show_name no)
