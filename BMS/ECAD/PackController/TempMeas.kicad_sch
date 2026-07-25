@@ -172,6 +172,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 132.08) (xy 144.78 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1492f83f-5b19-4986-95cd-4d0482238f22")
+	)
+	(wire
+		(pts
 			(xy 151.13 90.17) (xy 144.78 90.17)
 		)
 		(stroke
@@ -179,6 +189,16 @@
 			(type default)
 		)
 		(uuid "1852c488-43bd-4bf6-9494-9754f30ca255")
+	)
+	(wire
+		(pts
+			(xy 151.13 118.11) (xy 144.78 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271c881e-635e-4d5a-b1a4-74bdb38991a5")
 	)
 	(wire
 		(pts
@@ -199,6 +219,16 @@
 			(type default)
 		)
 		(uuid "6cc0db0b-2bbb-4786-b9b7-6e99ebab99d9")
+	)
+	(wire
+		(pts
+			(xy 116.84 119.38) (xy 123.19 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85fc81d7-7a34-4edd-bcdc-5463bd6d4204")
 	)
 	(wire
 		(pts
@@ -242,6 +272,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 133.35) (xy 123.19 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d7c3f7-e121-444d-adfc-a9d87b69ee99")
+	)
+	(wire
+		(pts
 			(xy 151.13 92.71) (xy 144.78 92.71)
 		)
 		(stroke
@@ -259,6 +299,26 @@
 			(type default)
 		)
 		(uuid "e092894e-f8b3-4d50-9847-d08119aaba99")
+	)
+	(wire
+		(pts
+			(xy 151.13 134.62) (xy 144.78 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8df704f-f81a-438b-a65b-1a520474b5c9")
+	)
+	(wire
+		(pts
+			(xy 151.13 120.65) (xy 144.78 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa149dd9-7616-40d6-b17c-1bd41ada6e7c")
 	)
 	(hierarchical_label "NTC1_Sig"
 		(shape input)
@@ -293,6 +353,110 @@
 		)
 		(uuid "9cd0e9a0-7465-44a0-acb3-e07edbfbf410")
 	)
+	(hierarchical_label "NTC4_Sig"
+		(shape input)
+		(at 116.84 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c59a1985-6043-4f5f-bea2-d879af3c7316")
+	)
+	(hierarchical_label "NTC5_Sig"
+		(shape input)
+		(at 116.84 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "daecd50a-7368-4cbb-9a7f-e3e94db65d8a")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 156.21 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "125594cc-0f0d-496d-8e7a-4e4cb7274d36")
+		(property "Reference" "NTC5"
+			(at 158.75 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 158.75 134.6199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+			(at 156.21 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 156.21 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d6dc0739-47c4-43d6-aa5f-3ac9e9b3adc4")
+		)
+		(pin "1"
+			(uuid "61a7750f-0465-4737-98ad-b378a4641743")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(reference "NTC5")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 156.21 90.17 0)
@@ -305,7 +469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e764227-ba88-4c01-b03d-31c61db07448")
-		(property "Reference" "NTC1202"
+		(property "Reference" "NTC2"
 			(at 158.75 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -316,7 +480,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" ""
 			(at 158.75 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -327,7 +491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 156.21 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -369,7 +533,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC1202")
+					(reference "NTC2")
 					(unit 1)
 				)
 			)
@@ -387,7 +551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76aab938-264a-4bd0-ba83-90a32717f612")
-		(property "Reference" "NTC1203"
+		(property "Reference" "NTC3"
 			(at 158.75 104.1399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -398,7 +562,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" ""
 			(at 158.75 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -409,7 +573,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 156.21 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -451,7 +615,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC1203")
+					(reference "NTC3")
 					(unit 1)
 				)
 			)
@@ -469,7 +633,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3ca57e0-45db-4bd1-8df6-ff26f949de54")
-		(property "Reference" "NTC1201"
+		(property "Reference" "NTC1"
 			(at 158.75 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -480,7 +644,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" ""
 			(at 158.75 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -491,7 +655,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 156.21 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -533,8 +697,242 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
-					(reference "NTC1201")
+					(reference "NTC1")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 156.21 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6ed1fc5-19c3-4924-a1c5-ea9a6281128c")
+		(property "Reference" "NTC4"
+			(at 158.75 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 158.75 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+			(at 156.21 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 156.21 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7c689f81-3126-44f7-a65d-f5b7f1b9fd86")
+		)
+		(pin "1"
+			(uuid "2c78152c-ead8-47b2-8c01-1c66dbeecc29")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(reference "NTC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 130.81)
+		(size 21.59 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1500e281-02be-4422-b48b-a5f621355aa6")
+		(property "Sheetname" "NTC5"
+			(at 123.19 130.0984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "NTC1.kicad_sch"
+			(at 123.19 139.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "NTC1_+" input
+			(at 144.78 132.08 0)
+			(uuid "0974c026-2222-4c97-862a-9e6495a4fad9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC1_Sig" input
+			(at 123.19 133.35 180)
+			(uuid "736ea7f0-fad0-4852-ad16-0ce25371a560")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NTC1_-" input
+			(at 144.78 134.62 0)
+			(uuid "4d694cb1-0ed0-49c8-9398-10eb5165bbf4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 116.84)
+		(size 21.59 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "63cfea26-3e90-457f-807f-e8d443d45a26")
+		(property "Sheetname" "NTC4"
+			(at 123.19 116.1284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "NTC1.kicad_sch"
+			(at 123.19 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "NTC1_+" input
+			(at 144.78 118.11 0)
+			(uuid "e64ad0fd-1302-4246-ba4e-09c77f54d9d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC1_Sig" input
+			(at 123.19 119.38 180)
+			(uuid "4b59b1d5-9db7-4373-9c92-a7b397714f75")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NTC1_-" input
+			(at 144.78 120.65 0)
+			(uuid "3670e2c5-4846-4efc-ab4e-a1b1078173fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/45830960-bd48-4e73-a3a7-091edb18d6d3"
+					(page "21")
 				)
 			)
 		)

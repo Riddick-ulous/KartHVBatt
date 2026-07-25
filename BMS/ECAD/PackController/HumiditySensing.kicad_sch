@@ -306,8 +306,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afe78409-0a08-4be0-a939-d89337628d01")
-		(property "Reference" "Leak702"
-			(at 176.53 72.3899 0)
+		(property "Reference" "Leak2"
+			(at 176.53 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -317,7 +317,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" ""
 			(at 176.53 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -328,7 +328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 173.99 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -370,7 +370,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak702")
+					(reference "Leak2")
 					(unit 1)
 				)
 			)
@@ -388,7 +388,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0c098ec-00f5-4bea-86fa-7d898ad0ec54")
-		(property "Reference" "Leak701"
+		(property "Reference" "Leak1"
 			(at 176.53 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -401,6 +401,7 @@
 		)
 		(property "Value" "Conn_01x02"
 			(at 176.53 59.6899 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -410,7 +411,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 173.99 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -452,7 +453,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/84895c30-1551-4ee7-9bdb-3f8b53d8ebdd"
-					(reference "Leak701")
+					(reference "Leak1")
 					(unit 1)
 				)
 			)

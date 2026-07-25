@@ -7918,10 +7918,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d8b15f4f-996a-4830-882d-671fb4e47fc1")
-		(property "Reference" "J401"
-			(at 19.05 25.4 0)
+		(property "Reference" "AIR"
+			(at 19.05 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7930,7 +7929,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x08"
+		(property "Value" ""
 			(at 19.05 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7940,7 +7939,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0812_2x04_P3.00mm_Vertical"
 			(at 19.05 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -8000,7 +7999,7 @@
 		(instances
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/9e3af51c-36cf-42ea-bd79-21f3fecec64c"
-					(reference "J401")
+					(reference "AIR")
 					(unit 1)
 				)
 			)
