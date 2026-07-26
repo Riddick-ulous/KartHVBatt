@@ -4074,7 +4074,7 @@
 		(at 59.69 194.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "59ef0a07-11ad-46f0-8d94-cb6e15e281cf")
+		(uuid "58171357-f9e8-426b-a71c-4c797ebc9383")
 	)
 	(junction
 		(at 146.05 87.63)
@@ -4111,6 +4111,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98431826-826e-4dd4-8de1-085ff3daec85")
+	)
+	(junction
+		(at 49.53 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a89f2e5-ddaa-46f2-b79e-fe2694dfe533")
 	)
 	(junction
 		(at 236.22 153.67)
@@ -4155,10 +4161,22 @@
 		(uuid "ca952fb2-eb32-4cb9-b96c-9f9264bbfd68")
 	)
 	(junction
+		(at 43.18 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d221f189-eaed-47a7-b47b-cec68cbe59ef")
+	)
+	(junction
 		(at 138.43 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e48edc63-af59-4a71-8b14-8d5af779011c")
+	)
+	(junction
+		(at 43.18 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e76e2122-4809-474c-a82c-c7cc3fbc50a5")
 	)
 	(junction
 		(at 119.38 99.06)
@@ -4341,6 +4359,16 @@
 			(type default)
 		)
 		(uuid "17313874-a74d-4bf1-9452-ba3140d43611")
+	)
+	(wire
+		(pts
+			(xy 43.18 194.31) (xy 49.53 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d1ffae1-8d55-43ea-88dd-205ed5299036")
 	)
 	(wire
 		(pts
@@ -4734,6 +4762,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 194.31) (xy 59.69 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6350d232-9ffd-4017-8aed-7bcb64f15205")
+	)
+	(wire
+		(pts
 			(xy 93.98 148.59) (xy 93.98 143.51)
 		)
 		(stroke
@@ -4854,7 +4892,17 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 175.26) (xy 49.53 175.26)
+			(xy 43.18 175.26) (xy 43.18 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc31f09-fe1f-4496-a7de-2e73bf0d2300")
+	)
+	(wire
+		(pts
+			(xy 35.56 175.26) (xy 43.18 175.26)
 		)
 		(stroke
 			(width 0)
@@ -5024,16 +5072,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 189.23) (xy 49.53 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8a2e015-c6a3-441f-adca-49284a461f54")
-	)
-	(wire
-		(pts
 			(xy 85.09 114.3) (xy 87.63 114.3)
 		)
 		(stroke
@@ -5084,7 +5122,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 194.31) (xy 59.69 194.31)
+			(xy 41.91 194.31) (xy 43.18 194.31)
 		)
 		(stroke
 			(width 0)
@@ -5154,6 +5192,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 175.26) (xy 49.53 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e57aee-436e-407e-a827-21604e9607a1")
+	)
+	(wire
+		(pts
 			(xy 129.54 87.63) (xy 138.43 87.63)
 		)
 		(stroke
@@ -5161,6 +5209,26 @@
 			(type default)
 		)
 		(uuid "b49dbd11-6e8a-4cfa-ae86-0962906a9e0b")
+	)
+	(wire
+		(pts
+			(xy 49.53 194.31) (xy 49.53 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4e4eb05-32e6-460b-92b9-114328886da0")
+	)
+	(wire
+		(pts
+			(xy 43.18 189.23) (xy 43.18 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8014f17-8d85-472f-b9e3-911536d66373")
 	)
 	(wire
 		(pts
@@ -5494,6 +5562,17 @@
 			(justify right)
 		)
 		(uuid "41e75675-e5f3-4034-a458-3c4bc281ec62")
+	)
+	(hierarchical_label "TS_P_DCDC"
+		(shape input)
+		(at 41.91 194.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ffceeb4-fcc9-4943-a980-ad947d22b32e")
 	)
 	(hierarchical_label "SC_END"
 		(shape input)
@@ -5986,7 +6065,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 22.352 86.36 90)
 			(hide yes)
 			(show_name no)
@@ -7007,6 +7086,84 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
 					(reference "C1903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 43.18 185.42 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "773ede08-8b65-449c-87a1-740e68ffb8e6")
+		(property "Reference" "R1910"
+			(at 43.18 185.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "500R 0805"
+			(at 40.64 185.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 44.958 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0706f17-1457-4104-825c-fa8a6256426b")
+		)
+		(pin "2"
+			(uuid "3ad3afd5-af16-4bc3-a907-b14f6fa81bf4")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
+					(reference "R1910")
 					(unit 1)
 				)
 			)

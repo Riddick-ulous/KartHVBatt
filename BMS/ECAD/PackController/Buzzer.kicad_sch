@@ -2725,7 +2725,7 @@
 		(dnp no)
 		(uuid "9a8a83bc-3afc-4220-8e5f-c2844d208be5")
 		(property "Reference" "R801"
-			(at 138.176 72.39 90)
+			(at 138.43 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -50,16 +50,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "border_display_style": 2,
+          "border_display_style": 1,
           "border_hatch_pitch": 0.5,
           "corner_radius": 0.0,
           "corner_smoothing": 0,
-          "fill_mode": 0,
-          "hatch_gap": 1.5,
-          "hatch_orientation": 0.0,
-          "hatch_smoothing_level": 0,
+          "fill_mode": 1,
+          "hatch_gap": 0.5,
+          "hatch_orientation": 45.0,
+          "hatch_smoothing_level": 1,
           "hatch_smoothing_value": 0.1,
-          "hatch_thickness": 1.0,
+          "hatch_thickness": 0.25,
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        3.5
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +239,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -697,7 +711,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "D1106,#PWR1110-1111,C1107-1109,R1116,U1104",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
