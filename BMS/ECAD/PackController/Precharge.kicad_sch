@@ -3684,19 +3684,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 13.97 12.7)
-		(end 83.82 196.85)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "23ef77f2-365c-40ab-acc4-71b6e41ca8b7")
-	)
 	(text_box "Q1104 EINSCHALTEN / LV-DELAY\n\nBestueckung:\nR1116 = 100k\nC1107 = 100nF\nC1108 = 100nF\nC1109 = 100nF\nC_sum = 300nF\nU1104 = SN74LVC2G14DBV, zwei Inverter in Serie\n\nWichtig:\nU1104 darf nur mit einem 3.3V-kompatiblen Signal betrieben werden.\nPCHRG_DELAY_IN = 3.3V-kompatibles, begrenztes PCHRG_Enable-Signal.\n\ntau_ON = R1116 * C_sum\ntau_ON = 100k * 300nF = 30ms\n\nSchmitt-Schwelle angenommen:\nV_T+ = 1.6...2.3V bei VCC = 3.3V\n\nt_ON = -tau_ON * ln(1 - V_T+ / 3.3V)\n\nFuer V_T+ = 1.6V:\nt_ON = -30ms * ln(1 - 1.6V / 3.3V) = 20ms\n\nFuer V_T+ = 2.3V:\nt_ON = -30ms * ln(1 - 2.3V / 3.3V) = 36ms\n\n=> U1101 / Q1104 wird ca. 20...36ms nach\n   PCHRG_DELAY_IN eingeschaltet.\n\nGate-Ladung Q1104 ist gegenueber 20...36ms vernachlaessigbar.\n=> Q1104-ON wird durch R1116/C1107/C1108/C1109 bestimmt,\n   nicht durch das MOSFET-Gate.\n\n\nQ1104 AUSSCHALTEN\n\nBei PCHRG_DELAY_IN = LOW:\nD1106 entlaedt den RC-Knoten schnell.\nU1104 schaltet zurueck.\nU1101 LED geht aus.\nQ1104 Gate entlaedt ueber R1107.\n\nR1107 = 100k\nKeine externe Gate-Timing-Kapazitaet vorhanden.\n\n=> Q1104-OFF ist deutlich schneller als K1101-Release.\n=> Q1104 wird vor dem mechanischen Oeffnen von K1101 abgeschaltet.\n\nWichtig:\nNach Q1104-OFF bleibt der Precharge-Pfad nicht hart aus,\nsondern laeuft bis K1101 oeffnet weiterhin ueber:\nTH1101 + TH1102 + Q1102\n\nDas ist beabsichtigt:\nQ1104 ist nur der Q1102-Bypass, nicht der alleinige Precharge-Schalter."
 		(exclude_from_sim no)
 		(at 237.49 13.97 0)
@@ -3896,6 +3883,12 @@
 		(uuid "4f01b984-5d0e-4e84-80ae-f6060da58439")
 	)
 	(junction
+		(at 40.64 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53009488-92e0-4a21-b06a-ae25b32ef77f")
+	)
+	(junction
 		(at 167.64 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3980,16 +3973,22 @@
 		(uuid "cafc4e56-5cde-4c2c-a3d0-0c1fec147b96")
 	)
 	(junction
+		(at 40.64 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d93681a5-2aef-48ec-9649-5845946c4ce9")
+	)
+	(junction
 		(at 138.43 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db5acce6-5e5c-4b29-9bfd-35c58d6715f7")
 	)
 	(junction
-		(at 40.64 81.28)
+		(at 104.14 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dd401077-1f99-43e0-a828-f743244d3557")
+		(uuid "e59c3e84-905a-475e-8080-9421e24d42e0")
 	)
 	(junction
 		(at 24.13 102.87)
@@ -4009,12 +4008,6 @@
 		(color 0 0 0 0)
 		(uuid "f92228e2-fb5d-4cec-9326-c4fc8214bd2d")
 	)
-	(junction
-		(at 40.64 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f9b5483d-56c1-424a-807e-f052aae30742")
-	)
 	(wire
 		(pts
 			(xy 100.33 181.61) (xy 100.33 180.34)
@@ -4027,7 +4020,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 76.2) (xy 110.49 76.2)
+			(xy 91.44 76.2) (xy 104.14 76.2)
 		)
 		(stroke
 			(width 0)
@@ -4257,16 +4250,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 53.34) (xy 24.13 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fd4d869-da9b-44df-89cb-f5e73ebf4aa6")
-	)
-	(wire
-		(pts
 			(xy 109.22 143.51) (xy 100.33 143.51)
 		)
 		(stroke
@@ -4347,16 +4330,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 45.72) (xy 73.66 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42424f74-22b9-4523-8c46-8f672745f549")
-	)
-	(wire
-		(pts
 			(xy 55.88 194.31) (xy 66.04 194.31)
 		)
 		(stroke
@@ -4404,16 +4377,6 @@
 			(type default)
 		)
 		(uuid "4b5a1dac-2feb-424f-98a5-2d79923c2fa3")
-	)
-	(wire
-		(pts
-			(xy 24.13 44.45) (xy 24.13 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c701907-d963-4128-b509-8199e0d538fc")
 	)
 	(wire
 		(pts
@@ -4534,6 +4497,16 @@
 			(type default)
 		)
 		(uuid "622ef3d0-8a9f-495e-b484-233267739a8e")
+	)
+	(wire
+		(pts
+			(xy 24.13 54.61) (xy 24.13 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "629aa2dd-6ea8-41d9-9f23-d6248502d1c4")
 	)
 	(wire
 		(pts
@@ -4757,6 +4730,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 45.72) (xy 73.66 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1959d57-b093-40fe-a991-ee2230d2a8cc")
+	)
+	(wire
+		(pts
 			(xy 72.39 182.88) (xy 72.39 175.26)
 		)
 		(stroke
@@ -4807,6 +4790,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 69.85) (xy 104.14 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4b9765-c76f-4d4a-bcef-a0e1e89b0f26")
+	)
+	(wire
+		(pts
 			(xy 115.57 138.43) (xy 99.06 138.43)
 		)
 		(stroke
@@ -4854,6 +4847,16 @@
 			(type default)
 		)
 		(uuid "afa6eed7-38f8-4919-a0c1-3a6d518d85c1")
+	)
+	(wire
+		(pts
+			(xy 24.13 36.83) (xy 24.13 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b08afd48-3944-4ceb-bea6-8afda6c23975")
 	)
 	(wire
 		(pts
@@ -4947,13 +4950,13 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 35.56) (xy 24.13 36.83)
+			(xy 104.14 76.2) (xy 110.49 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdcfaf47-19ef-4835-b184-7dfdea9ca55b")
+		(uuid "b9b4e407-4468-4f4c-8f68-73a8deb1985c")
 	)
 	(wire
 		(pts
@@ -5227,6 +5230,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 45.72) (xy 24.13 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec354060-6239-4452-92a0-802269bf01ab")
+	)
+	(wire
+		(pts
 			(xy 72.39 187.96) (xy 72.39 194.31)
 		)
 		(stroke
@@ -5406,6 +5419,17 @@
 		)
 		(uuid "07eb3b72-1f72-4a26-ad9d-3e7c16687752")
 	)
+	(hierarchical_label "PCHRG_Intended"
+		(shape input)
+		(at 104.14 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c630fc0-e64a-4af4-83f8-3c881b4d3f6a")
+	)
 	(hierarchical_label "TS_P_VEHI"
 		(shape input)
 		(at 41.91 194.31 180)
@@ -5460,6 +5484,174 @@
 			(justify right)
 		)
 		(uuid "cf452d5b-fc94-4b7c-98a4-3f303aae9131")
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 13.335 12.7) (xy 83.7406 13.335) (xy 83.8994 197.485) (xy 13.4938 196.85)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 255 153 0 1)
+			)
+			(fill
+				(type hatch)
+				(color 255 153 0 0.2)
+			)
+			(uuid "3b67b8c8-cce0-45e8-817b-3cf796e48113")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 83.82 48.26) (xy 37.465 48.26) (xy 29.21 48.26) (xy 29.21 151.13) (xy 83.82 151.13) (xy 83.82 62.23)
+				(xy 83.82 59.69) (xy 83.82 57.15)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 255 255 0 1)
+			)
+			(fill
+				(type reverse_hatch)
+				(color 255 255 0 0.2)
+			)
+			(uuid "462d3a03-560d-450b-ba66-aa91de6aa937")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 83.82 152.4) (xy 37.465 152.4) (xy 29.21 152.4) (xy 29.21 195.58) (xy 83.82 195.58) (xy 83.82 166.37)
+				(xy 83.82 163.83) (xy 83.82 161.29)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 194 0 194 1)
+			)
+			(fill
+				(type reverse_hatch)
+				(color 194 0 194 0.1882352941)
+			)
+			(uuid "f4bb82dc-ad66-4d1f-9b7c-b767bf9c0339")
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 52.07 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "83206df8-db52-40c1-ae16-d0a9e09ab3be")
+		(property "Netzklasse" "LOCAL_P_VEHI"
+			(at 52.7685 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 29.21 -30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 31.75 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "86d3b401-96c3-41a2-b3c8-e15b58ccd115")
+		(property "Netzklasse" "P_VEHI_+5"
+			(at 32.4485 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 8.89 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 15.24 12.7 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "960717ef-e421-404d-b76b-545f01e921c2")
+		(property "Netzklasse" "HV800"
+			(at 15.9385 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -7.62 -66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5980,7 +6172,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1babe4a1-41cf-4df5-b96d-3cae341ea9d0")
 		(property "Reference" "R1110"
 			(at 49.53 185.42 90)
@@ -5992,7 +6184,7 @@
 				)
 			)
 		)
-		(property "Value" "500R 0805"
+		(property "Value" "270R 0805"
 			(at 46.99 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)

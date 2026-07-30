@@ -431,7 +431,7 @@
 		)
 		(uuid "207f84a8-d915-4e49-8b3a-3fd8c6abaa5f")
 	)
-	(text_box "Leakage sensor:\nFlex electrodes form R_LEAK. R_EOL = 10M is mounted on the flex sensor,\nparallel to the electrodes, for open-wire detection.\n\nR_SENSOR = R_LEAK || R_EOL\n\nMeasurement:\nPulse R_Leak_Supply HIGH, wait 10...50ms, sample ADC, then set supply LOW/Hi-Z.\nSuggested scan rate: 1Hz.\n\nADC conversion, assuming ADC reference = VDD and R_Leak_Supply = VDD:\nx = ADC_raw / ADC_max\n\nR_SENSOR = R_REF * (1/x - 1) - R_SER_SUPPLY - R_ADC_SER\n\nNominal:\nR_SER_SUPPLY = 10k\nR_REF = 1M\nR_ADC_SER = 10k\nC_ADC = 1nF\nR_EOL = 10M on flex\n\nExpected:\ndisconnected/open: ADC ≈ 0\ndry connected:     R_SENSOR ≈ 10M\nwet/leakage:       R_SENSOR decreases\n\nInitial thresholds, validate with real coolant:\nwarning:      R_SENSOR < 3M\nleak:         R_SENSOR < 1M\nsevere leak:  R_SENSOR < 300k"
+	(text_box "Leakage sensor:\nFlex electrodes form R_LEAK. R_EOL = 10M is mounted on the flex sensor,\nparallel to the electrodes, for open-wire detection.\n\nR_SENSOR = R_LEAK || R_EOL\n\nMeasurement:\nPulse R_Leak_Supply HIGH, wait 10...50ms, sample ADC, then set supply LOW/Hi-Z.\nSuggested scan rate: 1Hz.\n\nADC conversion, assuming ADC reference = VDD and R_Leak_Supply = VDD:\nx = ADC_CODE / ADC_MAX\n\nR_SENSOR = R_REF × (1/x - 1)- R_SER_SUPPLY\n\nNominal:\nR_SER_SUPPLY = 10k\nR_REF = 1M\nR_ADC_SER = 10k\nC_ADC = 1nF\nR_EOL = 10M on flex\n\nExpected:\ndisconnected/open: ADC ≈ 0\ndry connected:     R_SENSOR ≈ 10M\nwet/leakage:       R_SENSOR decreases\n\nInitial thresholds, validate with real coolant:\nwarning:      R_SENSOR < 3M\nleak:         R_SENSOR < 1M\nsevere leak:  R_SENSOR < 300k"
 		(exclude_from_sim no)
 		(at 44.45 104.14 0)
 		(size 68.58 51.8121)

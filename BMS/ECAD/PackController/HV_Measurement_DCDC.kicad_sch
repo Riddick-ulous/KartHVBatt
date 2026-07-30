@@ -1549,7 +1549,7 @@
 	)
 	(text_box "4.4mm creepage per R for 2512 inch package"
 		(exclude_from_sim no)
-		(at 50.8 79.9663 0)
+		(at 50.8 78.6963 0)
 		(size 20.32 5.1237)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1629,6 +1629,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "462588a7-36e7-49fd-9865-4e203127f2f6")
+	)
+	(junction
+		(at 76.2 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ea6ef1d-dbc0-4426-9b4d-7882aad23c38")
 	)
 	(junction
 		(at 109.22 140.97)
@@ -1876,7 +1882,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 85.09) (xy 76.2 86.36)
+			(xy 76.2 83.82) (xy 76.2 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2143,6 +2149,16 @@
 			(type default)
 		)
 		(uuid "6c695070-1879-4853-a031-ec0a0546ffca")
+	)
+	(wire
+		(pts
+			(xy 76.2 93.98) (xy 78.74 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c6fc213-38d8-4521-8131-abe168542dd9")
 	)
 	(wire
 		(pts
@@ -2654,6 +2670,16 @@
 		)
 		(uuid "f8d86140-846d-4f0e-8862-cfed53da76ab")
 	)
+	(wire
+		(pts
+			(xy 76.2 92.71) (xy 76.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff3f6078-a577-402d-b19c-2956294bbdf7")
+	)
 	(hierarchical_label "V_DCDC"
 		(shape input)
 		(at 185.42 104.14 0)
@@ -2689,7 +2715,7 @@
 	)
 	(hierarchical_label "TS_P_DCDC"
 		(shape input)
-		(at 76.2 85.09 90)
+		(at 76.2 83.82 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2697,6 +2723,146 @@
 			(justify left)
 		)
 		(uuid "c36b7850-813d-4f27-a123-1749bf0b6d8c")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 86.36 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4250ca55-87b4-4c3f-93a9-33dde1a6eef1")
+		(property "Netzklasse" "HV0"
+			(at 87.0585 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 63.5 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 78.74 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a3b5905-f4e2-4354-9e78-a85124b1ccb2")
+		(property "Netzklasse" "HV400"
+			(at 79.4385 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 55.88 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 63.5 144.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93ea409c-ea3a-44e3-922c-984ea2f6571f")
+		(property "Netzklasse" "HV0"
+			(at 64.1985 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 40.64 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 99.06 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc37888c-45cf-447c-8591-f8f5a2ef87d3")
+		(property "Netzklasse" "HV0"
+			(at 99.7585 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 76.2 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3359,7 +3525,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 76.2 90.17 0)
+		(at 76.2 88.9 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3371,7 +3537,7 @@
 		(fields_autoplaced yes)
 		(uuid "5743b011-307e-4419-8f04-40f50b4962a5")
 		(property "Reference" "R2004"
-			(at 73.66 88.8999 0)
+			(at 73.66 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3382,7 +3548,7 @@
 			)
 		)
 		(property "Value" "4.7MR 2512 3kV 0,1%"
-			(at 73.66 91.4399 0)
+			(at 73.66 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3393,7 +3559,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
-			(at 77.978 90.17 90)
+			(at 77.978 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3404,7 +3570,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 90.17 0)
+			(at 76.2 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3415,7 +3581,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 76.2 90.17 0)
+			(at 76.2 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4096,7 +4262,7 @@
 				)
 			)
 		)
-		(property "Value" "500R 0805"
+		(property "Value" "270R 0805"
 			(at 88.9 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)

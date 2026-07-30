@@ -14090,7 +14090,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 0603 6.3V"
+		(property "Value" "100nF 0603 16V"
 			(at 197.866 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)

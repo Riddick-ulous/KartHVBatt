@@ -2602,12 +2602,6 @@
 		(uuid "28bea174-16b2-4510-b332-a97f0c5d9270")
 	)
 	(junction
-		(at 45.72 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b6e0a1d-1936-4bb4-8fc6-137ec72ebcd4")
-	)
-	(junction
 		(at 54.61 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2642,12 +2636,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d40c338-8680-41c3-b0c2-7248c51b4c26")
-	)
-	(junction
-		(at 49.53 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "832a19ac-c516-444e-991f-86db4bdf0cf2")
 	)
 	(junction
 		(at 58.42 54.61)
@@ -2716,10 +2704,22 @@
 		(uuid "cbe60423-ea61-4f9e-a326-0bc997cc7c32")
 	)
 	(junction
+		(at 49.53 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4bfab28-9059-4500-b2db-8ffc5f551dfe")
+	)
+	(junction
 		(at 121.92 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5adbd31-4536-4429-8f06-cedeac633176")
+	)
+	(junction
+		(at 45.72 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea2dbbd2-ffa0-41a9-93b6-873d04f8d035")
 	)
 	(junction
 		(at 187.96 60.96)
@@ -3077,7 +3077,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 151.13) (xy 45.72 165.1)
+			(xy 45.72 162.56) (xy 45.72 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4047,7 +4047,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 151.13) (xy 49.53 165.1)
+			(xy 49.53 162.56) (xy 49.53 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4463,7 +4463,7 @@
 	)
 	(hierarchical_label "DANGER_V_oD"
 		(shape input)
-		(at 49.53 151.13 90)
+		(at 49.53 162.56 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4507,7 +4507,7 @@
 	)
 	(hierarchical_label "PRCHG_DONE"
 		(shape input)
-		(at 45.72 151.13 90)
+		(at 45.72 162.56 90)
 		(effects
 			(font
 				(size 1.27 1.27)

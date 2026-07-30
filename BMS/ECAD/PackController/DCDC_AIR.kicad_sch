@@ -5552,7 +5552,7 @@
 		)
 		(uuid "169ad3e5-f4ac-4180-9939-adba9456a9a2")
 	)
-	(hierarchical_label "TS_P_DCCD"
+	(hierarchical_label "TS_P_DCDC"
 		(shape input)
 		(at 72.39 161.29 270)
 		(effects
@@ -5595,6 +5595,146 @@
 			(justify right)
 		)
 		(uuid "987a7cca-caca-41e1-9a13-9df05d09ad4f")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 59.69 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28eca137-7599-43d9-a429-0ae23319d6ce")
+		(property "Netzklasse" "HV800"
+			(at 60.3885 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 36.83 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 49.53 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a64b6493-98b5-4032-a8e0-cd9df33de4a3")
+		(property "Netzklasse" "HV800"
+			(at 50.2285 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 26.67 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 67.31 64.77 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b03e29d2-66b9-46e3-90d6-52cf75ecf91a")
+		(property "Netzklasse" "HV800"
+			(at 64.77 64.0715 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 44.45 -13.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 31.75 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e48a8832-19d8-4043-aee3-025b63cd5703")
+		(property "Netzklasse" "HV800"
+			(at 32.4485 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 8.89 -27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7100,7 +7240,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "773ede08-8b65-449c-87a1-740e68ffb8e6")
 		(property "Reference" "R1910"
 			(at 43.18 185.42 90)
@@ -7112,7 +7252,7 @@
 				)
 			)
 		)
-		(property "Value" "500R 0805"
+		(property "Value" "270R 0805"
 			(at 40.64 185.42 90)
 			(show_name no)
 			(do_not_autoplace no)

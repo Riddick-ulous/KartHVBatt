@@ -211,6 +211,17 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.4,
+        0.5,
+        0.75,
+        1.0,
+        1.5,
+        2.0,
+        3.0,
         3.5
       ],
       "tuning_pattern_settings": {
@@ -481,7 +492,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -526,13 +537,166 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "HV0",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "HV400",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "HV800",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "LOCAL_P_ACCU",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "LOCAL_P_DCDC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "LOCAL_P_VEHI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "P_VEHI_+5",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "+3.3V_ACCU": [
+        "HV0"
+      ],
+      "+3.3V_DCDC": [
+        "HV0"
+      ],
+      "+3.3V_VEHI": [
+        "HV0"
+      ],
+      "+5V_ACCU": [
+        "HV0"
+      ],
+      "+5V_DCDC": [
+        "HV0"
+      ],
+      "+5V_VEHI": [
+        "HV0"
+      ],
+      "/DCDC_AIR/+5V_TS_P_DCDC": [
+        "HV800"
+      ],
+      "/DCDC_AIR/TS_P_DCDC": [
+        "HV800"
+      ],
+      "/Precharge/+5V_TS_P_VEHI": [
+        "P_VEHI_+5"
+      ],
+      "/StackCommInterface/IFH_H": [
+        "HV800"
+      ],
+      "/StackCommInterface/IFH_L": [
+        "HV800"
+      ],
+      "/TS_N_ACCU": [
+        "HV0"
+      ],
+      "/TS_N_VEHI": [
+        "HV0"
+      ],
+      "/TS_P_ACCU": [
+        "HV800"
+      ],
+      "/TS_P_VEHI": [
+        "HV800",
+        "P_VEHI_+5"
+      ],
+      "Net-(D1101-K)": [
+        "HV800"
+      ],
+      "Net-(D1102-K)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(D1103-K)": [
+        "HV800"
+      ],
+      "Net-(D1104-K)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(D1108-A)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(D1108-K)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(D1902-A)": [
+        "HV800"
+      ],
+      "Net-(Q1102-D)": [
+        "HV800"
+      ],
+      "Net-(Q1102-S)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(Q1902-D)": [
+        "HV800"
+      ],
+      "Net-(R1106-Pad2)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(R1109-Pad2)": [
+        "LOCAL_P_VEHI"
+      ],
+      "Net-(R2004-Pad2)": [
+        "HV400"
+      ],
+      "Net-(R921-Pad2)": [
+        "HV400"
+      ],
+      "Net-(R925-Pad2)": [
+        "HV400"
+      ],
+      "Net-(TH1101-Pad2)": [
+        "HV800"
+      ],
+      "Net-(U2003-INP)": [
+        "HV0"
+      ],
+      "Net-(U907-INP)": [
+        "HV0"
+      ],
+      "Net-(U910-INP)": [
+        "HV0"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

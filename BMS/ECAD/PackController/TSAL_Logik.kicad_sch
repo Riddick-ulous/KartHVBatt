@@ -5621,10 +5621,10 @@
 		)
 		(uuid "8dc22b0b-3f30-44b0-a4bd-41f19edc09ec")
 	)
-	(text_box "POR: Capacitor charges from 0V to 3.3V when power supply is applied. This triggers the clear function of the flip-flop in the first few milliseconds.\nGRN_ON-signal also ANDed with POR to only display green after timeout."
+	(text_box "POR: Capacitor charges from 0V to 3.3V when power supply is applied. This triggers the clear function of the flip-flop. \nPOR keeps nCLR active for approximately 50...95 ms nominal. \nActual delay depends on Schmitt threshold and RC tolerances.\nGRN_ON-signal also ANDed with POR to only display green after timeout."
 		(exclude_from_sim no)
 		(at 167.64 128.27 0)
-		(size 44.45 9.9536)
+		(size 44.45 16.3934)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -7295,6 +7295,17 @@
 		)
 		(uuid "abc8074c-1132-4648-a2d3-743de65b0136")
 	)
+	(hierarchical_label "PCHRG_Intended"
+		(shape input)
+		(at 27.94 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae71ca99-e37a-438c-824a-011ef98d833e")
+	)
 	(hierarchical_label "AIR_P_Intended"
 		(shape input)
 		(at 34.29 76.2 180)
@@ -7316,17 +7327,6 @@
 			(justify right)
 		)
 		(uuid "bef94250-5a4c-40bf-8c30-3117a39ce568")
-	)
-	(hierarchical_label "AIR_P_Actual"
-		(shape input)
-		(at 27.94 143.51 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c241cdde-2a7e-42f4-9c01-3d7f25aa2579")
 	)
 	(hierarchical_label "GRN_ON"
 		(shape input)

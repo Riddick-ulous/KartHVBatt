@@ -1,0 +1,13 @@
+(version 1)
+(rule "HV800 separation"
+	(constraint clearance (min 5mm))
+	(condition "A.hasNetclass('HV800') && !(B.Pin_Type == 'Unconnected' || B.Pin_Type == '*+no_connect')")
+)
+(rule "HV400 separation"
+	(constraint clearance (min 3mm))
+	(condition "A.hasNetclass('HV400') && (B.hasNetclass('HV400') || B.hasNetclass('HV0')) && !(B.Pin_Type == 'Unconnected' || B.Pin_Type == '*+no_connect')")
+)
+(rule "HV0 separation"
+	(constraint clearance (min 5mm))
+	(condition "(A.hasNetclass('HV400') || A.hasNetclass('HV0')) && !(B.hasNetclass('HV800') || B.hasNetclass('HV400') || B.hasNetclass('HV0')) && !(B.Pin_Type == 'Unconnected' || B.Pin_Type == '*+no_connect')")
+)
