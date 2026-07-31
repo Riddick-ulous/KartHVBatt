@@ -3949,6 +3949,12 @@
 		(uuid "aa099f3f-9131-4195-beef-34a993596926")
 	)
 	(junction
+		(at 100.33 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7d29c09-4a30-472b-b3ea-7891f860eb68")
+	)
+	(junction
 		(at 147.32 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5492,7 +5498,7 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 13.335 12.7) (xy 83.7406 13.335) (xy 83.8994 197.485) (xy 13.4938 196.85)
+				(xy 13.335 12.7) (xy 83.82 12.7) (xy 83.8994 197.485) (xy 13.4938 196.85)
 			)
 			(stroke
 				(width 0)
@@ -5621,7 +5627,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 15.24 12.7 180)
+		(at 34.29 12.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5631,7 +5637,7 @@
 		)
 		(uuid "960717ef-e421-404d-b76b-545f01e921c2")
 		(property "Netzklasse" "HV800"
-			(at 15.9385 15.24 0)
+			(at 34.9885 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5642,7 +5648,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -7.62 -66.04 0)
+			(at 11.43 -66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9452,6 +9458,82 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
 					(reference "D1107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f1ffb1e1-dfd6-412d-aa17-da66a51bc548")
+		(property "Reference" "#PWR01104"
+			(at 100.33 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d91e1d79-2969-4bfb-9655-7eb0f01d46dd")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/10db8ab2-a069-4c18-98c6-f1c7e2899a80"
+					(reference "#PWR01104")
 					(unit 1)
 				)
 			)

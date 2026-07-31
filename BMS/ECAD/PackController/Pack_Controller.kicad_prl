@@ -19,14 +19,14 @@
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
-      "graphics": false,
+      "graphics": true,
       "keepouts": false,
       "lockedItems": false,
       "otherItems": false,
       "pads": false,
       "text": false,
       "tracks": true,
-      "vias": false,
+      "vias": true,
       "zones": true
     },
     "visible_items": [
@@ -75,6 +75,8 @@
       false,
       false,
       false,
+      false,
+      false,
       false
     ],
     "col_order": [
@@ -87,17 +89,21 @@
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
     "col_widths": [
       162,
-      147,
+      207,
       91,
       72,
       91,
       100,
       91,
       76,
+      91,
+      91,
       91,
       91
     ],

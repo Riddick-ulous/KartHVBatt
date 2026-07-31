@@ -254,6 +254,30 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -612,12 +636,16 @@
         "HV0"
       ],
       "/DCDC_AIR/+5V_TS_P_DCDC": [
-        "HV800"
+        "HV800",
+        "LOCAL_P_DCDC",
+        "P_DCDC_+5"
       ],
       "/DCDC_AIR/TS_P_DCDC": [
-        "HV800"
+        "HV800",
+        "P_DCDC_+5"
       ],
       "/Precharge/+5V_TS_P_VEHI": [
+        "HV800",
         "P_VEHI_+5"
       ],
       "/StackCommInterface/IFH_H": [
@@ -643,37 +671,65 @@
         "HV800"
       ],
       "Net-(D1102-K)": [
-        "LOCAL_P_VEHI"
+        "HV800"
       ],
       "Net-(D1103-K)": [
         "HV800"
       ],
       "Net-(D1104-K)": [
+        "HV800",
         "LOCAL_P_VEHI"
       ],
       "Net-(D1108-A)": [
+        "HV800",
         "LOCAL_P_VEHI"
       ],
       "Net-(D1108-K)": [
+        "HV800",
         "LOCAL_P_VEHI"
       ],
       "Net-(D1902-A)": [
-        "HV800"
+        "HV800",
+        "LOCAL_P_DCDC"
+      ],
+      "Net-(D1902-K)": [
+        "HV800",
+        "LOCAL_P_DCDC"
       ],
       "Net-(Q1102-D)": [
         "HV800"
       ],
       "Net-(Q1102-S)": [
+        "HV800",
         "LOCAL_P_VEHI"
       ],
+      "Net-(Q1901-D)": [
+        "HV800",
+        "LOCAL_P_DCDC"
+      ],
+      "Net-(Q1901-S)": [
+        "HV800",
+        "LOCAL_P_DCDC"
+      ],
       "Net-(Q1902-D)": [
-        "HV800"
+        "HV800",
+        "LOCAL_P_DCDC"
       ],
       "Net-(R1106-Pad2)": [
+        "HV800",
         "LOCAL_P_VEHI"
       ],
       "Net-(R1109-Pad2)": [
+        "HV800",
         "LOCAL_P_VEHI"
+      ],
+      "Net-(R1902-Pad2)": [
+        "HV800",
+        "LOCAL_P_DCDC"
+      ],
+      "Net-(R1904-Pad2)": [
+        "HV800",
+        "LOCAL_P_DCDC"
       ],
       "Net-(R2004-Pad2)": [
         "HV400"
@@ -686,6 +742,10 @@
       ],
       "Net-(TH1101-Pad2)": [
         "HV800"
+      ],
+      "Net-(TH1901-Pad2)": [
+        "HV800",
+        "LOCAL_P_DCDC"
       ],
       "Net-(U2003-INP)": [
         "HV0"
@@ -875,7 +935,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1104,#PWR1909",
     "variants": []
   },
   "sheets": [

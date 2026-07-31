@@ -3836,19 +3836,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(rectangle
-		(start 13.97 12.7)
-		(end 77.47 196.85)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "0faf6129-a161-432a-8db6-096122538f84")
-	)
 	(text_box "Q1902 Gate-Ladung:\n\nIPD95R750P7:\nQg,total,typ = 23nC @ V_GS = 0...10V\nCiss,typ = 712pF\n\nU1901 Ausgangsstromreserve:\nIC_U1901,min ~= 8.2mA\nStatischer Laststrom durch R1903 + U1902 ~= 3.2mA\nVerbleibender Gate-Ladestrom > 5mA\n\nt_gate_on ~= Qg / I_gate\nt_gate_on ~= 23nC / 5mA = 4.6us\n\n=> Gate-Ladung ist gegenueber dem 20...36ms\n   LV-RC-Delay vernachlaessigbar.\n=> Einschaltzeit wird durch R1909/C1901/C1902/C1907\n   und U1904 bestimmt, nicht durch Q1902-Gate."
 		(exclude_from_sim no)
 		(at 176.53 17.78 0)
@@ -4185,6 +4172,12 @@
 		(uuid "ecde518a-6c8c-4e53-b220-c45576a497e9")
 	)
 	(junction
+		(at 91.44 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efc1bb93-8490-45e1-8652-80f313f11afa")
+	)
+	(junction
 		(at 91.44 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4282,7 +4275,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 190.5) (xy 88.9 190.5)
+			(xy 93.98 190.5) (xy 91.44 190.5)
 		)
 		(stroke
 			(width 0)
@@ -4952,6 +4945,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 190.5) (xy 88.9 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "870bf3e7-5371-4879-a24d-c3d0cc8f3b3a")
+	)
+	(wire
+		(pts
 			(xy 88.9 180.34) (xy 91.44 180.34)
 		)
 		(stroke
@@ -5596,20 +5599,84 @@
 		)
 		(uuid "987a7cca-caca-41e1-9a13-9df05d09ad4f")
 	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 76.2 48.26) (xy 30.48 48.26) (xy 27.94 48.26) (xy 27.94 151.13) (xy 76.835 151.13) (xy 76.2 62.23)
+				(xy 76.2 59.69) (xy 76.2 57.15)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 255 255 0 1)
+			)
+			(fill
+				(type reverse_hatch)
+				(color 255 255 0 0.2)
+			)
+			(uuid "6eae10a5-f813-41fd-8726-df417f2c53d2")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 76.835 152.4) (xy 30.48 152.4) (xy 27.94 152.4) (xy 27.94 195.58) (xy 76.835 195.58) (xy 76.835 166.37)
+				(xy 76.835 163.83) (xy 76.835 161.29)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 194 0 194 1)
+			)
+			(fill
+				(type reverse_hatch)
+				(color 194 0 194 0.1882352941)
+			)
+			(uuid "8c2b189a-988a-4d0d-aa58-84e0b3494272")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 13.97 12.7) (xy 76.835 12.7) (xy 77.47 196.85) (xy 13.97 196.85)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+				(color 255 153 0 1)
+			)
+			(fill
+				(type hatch)
+				(color 255 153 0 0.2)
+			)
+			(uuid "c22222c2-9849-4a87-84e3-f10c62501403")
+		)
+	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 59.69 175.26 0)
-		(fields_autoplaced yes)
+		(at 44.45 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "28eca137-7599-43d9-a429-0ae23319d6ce")
-		(property "Netzklasse" "HV800"
-			(at 60.3885 172.72 0)
+		(uuid "11f179df-a3ba-463e-821c-7ab728c0bd7b")
+		(property "Netzklasse" "LOCAL_P_DCDC"
+			(at 45.1485 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5620,7 +5687,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 36.83 96.52 0)
+			(at 21.59 -30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5634,17 +5701,16 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 49.53 109.22 0)
-		(fields_autoplaced yes)
+		(at 30.48 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "a64b6493-98b5-4032-a8e0-cd9df33de4a3")
-		(property "Netzklasse" "HV800"
-			(at 50.2285 106.68 0)
+		(uuid "16e49ae1-f1f0-42f5-be0d-07b24aa35130")
+		(property "Netzklasse" "P_DCDC_+5"
+			(at 31.1785 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5655,7 +5721,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 26.67 30.48 0)
+			(at 7.62 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5704,17 +5770,17 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 31.75 50.8 0)
+		(at 17.78 12.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "e48a8832-19d8-4043-aee3-025b63cd5703")
+		(uuid "ca6fa8a1-03ba-4f28-b6a0-0efebdf9f4ab")
 		(property "Netzklasse" "HV800"
-			(at 32.4485 48.26 0)
+			(at 18.4785 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5725,7 +5791,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 8.89 -27.94 0)
+			(at -5.08 -66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6804,6 +6870,82 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
 					(reference "D1901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "60b992b4-786d-4af2-9dc2-ec0c14a910fe")
+		(property "Reference" "#PWR01909"
+			(at 91.44 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72cfdd38-33f9-423c-8f3b-672c3822362f")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
+					(reference "#PWR01909")
 					(unit 1)
 				)
 			)

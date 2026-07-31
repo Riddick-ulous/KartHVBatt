@@ -11,3 +11,11 @@
 	(constraint clearance (min 5mm))
 	(condition "(A.hasNetclass('HV400') || A.hasNetclass('HV0')) && !(B.hasNetclass('HV800') || B.hasNetclass('HV400') || B.hasNetclass('HV0')) && !(B.Pin_Type == 'Unconnected' || B.Pin_Type == '*+no_connect')")
 )
+(rule "VEHI local domain exception"
+	(constraint clearance (min 0.2mm))
+	(condition "(A.hasNetclass('LOCAL_P_VEHI') && B.hasNetclass('LOCAL_P_VEHI')) || (A.hasNetclass('P_VEHI_+5') && B.hasNetclass('P_VEHI_+5'))")
+)
+(rule "DCDC local domain exception"
+	(constraint clearance (min 0.2mm))
+	(condition "(A.hasNetclass('LOCAL_P_DCDC') && B.hasNetclass('LOCAL_P_DCDC')) || (A.hasNetclass('P_DCDC_+5') && B.hasNetclass('P_DCDC_+5'))")
+)
