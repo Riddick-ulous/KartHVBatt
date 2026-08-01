@@ -1,10 +1,15 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 6,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [],
+    "hidden_nets": [
+      "GND",
+      "+BATT",
+      "+3.3V",
+      "+5V"
+    ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -17,10 +22,10 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": true,
-      "graphics": true,
-      "keepouts": false,
+      "graphics": false,
+      "keepouts": true,
       "lockedItems": false,
       "otherItems": false,
       "pads": false,
@@ -51,7 +56,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_ffffffff",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_fffffbef",
     "zone_display_mode": 0
   },
   "git": {
@@ -77,6 +82,8 @@
       false,
       false,
       false,
+      false,
+      false,
       false
     ],
     "col_order": [
@@ -91,17 +98,21 @@
       8,
       9,
       10,
-      11
+      11,
+      12,
+      13
     ],
     "col_widths": [
       162,
-      207,
+      147,
       91,
       72,
       91,
       100,
       91,
       76,
+      91,
+      91,
       91,
       91,
       91,

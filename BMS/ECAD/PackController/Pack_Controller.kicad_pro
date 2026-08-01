@@ -53,14 +53,14 @@
           "border_display_style": 1,
           "border_hatch_pitch": 0.5,
           "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_smoothing": 2,
           "fill_mode": 1,
-          "hatch_gap": 0.5,
+          "hatch_gap": 1.0,
           "hatch_orientation": 45.0,
           "hatch_smoothing_level": 1,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 0.25,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -162,7 +162,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -565,49 +565,56 @@
       {
         "name": "HV0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "HV400",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "HV800",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
+        "name": "LOCAL_ISO_UART",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "LOCAL_P_ACCU",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "LOCAL_P_DCDC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "LOCAL_P_VEHI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "P_VEHI_+5",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       }
@@ -637,7 +644,6 @@
       ],
       "/DCDC_AIR/+5V_TS_P_DCDC": [
         "HV800",
-        "LOCAL_P_DCDC",
         "P_DCDC_+5"
       ],
       "/DCDC_AIR/TS_P_DCDC": [
@@ -649,10 +655,20 @@
         "P_VEHI_+5"
       ],
       "/StackCommInterface/IFH_H": [
-        "HV800"
+        "HV800",
+        "LOCAL_ISO_UART"
       ],
       "/StackCommInterface/IFH_L": [
-        "HV800"
+        "HV800",
+        "LOCAL_ISO_UART"
+      ],
+      "/StackCommInterface/IFL_H": [
+        "HV800",
+        "LOCAL_ISO_UART"
+      ],
+      "/StackCommInterface/IFL_L": [
+        "HV800",
+        "LOCAL_ISO_UART"
       ],
       "/TS_N_ACCU": [
         "HV0"
@@ -696,6 +712,10 @@
         "HV800",
         "LOCAL_P_DCDC"
       ],
+      "Net-(D1903-K)": [
+        "HV800",
+        "LOCAL_P_DCDC"
+      ],
       "Net-(Q1102-D)": [
         "HV800"
       ],
@@ -712,8 +732,7 @@
         "LOCAL_P_DCDC"
       ],
       "Net-(Q1902-D)": [
-        "HV800",
-        "LOCAL_P_DCDC"
+        "HV800"
       ],
       "Net-(R1106-Pad2)": [
         "HV800",
@@ -744,8 +763,7 @@
         "HV800"
       ],
       "Net-(TH1901-Pad2)": [
-        "HV800",
-        "LOCAL_P_DCDC"
+        "HV800"
       ],
       "Net-(U2003-INP)": [
         "HV0"
@@ -935,7 +953,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "#PWR1104,#PWR1909",
+    "used_designators": "D1903",
     "variants": []
   },
   "sheets": [

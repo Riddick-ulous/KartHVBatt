@@ -19,3 +19,7 @@
 	(constraint clearance (min 0.2mm))
 	(condition "(A.hasNetclass('LOCAL_P_DCDC') && B.hasNetclass('LOCAL_P_DCDC')) || (A.hasNetclass('P_DCDC_+5') && B.hasNetclass('P_DCDC_+5'))")
 )
+(rule "ISO UART local spacing"
+	(constraint clearance (min 0.2mm))
+	(condition "A.hasNetclass('LOCAL_ISO_UART') && B.hasNetclass('LOCAL_ISO_UART')")
+)

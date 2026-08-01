@@ -4395,7 +4395,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 36.83) (xy 67.31 82.55)
+			(xy 67.31 36.83) (xy 67.31 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4692,6 +4692,16 @@
 			(type default)
 		)
 		(uuid "5aa78ae5-f380-4165-a70d-264d0f3aa57b")
+	)
+	(wire
+		(pts
+			(xy 67.31 62.23) (xy 67.31 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cce7f30-9976-481f-954a-a94878f1345a")
 	)
 	(wire
 		(pts
@@ -5606,8 +5616,8 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 76.2 48.26) (xy 30.48 48.26) (xy 27.94 48.26) (xy 27.94 151.13) (xy 76.835 151.13) (xy 76.2 62.23)
-				(xy 76.2 59.69) (xy 76.2 57.15)
+				(xy 36.83 78.74) (xy 36.83 87.63) (xy 29.21 87.63) (xy 29.21 69.85) (xy 13.97 69.85) (xy 13.97 151.13)
+				(xy 76.835 151.13) (xy 76.2 78.74)
 			)
 			(stroke
 				(width 0)
@@ -5650,7 +5660,7 @@
 		(dnp no)
 		(polyline
 			(pts
-				(xy 13.97 12.7) (xy 76.835 12.7) (xy 77.47 196.85) (xy 13.97 196.85)
+				(xy 12.7 12.7) (xy 76.835 12.7) (xy 77.47 196.85) (xy 12.7 197.485)
 			)
 			(stroke
 				(width 0)
@@ -5667,7 +5677,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 44.45 48.26 180)
+		(at 48.26 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5676,7 +5686,7 @@
 		)
 		(uuid "11f179df-a3ba-463e-821c-7ab728c0bd7b")
 		(property "Netzklasse" "LOCAL_P_DCDC"
-			(at 45.1485 50.8 0)
+			(at 48.9585 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5687,7 +5697,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 21.59 -30.48 0)
+			(at 25.4 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5722,41 +5732,6 @@
 		)
 		(property "Component Class" ""
 			(at 7.62 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 67.31 64.77 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b03e29d2-66b9-46e3-90d6-52cf75ecf91a")
-		(property "Netzklasse" "HV800"
-			(at 64.77 64.0715 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Component Class" ""
-			(at 44.45 -13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9258,6 +9233,110 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
 					(reference "K1901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 67.31 58.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f648fa4e-7649-427f-8953-21c0a8a48cdf")
+		(property "Reference" "D1903"
+			(at 69.85 57.1499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BY2000"
+			(at 69.85 59.6899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AE_P12.70mm_Horizontal"
+			(at 67.31 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 67.31 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 67.31 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3c9cfd5e-2c4c-46be-8a0e-b0281b34de82")
+		)
+		(pin "1"
+			(uuid "e9e4ba37-762f-43b6-803b-e6d929dd468b")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735/b3a91e7b-f813-4b7e-8a66-9207449a05f0"
+					(reference "D1903")
 					(unit 1)
 				)
 			)
