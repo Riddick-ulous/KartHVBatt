@@ -3596,6 +3596,12 @@
 		(uuid "1f1e40cb-4f50-42a8-ada6-d1edae12d9c9")
 	)
 	(junction
+		(at 314.96 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "307eec18-4b77-4d57-af22-53eda9979fa9")
+	)
+	(junction
 		(at 355.6 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4135,6 +4141,16 @@
 	)
 	(wire
 		(pts
+			(xy 327.66 97.79) (xy 327.66 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3559e17c-2f92-4e06-811f-46aa1092e0ae")
+	)
+	(wire
+		(pts
 			(xy 232.41 67.31) (xy 232.41 48.26)
 		)
 		(stroke
@@ -4565,6 +4581,16 @@
 	)
 	(wire
 		(pts
+			(xy 314.96 97.79) (xy 314.96 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ffaa4d-17ab-45a5-9c42-68f516bdb7c4")
+	)
+	(wire
+		(pts
 			(xy 349.25 87.63) (xy 349.25 88.9)
 		)
 		(stroke
@@ -4615,7 +4641,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 104.14) (xy 314.96 83.82)
+			(xy 314.96 104.14) (xy 314.96 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5305,6 +5331,16 @@
 	)
 	(wire
 		(pts
+			(xy 323.85 97.79) (xy 327.66 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b38e172e-403d-429f-a33e-fa2e11a4406e")
+	)
+	(wire
+		(pts
 			(xy 110.49 127) (xy 123.19 127)
 		)
 		(stroke
@@ -5875,6 +5911,16 @@
 	)
 	(wire
 		(pts
+			(xy 316.23 97.79) (xy 314.96 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15a5df1-d6bd-4371-89ac-231502cb033f")
+	)
+	(wire
+		(pts
 			(xy 109.22 52.07) (xy 110.49 52.07)
 		)
 		(stroke
@@ -6103,7 +6149,7 @@
 			(justify left bottom)
 		)
 		(uuid "115bc485-02fa-4b4c-af5c-e175eaa503a6")
-		(property "Netzklasse" "HV800"
+		(property "Netclass" "HV800"
 			(at 131.5085 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6138,7 +6184,7 @@
 			(justify right bottom)
 		)
 		(uuid "33084c31-b933-43f2-a610-1e4f25bd4eaf")
-		(property "Netzklasse" "HV0"
+		(property "Netclass" "HV0"
 			(at 48.9585 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6173,7 +6219,7 @@
 			(justify right bottom)
 		)
 		(uuid "3bb5a70c-a0ac-410d-a24d-8315523831b4")
-		(property "Netzklasse" "LOCAL_ISO_UART"
+		(property "Netclass" "LOCAL_ISO_UART"
 			(at 111.1885 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6208,7 +6254,7 @@
 			(justify left bottom)
 		)
 		(uuid "499740c6-7f8d-4448-a308-2d52606b245a")
-		(property "Netzklasse" "LOCAL_ISO_UART"
+		(property "Netclass" "LOCAL_ISO_UART"
 			(at 111.1885 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6243,7 +6289,7 @@
 			(justify right bottom)
 		)
 		(uuid "5f6febe4-52ab-46f5-8c32-67552258e284")
-		(property "Netzklasse" "HV800"
+		(property "Netclass" "HV800"
 			(at 131.5085 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6278,7 +6324,7 @@
 			(justify left bottom)
 		)
 		(uuid "63201ad2-798e-45cc-b534-514476feec11")
-		(property "Netzklasse" "HV800"
+		(property "Netclass" "HV800"
 			(at 48.9585 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6313,7 +6359,7 @@
 			(justify right bottom)
 		)
 		(uuid "65af10c1-38a9-446f-9dd7-9ad44803c98f")
-		(property "Netzklasse" "HV0"
+		(property "Netclass" "HV0"
 			(at 48.9585 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6348,7 +6394,7 @@
 			(justify right bottom)
 		)
 		(uuid "90c71cb9-df8e-4a4e-8b88-83050a22dfd5")
-		(property "Netzklasse" "HV800"
+		(property "Netclass" "HV800"
 			(at 97.2185 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6383,7 +6429,7 @@
 			(justify left bottom)
 		)
 		(uuid "f9da59ff-b496-4efe-af44-01334520b70e")
-		(property "Netzklasse" "HV800"
+		(property "Netclass" "HV800"
 			(at 48.9585 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6645,6 +6691,86 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735"
 					(reference "R102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_TVS")
+		(at 320.04 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "13ae4abb-d928-467b-ae30-941ad9c2ca94")
+		(property "Reference" "D104"
+			(at 320.04 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DESD5V0S1BA-7"
+			(at 332.74 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 320.04 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 320.04 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ac8c7e47-0b87-4588-8b0d-3a397cfe1f4f")
+		)
+		(pin "1"
+			(uuid "bff976b5-1414-4e19-b4f9-1fd7956f47fb")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735"
+					(reference "D104")
 					(unit 1)
 				)
 			)
@@ -8033,7 +8159,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 1206 25V"
+		(property "Value" "10uF 0805 35V"
 			(at 386.588 78.486 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8044,7 +8170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 380.0348 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8086,6 +8212,82 @@
 			(project "Pack_Controller"
 				(path "/58a1c93e-baba-4d23-9191-955e00968735"
 					(reference "C101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 327.66 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97cd1454-33c2-41b6-ae69-5d33ab95f7c1")
+		(property "Reference" "#PWR0110"
+			(at 327.66 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 327.66 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 327.66 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.66 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 327.66 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b47cb2a7-3745-4d17-b8ad-847654d0604e")
+		)
+		(instances
+			(project "Pack_Controller"
+				(path "/58a1c93e-baba-4d23-9191-955e00968735"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)

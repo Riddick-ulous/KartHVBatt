@@ -2736,7 +2736,7 @@
 			(justify left bottom)
 		)
 		(uuid "4250ca55-87b4-4c3f-93a9-33dde1a6eef1")
-		(property "Netzklasse" "HV0"
+		(property "Netclass" "HV0"
 			(at 87.0585 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2771,7 +2771,7 @@
 			(justify left bottom)
 		)
 		(uuid "4a3b5905-f4e2-4354-9e78-a85124b1ccb2")
-		(property "Netzklasse" "HV400"
+		(property "Netclass" "HV400"
 			(at 79.4385 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2806,7 +2806,7 @@
 			(justify left bottom)
 		)
 		(uuid "93ea409c-ea3a-44e3-922c-984ea2f6571f")
-		(property "Netzklasse" "HV0"
+		(property "Netclass" "HV0"
 			(at 64.1985 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2841,7 +2841,7 @@
 			(justify left bottom)
 		)
 		(uuid "bc37888c-45cf-447c-8591-f8f5a2ef87d3")
-		(property "Netzklasse" "HV0"
+		(property "Netclass" "HV0"
 			(at 99.7585 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4342,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 50V"
+		(property "Value" "10uF 0805 35V"
 			(at 147.066 158.496 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5072,7 +5072,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 50V"
+		(property "Value" "10uF 0805 35V"
 			(at 112.776 157.988 90)
 			(show_name no)
 			(do_not_autoplace no)

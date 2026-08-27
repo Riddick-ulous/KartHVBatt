@@ -1,15 +1,10 @@
 {
   "board": {
-    "active_layer": 6,
+    "active_layer": 5,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "GND",
-      "+BATT",
-      "+3.3V",
-      "+5V"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -22,14 +17,14 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": true,
-      "graphics": false,
+      "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
-      "otherItems": false,
-      "pads": false,
-      "text": false,
+      "lockedItems": true,
+      "otherItems": true,
+      "pads": true,
+      "text": true,
       "tracks": true,
       "vias": true,
       "zones": true
@@ -56,7 +51,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_fffffbef",
+    "visible_layers": "ffffffff_ffffffff_fffffff5_5fff55f5",
     "zone_display_mode": 0
   },
   "git": {
@@ -144,7 +139,7 @@
       "lockedItems": false,
       "otherItems": true,
       "pins": true,
-      "ruleAreas": true,
+      "ruleAreas": false,
       "symbols": true,
       "text": true,
       "wires": true

@@ -823,19 +823,9 @@
 				(justify left top)
 			)
 		)
-		(pin "NTC1_+" input
-			(at 144.78 132.08 0)
-			(uuid "0974c026-2222-4c97-862a-9e6495a4fad9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NTC1_Sig" input
+		(pin "NTCSig" input
 			(at 123.19 133.35 180)
-			(uuid "736ea7f0-fad0-4852-ad16-0ce25371a560")
+			(uuid "14f9d8eb-a355-4249-b3ff-3e21d98b9ce2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -843,9 +833,19 @@
 				(justify left)
 			)
 		)
-		(pin "NTC1_-" input
+		(pin "NTC-" input
 			(at 144.78 134.62 0)
-			(uuid "4d694cb1-0ed0-49c8-9398-10eb5165bbf4")
+			(uuid "6909f3bd-4f9c-4ece-87c1-c5d4b85ca02c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC+" input
+			(at 144.78 132.08 0)
+			(uuid "45f3b026-01a7-4f08-b4e8-166bafd392fe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -899,19 +899,9 @@
 				(justify left top)
 			)
 		)
-		(pin "NTC1_+" input
-			(at 144.78 118.11 0)
-			(uuid "e64ad0fd-1302-4246-ba4e-09c77f54d9d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NTC1_Sig" input
+		(pin "NTCSig" input
 			(at 123.19 119.38 180)
-			(uuid "4b59b1d5-9db7-4373-9c92-a7b397714f75")
+			(uuid "b1fc957d-4f77-4e5e-adb9-e969207ed79a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -919,9 +909,19 @@
 				(justify left)
 			)
 		)
-		(pin "NTC1_-" input
+		(pin "NTC-" input
 			(at 144.78 120.65 0)
-			(uuid "3670e2c5-4846-4efc-ab4e-a1b1078173fc")
+			(uuid "805b368f-95d0-4324-969e-bbd3e07e9682")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC+" input
+			(at 144.78 118.11 0)
+			(uuid "5f920b30-43a1-4e52-be82-481065fe6373")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -975,19 +975,9 @@
 				(justify left top)
 			)
 		)
-		(pin "NTC1_+" input
-			(at 144.78 90.17 0)
-			(uuid "104c837d-71eb-4d34-af3d-b2ff59da94b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NTC1_Sig" input
+		(pin "NTCSig" input
 			(at 123.19 91.44 180)
-			(uuid "b6985e3a-ca41-4b7e-8771-2f7369cb6d44")
+			(uuid "66e3c615-a2f2-4f5f-ba91-966dd6676879")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,9 +985,19 @@
 				(justify left)
 			)
 		)
-		(pin "NTC1_-" input
+		(pin "NTC-" input
 			(at 144.78 92.71 0)
-			(uuid "0a44d67e-6d2a-4b4b-8e66-e78a13d8a574")
+			(uuid "bf2ee806-6861-4b0f-8afc-6765bafe5f72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC+" input
+			(at 144.78 90.17 0)
+			(uuid "1a311d9f-273e-439a-8afc-67d98a243f83")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1051,19 +1051,9 @@
 				(justify left top)
 			)
 		)
-		(pin "NTC1_+" input
-			(at 144.78 104.14 0)
-			(uuid "df0d328b-be70-462f-8025-0c1c95322311")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NTC1_Sig" input
+		(pin "NTCSig" input
 			(at 123.19 105.41 180)
-			(uuid "c500328c-7347-4a66-9a95-1fe1518aaa97")
+			(uuid "0357f340-f5a4-4140-8788-d78696194142")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,9 +1061,19 @@
 				(justify left)
 			)
 		)
-		(pin "NTC1_-" input
+		(pin "NTC-" input
 			(at 144.78 106.68 0)
-			(uuid "32beda0a-2e44-445f-9ec2-cc6d8aed7b4a")
+			(uuid "d83654a4-f97a-4a6c-a5a2-0d2ce8492712")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC+" input
+			(at 144.78 104.14 0)
+			(uuid "62f1f572-8fd4-45a2-808e-8cc97864a967")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1127,19 +1127,9 @@
 				(justify left top)
 			)
 		)
-		(pin "NTC1_+" input
-			(at 144.78 76.2 0)
-			(uuid "833a2f29-a74c-491d-acb2-d1135f929d56")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "NTC1_Sig" input
+		(pin "NTCSig" input
 			(at 123.19 77.47 180)
-			(uuid "39878b56-ecee-4b7e-8b5b-8f3f4d416c99")
+			(uuid "0b146d55-5eb9-4e3b-824f-8af7e12c23ac")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1147,9 +1137,19 @@
 				(justify left)
 			)
 		)
-		(pin "NTC1_-" input
+		(pin "NTC+" input
+			(at 144.78 76.2 0)
+			(uuid "09953736-d1dc-4857-9c56-2c33f4ec12c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NTC-" input
 			(at 144.78 78.74 0)
-			(uuid "f09a0243-2c09-40d8-a848-ee2990194046")
+			(uuid "99ece531-e97e-41db-9c63-2ec7c9fa003e")
 			(effects
 				(font
 					(size 1.27 1.27)

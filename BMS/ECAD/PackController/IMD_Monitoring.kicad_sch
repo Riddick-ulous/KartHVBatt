@@ -3611,7 +3611,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 0805 16V"
+		(property "Value" "10uF 0805 35V"
 			(at 80.01 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)

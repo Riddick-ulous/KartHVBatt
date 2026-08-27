@@ -3229,7 +3229,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330nF 16V"
+		(property "Value" "330nF 50V"
 			(at 121.92 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3240,7 +3240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 116.84 78.4352 0)
 			(hide yes)
 			(show_name no)
@@ -3392,7 +3392,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pC 1000V"
+		(property "Value" "220pC 100V"
 			(at 190.246 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3403,7 +3403,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 189.5348 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3645,7 +3645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 66.04 91.1352 0)
 			(hide yes)
 			(show_name no)
@@ -3884,7 +3884,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 70.866 81.28 90)
 			(hide yes)
 			(show_name no)
@@ -3896,7 +3896,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 66.04 86.0552 0)
 			(hide yes)
 			(show_name no)
@@ -4966,7 +4966,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 80.01 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +4977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.93 86.0552 0)
 			(hide yes)
 			(show_name no)
@@ -5048,7 +5048,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 211.074 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5059,7 +5059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 215.9 91.1352 0)
 			(hide yes)
 			(show_name no)
@@ -5130,7 +5130,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 219.964 81.28 90)
 			(hide yes)
 			(show_name no)
@@ -5142,7 +5142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 224.79 86.0552 0)
 			(hide yes)
 			(show_name no)
@@ -5621,7 +5621,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pC 1000V"
+		(property "Value" "220pC 100V"
 			(at 81.788 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5632,7 +5632,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.2152 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -5780,7 +5780,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pC 1000V"
+		(property "Value" "220pC 100V"
 			(at 209.042 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5791,7 +5791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 194.6148 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -5940,7 +5940,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 79.756 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5951,7 +5951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.93 91.1352 0)
 			(hide yes)
 			(show_name no)
@@ -6102,7 +6102,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 210.82 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6113,7 +6113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 215.9 86.0552 0)
 			(hide yes)
 			(show_name no)
@@ -6184,7 +6184,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2nC 1000V"
+		(property "Value" "2.2nC 100V"
 			(at 219.964 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -6196,7 +6196,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 224.79 91.1352 0)
 			(hide yes)
 			(show_name no)
@@ -6266,7 +6266,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220pC 1000V"
+		(property "Value" "220pC 100V"
 			(at 100.584 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6277,7 +6277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 101.2952 100.33 0)
 			(hide yes)
 			(show_name no)

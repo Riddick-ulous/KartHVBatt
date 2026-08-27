@@ -23,3 +23,10 @@
 	(constraint clearance (min 0.2mm))
 	(condition "A.hasNetclass('LOCAL_ISO_UART') && B.hasNetclass('LOCAL_ISO_UART')")
 )
+(rule "Globaler Pad-Freiraum 0,15 mm"
+    (constraint clearance (min 0.15mm))
+    (condition "A.Type == 'Pad' || B.Type == 'Pad'")
+)
+(rule "Courtyard-Überlappung bis 0,1 mm zulassen"
+    (constraint courtyard_clearance (min -0.1mm))
+)

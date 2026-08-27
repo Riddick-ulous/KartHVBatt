@@ -714,10 +714,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "Passive piezo buzzer driver.\nTarget part: CPT-2305-90PM, externally driven, 12 Vp-p, 4 kHz, typ. 24 nF.\n\nDrive with STM32 PWM:\nf_PWM ≈ 4 kHz\nduty ≈ 50 %\n\nQ15 is a low-side NMOS switch.\nR37 discharges the piezo during MOSFET off-time:\ntau = R37 * C_PIEZO ≈ 2.2k * 24nF ≈ 53us.\n\nR36 limits peak current and EMI.\nNo additional series coupling capacitor required."
+	(text_box "Passive piezo buzzer driver.\nTarget: CPT-2305-90PM, 12 Vp-p, 4 kHz, C_PIEZO typ. 24 nF.\n\nQ801 = low-side NMOS, driven by STM32 PWM:\nf ~= 4 kHz, duty ~= 50 %\n\nR801 = 100R limits capacitive peak current:\nI_peak <= VBATT,max / R801 = 16V / 100R = 160 mA\ntau_ON = R801 * C_PIEZO = 2.4 us\n\nR802 = 2.2k discharges piezo:\ntau_OFF = R802 * C_PIEZO = 52.8 us\nAt 4 kHz: t_OFF ~= 125 us\nV_remain ~= exp(-125us / 52.8us) = 9.4 %\n\nFET current check:\nI_Q801,rms ~= 12 mA incl. R802 discharge/load current.\nEven with RDS(on) = 100R:\nP_Q801 ~= 14 mW"
 		(exclude_from_sim no)
 		(at 167.64 78.7669 0)
-		(size 62.23 22.8331)
+		(size 62.23 32.4928)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)

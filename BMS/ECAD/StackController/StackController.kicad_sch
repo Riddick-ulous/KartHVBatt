@@ -9568,7 +9568,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uC 16V"
+		(property "Value" "10uC 35V"
 			(at 68.834 106.426 0)
 			(hide yes)
 			(show_name no)
@@ -9580,7 +9580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 69.5452 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12732,7 +12732,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uC 16V"
+		(property "Value" "10uC 35V"
 			(at 53.594 106.426 0)
 			(hide yes)
 			(show_name no)
@@ -12744,7 +12744,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 54.3052 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12814,7 +12814,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uC 16V"
+		(property "Value" "10uC 35V"
 			(at 45.974 106.426 0)
 			(hide yes)
 			(show_name no)
@@ -12826,7 +12826,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 46.6852 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14637,7 +14637,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uC 16V"
+		(property "Value" "10uC 35V"
 			(at 61.214 106.426 0)
 			(hide yes)
 			(show_name no)
@@ -14649,7 +14649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 61.9252 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -15881,7 +15881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uC 16V"
+		(property "Value" "10uC 35V"
 			(at 78.994 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15892,7 +15892,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 77.1652 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -19767,7 +19767,7 @@
 				)
 			)
 		)
-		(property "Value" "170kR 0,1% 25ppm/C"
+		(property "Value" "162kR 0,1% 25ppm/C"
 			(at 31.496 102.108 90)
 			(show_name no)
 			(do_not_autoplace no)

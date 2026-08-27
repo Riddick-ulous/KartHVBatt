@@ -54,12 +54,12 @@
           "border_hatch_pitch": 0.5,
           "corner_radius": 0.0,
           "corner_smoothing": 2,
-          "fill_mode": 1,
-          "hatch_gap": 1.0,
-          "hatch_orientation": 45.0,
-          "hatch_smoothing_level": 1,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
-          "hatch_thickness": 0.25,
+          "hatch_thickness": 1.0,
           "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
@@ -76,7 +76,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|12950000|8750000|04c712ff-470a-467f-bbbf-eb772ecca661|abcb3be5-b105-4711-910e-937c4c821a47",
+          ""
+        ],
+        [
+          "clearance|195120425|6646619|0fac1d89-a077-40ad-a017-2ddee64f4979|98156193-0c44-406f-8976-05046634cdce",
+          ""
+        ],
+        [
+          "clearance|44250000|8836207|58b28ba7-00c2-49cd-957b-cb32c00bf4b4|ebf831b4-d636-4458-8369-1c7c896f4d6c",
+          ""
+        ],
+        [
+          "clearance|82977500|11522500|55511df0-513e-4b99-be28-8d64d6777a5e|d71793cb-16f0-4616-a5f3-e51beb7ce11f",
+          ""
+        ],
+        [
+          "starved_thermal|140135000|51502500|c98e561e-b666-4281-87f8-d785672ab562|e9056c90-a2f3-4071-b36c-628e4367c50d|In3.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -146,7 +167,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -158,10 +179,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.25,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -785,7 +806,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "RESS-Pack_Controller_simple.step",
       "svg": "",
       "vrml": ""
     },
@@ -953,7 +974,7 @@
         "uuid": "58a1c93e-baba-4d23-9191-955e00968735"
       }
     ],
-    "used_designators": "D1903",
+    "used_designators": "#PWR110,#PWR904,D104,D1903,Q1101,Q1105,Q1905,R905",
     "variants": []
   },
   "sheets": [
