@@ -1,0 +1,709 @@
+VERSION "PackController CAN-FD 0.3 Codex-Uebergabestand"
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_DEF_DEF_
+    BA_
+    VAL_
+
+BS_:
+
+BU_: PackController VCU PackCurrentSensor Inverter
+
+
+BO_ 256 VCU_BMS_Control: 16 VCU
+ SG_ ControlAliveCounter : 0|4@1+ (1,0) [0|15] "" PackController
+ SG_ ControlProtocolVersion : 4|4@1+ (1,0) [0|15] "" PackController
+ SG_ HVOnRequest : 8|1@1+ (1,0) [0|1] "" PackController
+ SG_ DcdcEnableRequest : 9|1@1+ (1,0) [0|1] "" PackController
+ SG_ BalanceEnable : 10|1@1+ (1,0) [0|1] "" PackController
+ SG_ SafeResetRequest : 11|1@1+ (1,0) [0|1] "" PackController
+ SG_ ChargeModeRequest : 12|1@1+ (1,0) [0|1] "" PackController
+ SG_ DriveModeRequest : 13|1@1+ (1,0) [0|1] "" PackController
+ SG_ BeepShutoffOverride : 14|1@1+ (1,0) [0|1] "" PackController
+ SG_ PrepareShutdownRequest : 15|1@1+ (1,0) [0|1] "" PackController
+ SG_ FanSpeedRequest : 16|8@1+ (0.5,0) [0|100] "%" PackController
+ SG_ ControlRequestSequence : 32|16@1+ (1,0) [0|65535] "" PackController
+ SG_ ControlCrc8 : 120|8@1+ (1,0) [0|255] "" PackController
+
+BO_ 257 PackCurrentStatus: 16 PackCurrentSensor
+ SG_ CurrentAliveCounter : 0|4@1+ (1,0) [0|15] "" PackController
+ SG_ CurrentProtocolVersion : 4|4@1+ (1,0) [0|15] "" PackController
+ SG_ CurrentQuality : 8|8@1+ (1,0) [0|255] "" PackController
+ SG_ PackCurrent : 16|32@1- (0.01,0) [-10000|10000] "A" PackController
+ SG_ CurrentSensorTemperature : 48|16@1- (0.1,0) [-100|200] "degC" PackController
+ SG_ CurrentSourceTimestamp : 64|32@1+ (1,0) [0|4294967295] "ms" PackController
+ SG_ CurrentSensorStatus : 96|16@1+ (1,0) [0|65535] "" PackController
+ SG_ CurrentSensorId : 112|8@1+ (1,0) [0|255] "" PackController
+ SG_ CurrentCrc8 : 120|8@1+ (1,0) [0|255] "" PackController
+
+BO_ 258 InverterStatus: 16 Inverter
+ SG_ InverterAliveCounter : 0|4@1+ (1,0) [0|15] "" PackController
+ SG_ InverterProtocolVersion : 4|4@1+ (1,0) [0|15] "" PackController
+ SG_ InverterQuality : 8|8@1+ (1,0) [0|255] "" PackController
+ SG_ InverterPowerActual : 16|32@1- (0.1,0) [-1000|1000] "kW" PackController
+ SG_ InverterDcVoltage : 48|16@1+ (0.1,0) [0|1000] "V" PackController
+ SG_ InverterSourceTimestamp : 64|32@1+ (1,0) [0|4294967295] "ms" PackController
+ SG_ InverterState : 96|8@1+ (1,0) [0|255] "" PackController
+ SG_ BmsLimitsAccepted : 104|1@1+ (1,0) [0|1] "" PackController
+ SG_ InverterCrc8 : 120|8@1+ (1,0) [0|255] "" PackController
+
+BO_ 288 BMS_ServiceRequest: 32 VCU
+ SG_ ServiceRequestAliveCounter : 0|4@1+ (1,0) [0|15] "" PackController
+ SG_ ServiceRequestProtocolVersion : 4|4@1+ (1,0) [0|15] "" PackController
+ SG_ ServiceCommand : 8|8@1+ (1,0) [0|255] "" PackController
+ SG_ ServiceSequence : 16|16@1+ (1,0) [0|65535] "" PackController
+ SG_ ServiceTarget : 32|16@1+ (1,0) [0|65535] "" PackController
+ SG_ ServiceSubIndex : 48|16@1+ (1,0) [0|65535] "" PackController
+ SG_ ServiceValue0 : 64|32@1+ (1,0) [0|4294967295] "" PackController
+ SG_ ServiceValue1 : 96|32@1+ (1,0) [0|4294967295] "" PackController
+ SG_ ServiceValue2 : 128|32@1+ (1,0) [0|4294967295] "" PackController
+ SG_ ServicePayloadLength : 160|8@1+ (1,0) [0|12] "byte" PackController
+ SG_ ServiceCommitRequest : 168|1@1+ (1,0) [0|1] "" PackController
+ SG_ ServiceRequestCrc8 : 248|8@1+ (1,0) [0|255] "" PackController
+
+BO_ 289 BMS_ServiceResponse: 32 PackController
+ SG_ ServiceResponseAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU
+ SG_ ServiceResponseProtocolVersion : 4|4@1+ (1,0) [0|15] "" VCU
+ SG_ ServiceResponseCommand : 8|8@1+ (1,0) [0|255] "" VCU
+ SG_ ServiceResponseSequence : 16|16@1+ (1,0) [0|65535] "" VCU
+ SG_ ServiceResult : 32|8@1+ (1,0) [0|255] "" VCU
+ SG_ ServiceResponseTarget : 48|16@1+ (1,0) [0|65535] "" VCU
+ SG_ ServiceResponseValue0 : 64|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ ServiceResponseValue1 : 96|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ ServiceResponseValue2 : 128|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ ServiceNvmSequence : 160|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ ServiceResponseCrc8 : 248|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 274 BMS_Analog: 64 PackController
+ SG_ AnalogAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU
+ SG_ AnalogProtocolVersion : 4|4@1+ (1,0) [0|15] "" VCU
+ SG_ AnalogFrameCoherent : 8|1@1+ (1,0) [0|1] "" VCU
+ SG_ AnalogQuality : 9|2@1+ (1,0) [0|3] "" VCU
+ SG_ AnalogSampleCounter : 16|16@1+ (1,0) [0|65535] "" VCU
+ SG_ AnalogSampleTimestamp : 32|32@1+ (1,0) [0|4294967295] "ms" VCU
+ SG_ RawRLeak1 : 64|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawVVehi : 80|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawTntc4 : 96|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawVrefInt : 112|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawRLeak2 : 128|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawTntc1 : 144|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawTntc5 : 160|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawVBatt : 176|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawVAccu : 192|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawVDcdc : 208|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawTntc3 : 224|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RawTntc2 : 240|16@1+ (1,0) [0|4095] "" VCU
+ SG_ RLeak1SenseVoltage : 256|16@1+ (0.001,0) [0|3.3] "V" VCU
+ SG_ VVehiAnalog : 272|16@1+ (0.1,0) [0|1000] "V" VCU
+ SG_ Tntc4Temperature : 288|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ Vdda : 304|16@1+ (0.001,0) [0|5] "V" VCU
+ SG_ RLeak2SenseVoltage : 320|16@1+ (0.001,0) [0|3.3] "V" VCU
+ SG_ Tntc1Temperature : 336|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ Tntc5Temperature : 352|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ VBattAnalog : 368|16@1+ (0.01,0) [0|30] "V" VCU
+ SG_ VAccuAnalog : 384|16@1+ (0.1,0) [0|1000] "V" VCU
+ SG_ VDcdcAnalog : 400|16@1+ (0.1,0) [0|1000] "V" VCU
+ SG_ Tntc3Temperature : 416|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ Tntc2Temperature : 432|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ RLeak1Quality : 448|2@1+ (1,0) [0|3] "" VCU
+ SG_ VVehiQuality : 450|2@1+ (1,0) [0|3] "" VCU
+ SG_ Tntc4Quality : 452|2@1+ (1,0) [0|3] "" VCU
+ SG_ VrefIntQuality : 454|2@1+ (1,0) [0|3] "" VCU
+ SG_ RLeak2Quality : 456|2@1+ (1,0) [0|3] "" VCU
+ SG_ Tntc1Quality : 458|2@1+ (1,0) [0|3] "" VCU
+ SG_ Tntc5Quality : 460|2@1+ (1,0) [0|3] "" VCU
+ SG_ VBattQuality : 462|2@1+ (1,0) [0|3] "" VCU
+ SG_ VAccuQuality : 464|2@1+ (1,0) [0|3] "" VCU
+ SG_ VDcdcQuality : 466|2@1+ (1,0) [0|3] "" VCU
+ SG_ Tntc3Quality : 468|2@1+ (1,0) [0|3] "" VCU
+ SG_ Tntc2Quality : 470|2@1+ (1,0) [0|3] "" VCU
+ SG_ AnalogDmaErrorCount : 472|16@1+ (1,0) [0|65535] "" VCU
+ SG_ AnalogDroppedBlockCount : 488|16@1+ (1,0) [0|65535] "" VCU
+ SG_ AnalogCrc8 : 504|8@1+ (1,0) [0|255] "" VCU
+
+
+BO_ 272 BMS_Status: 64 PackController
+ SG_ StatusAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU,Inverter
+ SG_ StatusCrcEnabled : 4|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ AuthoritativeCanBus : 5|2@1+ (1,0) [0|2] "" VCU,Inverter
+ SG_ CriticalErrorActive : 7|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ HvState : 8|4@1+ (1,0) [0|10] "" VCU,Inverter
+ SG_ DcdcState : 12|3@1+ (1,0) [0|4] "" VCU,Inverter
+ SG_ HvReady : 15|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ ChargeState : 16|3@1+ (1,0) [0|4] "" VCU,Inverter
+ SG_ DrivingModeActive : 19|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ HvOnInhibitCold : 20|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ BalanceActive : 21|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ SafeResetAllowed : 22|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ ChargeModeActive : 23|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ AirNSwitch : 24|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirNIntended : 25|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirNActual : 26|1@1+ (1,0) [0|1] "" VCU
+ SG_ PrechargeSwitch : 27|1@1+ (1,0) [0|1] "" VCU
+ SG_ PrechargeActual : 28|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirPSwitch : 29|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirPIntended : 30|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirPActual : 31|1@1+ (1,0) [0|1] "" VCU
+ SG_ DcdcSwitch : 32|1@1+ (1,0) [0|1] "" VCU
+ SG_ DcdcActual : 33|1@1+ (1,0) [0|1] "" VCU
+ SG_ PrechargeDone_n : 34|1@1+ (1,0) [0|1] "" VCU
+ SG_ AirError_n : 35|1@1+ (1,0) [0|1] "" VCU
+ SG_ PorState_n : 36|1@1+ (1,0) [0|1] "" VCU
+ SG_ ScLatched : 37|1@1+ (1,0) [0|1] "" VCU
+ SG_ DangerVoltage : 38|1@1+ (1,0) [0|1] "" VCU
+ SG_ TsalGreenActual : 39|1@1+ (1,0) [0|1] "" VCU
+ SG_ PrimaryFaultId : 40|8@1+ (1,0) [0|127] "" VCU,Inverter
+ SG_ FaultSeverity : 48|3@1+ (1,0) [0|4] "" VCU,Inverter
+ SG_ FaultResetPolicy : 51|2@1+ (1,0) [0|2] "" VCU
+ SG_ TleStackState : 53|2@1+ (1,0) [0|3] "" VCU
+ SG_ PowerLimitsValid : 55|1@1+ (1,0) [0|1] "" VCU,Inverter
+ SG_ ImdState : 56|4@1+ (1,0) [0|8] "" VCU
+ SG_ LeakageStateMax : 60|2@1+ (1,0) [0|3] "" VCU
+ SG_ SocQuality : 62|2@1+ (1,0) [0|3] "" VCU,Inverter
+ SG_ RuntimeSeconds : 64|32@1+ (1,0) [0|4294967295] "s" VCU,Inverter
+ SG_ CellVoltageMin : 128|16@1+ (0.0001,0) [0|6.5535] "V" VCU,Inverter
+ SG_ CellVoltageMax : 144|16@1+ (0.0001,0) [0|6.5535] "V" VCU,Inverter
+ SG_ CellVoltageMinIndex : 160|8@1+ (1,0) [0|161] "" VCU
+ SG_ CellVoltageMaxIndex : 168|8@1+ (1,0) [0|161] "" VCU
+ SG_ CellTemperatureMin : 176|16@1- (0.1,0) [-100|200] "degC" VCU,Inverter
+ SG_ CellTemperatureMax : 192|16@1- (0.1,0) [-100|200] "degC" VCU,Inverter
+ SG_ CellTemperatureMinIndex : 208|8@1+ (1,0) [0|215] "" VCU
+ SG_ CellTemperatureMaxIndex : 216|8@1+ (1,0) [0|215] "" VCU
+ SG_ NtcValidCount : 224|8@1+ (1,0) [0|216] "" VCU
+ SG_ NtcInvalidCount : 232|8@1+ (1,0) [0|216] "" VCU
+ SG_ Soc : 240|16@1+ (0.01,0) [0|100] "%" VCU,Inverter
+ SG_ Soh : 256|16@1+ (0.01,0) [0|100] "%" VCU,Inverter
+ SG_ PDischargeMax : 272|16@1+ (0.1,0) [0|1000] "kW" VCU,Inverter
+ SG_ PChargeMax : 288|16@1+ (0.1,0) [0|1000] "kW" VCU,Inverter
+ SG_ PackCurrentMeasured : 304|32@1- (0.01,0) [-10000|10000] "A" VCU,Inverter
+ SG_ PackPowerMeasured : 336|32@1- (0.1,0) [-1000|1000] "kW" VCU,Inverter
+ SG_ ImdResistance : 368|32@1+ (1,0) [0|4294967295] "ohm" VCU
+ SG_ ImdFrequency : 400|16@1+ (0.01,0) [0|100] "Hz" VCU
+ SG_ ImdDutyCycle : 416|16@1+ (0.01,0) [0|100] "%" VCU
+ SG_ LeakageResistance1 : 432|32@1+ (1,0) [0|4294967295] "ohm" VCU
+ SG_ LeakageResistance2 : 464|32@1+ (1,0) [0|4294967295] "ohm" VCU
+ SG_ StatusAge : 496|6@1+ (1,0) [0|63] "ms" VCU
+ SG_ DeveloperMode : 502|2@1+ (1,0) [0|2] "" VCU
+ SG_ StatusCrc8 : 504|8@1+ (1,0) [0|255] "" VCU,Inverter
+
+BO_ 273 BMS_SafetyDiag: 64 PackController
+ SG_ SafetyAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU
+ SG_ SafetyProtocolVersion : 4|4@1+ (1,0) [0|15] "" VCU
+ SG_ ResetCause : 8|8@1+ (1,0) [0|255] "" VCU
+ SG_ Can1State : 16|4@1+ (1,0) [0|15] "" VCU
+ SG_ Can2State : 20|4@1+ (1,0) [0|15] "" VCU
+ SG_ AdcQuality : 24|4@1+ (1,0) [0|15] "" VCU
+ SG_ SchedulerHealthy : 28|1@1+ (1,0) [0|1] "" VCU
+ SG_ WatchdogFeedEnabled : 29|1@1+ (1,0) [0|1] "" VCU
+ SG_ TsalGreenSoftware : 30|1@1+ (1,0) [0|1] "" VCU
+ SG_ ImdOk : 31|1@1+ (1,0) [0|1] "" VCU
+ SG_ DigitalRawBitmap : 32|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ DigitalConfirmedBitmap : 64|32@1+ (1,0) [0|4294967295] "" VCU
+ SG_ FaultActiveBitmapLo : 96|64@1+ (1,0) [0|18446744073709551615] "" VCU
+ SG_ FaultActiveBitmapHi : 160|64@1+ (1,0) [0|18446744073709551615] "" VCU
+ SG_ FaultLatchedBitmapLo : 224|64@1+ (1,0) [0|18446744073709551615] "" VCU
+ SG_ FaultLatchedBitmapHi : 288|64@1+ (1,0) [0|18446744073709551615] "" VCU
+ SG_ SchedulerLoopLast : 352|16@1+ (1,0) [0|65535] "us" VCU
+ SG_ SchedulerLoopMax : 368|16@1+ (1,0) [0|65535] "us" VCU
+ SG_ Can1DroppedFrames : 384|16@1+ (1,0) [0|65535] "" VCU
+ SG_ Can2DroppedFrames : 400|16@1+ (1,0) [0|65535] "" VCU
+ SG_ TleValidSlaveCount : 416|8@1+ (1,0) [0|255] "" VCU
+ SG_ TleValidNtcCount : 424|8@1+ (1,0) [0|216] "" VCU
+ SG_ BalanceActiveCellCount : 432|8@1+ (1,0) [0|162] "" VCU
+ SG_ AdcDmaErrorCount : 440|16@1+ (1,0) [0|65535] "" VCU
+ SG_ Can1BusOffCount : 456|8@1+ (1,0) [0|255] "" VCU
+ SG_ Can2BusOffCount : 464|8@1+ (1,0) [0|255] "" VCU
+ SG_ EepromErrorCount : 472|16@1+ (1,0) [0|65535] "" VCU
+ SG_ ImdHardwareType : 488|2@1+ (1,0) [0|2] "" VCU
+ SG_ LeakageLevel1 : 490|3@1+ (1,0) [0|5] "" VCU
+ SG_ LeakageLevel2 : 493|3@1+ (1,0) [0|5] "" VCU
+ SG_ BalanceState : 496|3@1+ (1,0) [0|4] "" VCU
+ SG_ BuzzerState : 499|2@1+ (1,0) [0|3] "" VCU
+ SG_ FanFailsafeActive : 501|1@1+ (1,0) [0|1] "" VCU
+ SG_ TleErrqActive : 502|1@1+ (1,0) [0|1] "" VCU
+ SG_ TleErrorPulseLatched : 503|1@1+ (1,0) [0|1] "" VCU
+ SG_ SafetyCrc8 : 504|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 280 BMS_CellPage: 64 PackController
+ SG_ CellPageAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU
+ SG_ CellPageIndex : 4|4@1+ (1,0) [0|6] "" VCU
+ SG_ CellPageCount : 8|8@1+ (1,0) [7|7] "" VCU
+ SG_ CellSampleCounter : 16|16@1+ (1,0) [0|65535] "" VCU
+ SG_ CellSampleTimestamp : 32|32@1+ (1,0) [0|4294967295] "ms" VCU
+ SG_ CellVoltageSlot00 : 64|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot01 : 80|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot02 : 96|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot03 : 112|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot04 : 128|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot05 : 144|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot06 : 160|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot07 : 176|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot08 : 192|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot09 : 208|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot10 : 224|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot11 : 240|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot12 : 256|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot13 : 272|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot14 : 288|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot15 : 304|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot16 : 320|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot17 : 336|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot18 : 352|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot19 : 368|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot20 : 384|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot21 : 400|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot22 : 416|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellVoltageSlot23 : 432|16@1+ (0.0001,0) [0|6.5535] "V" VCU
+ SG_ CellValidBitmap : 448|24@1+ (1,0) [0|16777215] "" VCU
+ SG_ CellBalanceBitmap : 472|24@1+ (1,0) [0|16777215] "" VCU
+ SG_ CellFrameCoherent : 496|1@1+ (1,0) [0|1] "" VCU
+ SG_ CellPageCrc8 : 504|8@1+ (1,0) [0|255] "" VCU
+
+BO_ 281 BMS_TemperaturePage: 64 PackController
+ SG_ TemperaturePageAliveCounter : 0|4@1+ (1,0) [0|15] "" VCU
+ SG_ TemperaturePageIndex : 4|4@1+ (1,0) [0|8] "" VCU
+ SG_ TemperaturePageCount : 8|8@1+ (1,0) [9|9] "" VCU
+ SG_ TemperatureSampleCounter : 16|16@1+ (1,0) [0|65535] "" VCU
+ SG_ TemperatureSampleTimestamp : 32|32@1+ (1,0) [0|4294967295] "ms" VCU
+ SG_ TemperatureSlot00 : 64|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot01 : 80|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot02 : 96|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot03 : 112|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot04 : 128|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot05 : 144|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot06 : 160|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot07 : 176|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot08 : 192|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot09 : 208|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot10 : 224|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot11 : 240|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot12 : 256|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot13 : 272|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot14 : 288|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot15 : 304|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot16 : 320|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot17 : 336|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot18 : 352|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot19 : 368|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot20 : 384|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot21 : 400|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot22 : 416|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureSlot23 : 432|16@1- (0.1,0) [-100|200] "degC" VCU
+ SG_ TemperatureValidBitmap : 448|24@1+ (1,0) [0|16777215] "" VCU
+ SG_ TemperatureFaultBitmap : 472|24@1+ (1,0) [0|16777215] "" VCU
+ SG_ TemperatureFrameCoherent : 496|1@1+ (1,0) [0|1] "" VCU
+ SG_ TemperatureAverageValid : 497|1@1+ (1,0) [0|1] "" VCU
+ SG_ TemperaturePageCrc8 : 504|8@1+ (1,0) [0|255] "" VCU
+
+
+CM_ BO_ 256 "Identisches Layout auf CAN1 und CAN2. Der 4-bit-Counter wird je Bus und Message bei jeder Sendung modulo 16 inkrementiert. CRC8 ist reserviert und bei StatusCrcEnabled=0 immer 0.";
+CM_ SG_ 256 ControlAliveCounter "Alive-Counter der Control-Message; vom VCU je Bus bei jeder Sendung modulo 16 erhoeht.";
+CM_ SG_ 256 ControlProtocolVersion "Version des Control-Nachrichtenlayouts; aktuell CONTROL_PROTOCOL_V0.";
+CM_ SG_ 256 HVOnRequest "Anforderung des VCU, den HV-Stateflow einzuschalten; nur von der autoritativen frischen Quelle gueltig.";
+CM_ SG_ 256 DcdcEnableRequest "Anforderung des VCU, den DCDC-Stateflow einzuschalten; nur von der autoritativen frischen Quelle gueltig.";
+CM_ SG_ 256 BalanceEnable "Freigabeanforderung des VCU fuer Balancing; Safety- und Stateflow-Gates bleiben wirksam.";
+CM_ SG_ 256 SafeResetRequest "Flankenbasierte Anforderung zum Loeschen ausschliesslich CAN-ruecksetzbarer Fault-Latches nach allen Safe-Reset-Gates.";
+CM_ SG_ 256 ChargeModeRequest "Anforderung des VCU fuer den Ladebetriebsmodus.";
+CM_ SG_ 256 DriveModeRequest "Anforderung des VCU fuer den Fahrbetriebsmodus.";
+CM_ SG_ 256 BeepShutoffOverride "Anforderung zum Abschalten des nicht sicherheitskritischen Beep-Ausgangs.";
+CM_ SG_ 256 PrepareShutdownRequest "Anforderung des VCU zur geordneten Vorbereitung auf das Abschalten.";
+CM_ SG_ 256 FanSpeedRequest "Angeforderter Luefter-Sollwert in Prozent; lokale Failsafe-Begrenzungen haben Vorrang.";
+CM_ SG_ 256 ControlRequestSequence "Vom VCU fortgeschriebene fachliche Request-Sequenz, unabhaengig vom 4-bit-Alive-Counter.";
+CM_ SG_ 256 ControlCrc8 "Reserviertes CRC8-Feld der Control-Message; solange CRC-Pruefung deaktiviert ist, Wert 0 senden.";
+CM_ BO_ 257 "I_pack > 0 bedeutet Entladen, I_pack < 0 Laden. Message-Alter >500 ms setzt PACK_CURRENT_INVALID.";
+CM_ SG_ 257 CurrentAliveCounter "Alive-Counter des Stromsensors; bei jeder Sendung modulo 16 erhoeht.";
+CM_ SG_ 257 CurrentProtocolVersion "Version des Stromsensor-Nachrichtenlayouts; aktuell CURRENT_PROTOCOL_V0.";
+CM_ SG_ 257 CurrentQuality "Qualitaet der Stromsensorwerte nach der gemeinsamen SignalQuality-Codierung.";
+CM_ SG_ 257 PackCurrent "Gemessener Packstrom; positive Werte bedeuten Entladen, negative Werte Laden.";
+CM_ SG_ 257 CurrentSensorTemperature "Vom Stromsensor gemeldete interne Sensortemperatur.";
+CM_ SG_ 257 CurrentSourceTimestamp "Zeitstempel des zugrunde liegenden Stromsensor-Samples in Millisekunden.";
+CM_ SG_ 257 CurrentSensorStatus "Herstellerspezifisches Status-Bitfeld des Stromsensors; keine Enum ohne abgestimmten Sensorvertrag.";
+CM_ SG_ 257 CurrentSensorId "Vom Stromsensor gemeldete Sensor- oder Instanzkennung.";
+CM_ SG_ 257 CurrentCrc8 "Reserviertes CRC8-Feld der Stromsensor-Message; bei deaktivierter CRC-Pruefung Wert 0.";
+CM_ BO_ 258 "P_inverter > 0 bedeutet Entladen, P_inverter < 0 Laden/Rekuperation. Message-Alter >500 ms deaktiviert nur die Compliance-Auswertung.";
+CM_ SG_ 258 InverterAliveCounter "Alive-Counter der Inverter-Message; bei jeder Sendung modulo 16 erhoeht.";
+CM_ SG_ 258 InverterProtocolVersion "Version des Inverter-Nachrichtenlayouts; aktuell INVERTER_PROTOCOL_V0.";
+CM_ SG_ 258 InverterQuality "Qualitaet der Inverterwerte nach der gemeinsamen SignalQuality-Codierung.";
+CM_ SG_ 258 InverterPowerActual "Vom Inverter gemeldete DC-Leistung; positiv beim Entladen, negativ beim Laden oder Rekuperieren.";
+CM_ SG_ 258 InverterDcVoltage "Vom Inverter gemessene DC-Zwischenkreisspannung.";
+CM_ SG_ 258 InverterSourceTimestamp "Zeitstempel des zugrunde liegenden Inverter-Samples in Millisekunden.";
+CM_ SG_ 258 InverterState "Externer Inverter-Zustandswert; bleibt bis zur Abstimmung mit der Fahrzeug-DBC bewusst ohne lokale Enum.";
+CM_ SG_ 258 BmsLimitsAccepted "Rueckmeldung des Inverters, dass die publizierten BMS-Leistungsgrenzen uebernommen wurden.";
+CM_ SG_ 258 InverterCrc8 "Reserviertes CRC8-Feld der Inverter-Message; bei deaktivierter CRC-Pruefung Wert 0.";
+CM_ BO_ 288 "Ereignisgesteuerter Servicezugriff. CONFIG_STAGE uebertraegt bis zu 12 Bytes little-endian, CONFIG_COMMIT schreibt nach Safety-Gate den kompletten SystemConfig-A/B-Record. EEPROM_SELFTEST benoetigt COMMIT_REQUESTED. Developer-Befehle existieren nur im BOARD_BRINGUP-Build.";
+CM_ SG_ 288 ServiceRequestAliveCounter "Alive-Counter der Serviceanforderungen; je Bus und Service-Message modulo 16 erhoeht.";
+CM_ SG_ 288 ServiceRequestProtocolVersion "Version des Service-Request-Layouts; aktuell SERVICE_REQUEST_PROTOCOL_V0.";
+CM_ SG_ 288 ServiceCommand "Auszufuehrender Servicebefehl gemaess der hinterlegten Value-Table.";
+CM_ SG_ 288 ServiceSequence "Sequenznummer zur eindeutigen Zuordnung von Serviceanforderung und Antwort.";
+CM_ SG_ 288 ServiceTarget "Konfigurationsblock gemaess Value-Table; fuer EEPROM_SELFTEST und Developer-Befehle NVM_TARGET_NONE senden.";
+CM_ SG_ 288 ServiceSubIndex "Byte-Offset innerhalb des ausgewaehlten ServiceTarget; CONFIG_READ liefert ab dort bis zu 12 Bytes, CONFIG_STAGE schreibt ServicePayloadLength Bytes.";
+CM_ SG_ 288 ServiceValue2 "Befehlsabhaengiger dritter 32-bit-Servicewert; bei ungenutztem Feld 0.";
+CM_ SG_ 288 ServicePayloadLength "CONFIG_STAGE: 1 bis 12 gueltige little-endian Payload-Bytes in ServiceValue0 bis ServiceValue2; bei READ, COMMIT und SELFTEST 0.";
+CM_ SG_ 288 ServiceCommitRequest "Muss fuer CONFIG_COMMIT und EEPROM_SELFTEST COMMIT_REQUESTED sein; alle anderen Befehle verwenden COMMIT_NOT_REQUESTED.";
+CM_ SG_ 288 ServiceRequestCrc8 "CRC8 der Serviceanforderung; solange CRC-Pruefung deaktiviert ist, Wert 0.";
+CM_ BO_ 289 "Antwort auf BMS_ServiceRequest mit identischer Sequence. Keine zyklische Alive-Ueberwachung; der Counter erkennt lediglich Drop/Duplikat.";
+CM_ SG_ 289 ServiceResponseAliveCounter "Alive-Counter der Serviceantworten; je Bus und Service-Message modulo 16 erhoeht.";
+CM_ SG_ 289 ServiceResponseProtocolVersion "Version des Service-Response-Layouts; aktuell SERVICE_RESPONSE_PROTOCOL_V0.";
+CM_ SG_ 289 ServiceResponseCommand "Echo des beantworteten Servicebefehls.";
+CM_ SG_ 289 ServiceResponseSequence "Echo der ServiceSequence zur Zuordnung von Anfrage und Antwort.";
+CM_ SG_ 289 ServiceResult "Ergebniscode der Serviceverarbeitung gemaess der hinterlegten Value-Table.";
+CM_ SG_ 289 ServiceResponseTarget "Echo oder tatsaechlich bearbeitetes ServiceTarget.";
+CM_ SG_ 289 ServiceResponseValue0 "Befehlsabhaengiger erster 32-bit-Antwortwert.";
+CM_ SG_ 289 ServiceResponseValue1 "Befehlsabhaengiger zweiter 32-bit-Antwortwert.";
+CM_ SG_ 289 ServiceResponseValue2 "Befehlsabhaengiger dritter 32-bit-Antwortwert.";
+CM_ SG_ 289 ServiceNvmSequence "Sequenznummer des aktuell gueltigen NVM-Records; 0 wenn fuer die Antwort nicht relevant.";
+CM_ SG_ 289 ServiceResponseCrc8 "CRC8 der Serviceantwort; solange CRC-Pruefung deaktiviert ist, Wert 0.";
+CM_ BO_ 274 "Direkte Board-Analogwerte; 20 ms, CAN-FD+BRS, beide Busse.";
+CM_ SG_ 274 AnalogAliveCounter "Alive je Bus, modulo 16.";
+CM_ SG_ 274 AnalogProtocolVersion "Layoutversion; aktuell V0.";
+CM_ SG_ 274 AnalogFrameCoherent "1: alle ADC-DMA-Daten stammen aus demselben Block.";
+CM_ SG_ 274 AnalogQuality "Gesamtquality: 0 INVALID, 1 VALID, 2 STALE, 3 FAULT.";
+CM_ SG_ 274 AnalogSampleCounter "Zaehler der 10-Sample-Bloecke.";
+CM_ SG_ 274 AnalogSampleTimestamp "Erfassungszeit seit Reset.";
+CM_ SG_ 274 RawRLeak1 "10-Sample-Mittel RLeak1; siehe RLeak1Quality.";
+CM_ SG_ 274 RawVVehi "10-Sample-Mittel VVEHI; siehe VVehiQuality.";
+CM_ SG_ 274 RawTntc4 "10-Sample-Mittel TNTC4; siehe Tntc4Quality.";
+CM_ SG_ 274 RawVrefInt "10-Sample-Mittel VREFINT; siehe VrefIntQuality.";
+CM_ SG_ 274 RawRLeak2 "10-Sample-Mittel RLeak2; siehe RLeak2Quality.";
+CM_ SG_ 274 RawTntc1 "10-Sample-Mittel TNTC1; siehe Tntc1Quality.";
+CM_ SG_ 274 RawTntc5 "10-Sample-Mittel TNTC5; siehe Tntc5Quality.";
+CM_ SG_ 274 RawVBatt "10-Sample-Mittel VBatt; siehe VBattQuality.";
+CM_ SG_ 274 RawVAccu "10-Sample-Mittel VACCU; siehe VAccuQuality.";
+CM_ SG_ 274 RawVDcdc "10-Sample-Mittel VDCDC; siehe VDcdcQuality.";
+CM_ SG_ 274 RawTntc3 "10-Sample-Mittel TNTC3; siehe Tntc3Quality.";
+CM_ SG_ 274 RawTntc2 "10-Sample-Mittel TNTC2; siehe Tntc2Quality.";
+CM_ SG_ 274 RLeak1SenseVoltage "RLeak1 ADC-Spannung; siehe RLeak1Quality.";
+CM_ SG_ 274 VVehiAnalog "VVEHI mit Gain 280.167; siehe VVehiQuality.";
+CM_ SG_ 274 Tntc4Temperature "Eaton-NTC-Temperatur; siehe Tntc4Quality.";
+CM_ SG_ 274 Vdda "VDDA aus VREFINT; siehe VrefIntQuality.";
+CM_ SG_ 274 RLeak2SenseVoltage "RLeak2 ADC-Spannung; siehe RLeak2Quality.";
+CM_ SG_ 274 Tntc1Temperature "Eaton-NTC-Temperatur; siehe Tntc1Quality.";
+CM_ SG_ 274 Tntc5Temperature "Eaton-NTC-Temperatur; siehe Tntc5Quality.";
+CM_ SG_ 274 VBattAnalog "VBatt mit Gain 5.54545; siehe VBattQuality.";
+CM_ SG_ 274 VAccuAnalog "VACCU mit Gain 280.167; siehe VAccuQuality.";
+CM_ SG_ 274 VDcdcAnalog "VDCDC mit Gain 280.167; siehe VDcdcQuality.";
+CM_ SG_ 274 Tntc3Temperature "Eaton-NTC-Temperatur; siehe Tntc3Quality.";
+CM_ SG_ 274 Tntc2Temperature "Eaton-NTC-Temperatur; siehe Tntc2Quality.";
+CM_ SG_ 274 RLeak1Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: RLeak1.";
+CM_ SG_ 274 VVehiQuality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: VVEHI.";
+CM_ SG_ 274 Tntc4Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: TNTC4.";
+CM_ SG_ 274 VrefIntQuality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: VREFINT/VDDA.";
+CM_ SG_ 274 RLeak2Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: RLeak2.";
+CM_ SG_ 274 Tntc1Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: TNTC1.";
+CM_ SG_ 274 Tntc5Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: TNTC5.";
+CM_ SG_ 274 VBattQuality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: VBatt.";
+CM_ SG_ 274 VAccuQuality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: VACCU.";
+CM_ SG_ 274 VDcdcQuality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: VDCDC.";
+CM_ SG_ 274 Tntc3Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: TNTC3.";
+CM_ SG_ 274 Tntc2Quality "0 INVALID, 1 VALID, 2 STALE, 3 FAULT: TNTC2.";
+CM_ SG_ 274 AnalogDmaErrorCount "ADC-DMA- und Framefehler seit Reset.";
+CM_ SG_ 274 AnalogDroppedBlockCount "Verworfene Analogbloecke seit Reset.";
+CM_ SG_ 274 AnalogCrc8 "CRC8; derzeit 0.";
+CM_ SG_ 288 ServiceValue0 "CONFIG_STAGE: Payload-Bytes 0 bis 3; DEV_MODE_ENTER: DeveloperMode 1 oder 2; DEV_OUTPUT_SET: Bit0 AIR_N, Bit1 PCHRG, Bit2 AIR_P, Bit3 DCDC.";
+CM_ SG_ 288 ServiceValue1 "CONFIG_STAGE: Payload-Bytes 4 bis 7; DEV_MODE_ENTER: Build-Key BRT = 0x00425254; kein Security-Mechanismus.";
+CM_ BO_ 272 "Zyklisch 20 ms und ereignisgetrieben. Alle digitalen Zustände sind 100-ms-bestaetigt; Rawwerte stehen in BMS_SafetyDiag.";
+CM_ SG_ 272 StatusAliveCounter "Alive-Counter der Status-Message; vom PackController je Bus bei jeder Sendung modulo 16 erhoeht.";
+CM_ SG_ 272 StatusCrcEnabled "Zeigt an, ob die CRC8-Auswertung fuer die zyklischen Statusframes aktiviert ist.";
+CM_ SG_ 272 AuthoritativeCanBus "Aktuell fuer VCU-Befehle autoritative CAN-Quelle mit Prioritaet fuer CAN1.";
+CM_ SG_ 272 CriticalErrorActive "Zentrale Fault-Manager-Aggregation; aktiv ab kontrolliert kritischer Severity.";
+CM_ SG_ 272 HvState "Aktueller Zustand des einzigen HV-Schuetz-Stateflows.";
+CM_ SG_ 272 DcdcState "Aktueller Zustand des DCDC-Stateflows.";
+CM_ SG_ 272 HvReady "Gesamtergebnis aller Voraussetzungen fuer einen HV-On-Eintritt.";
+CM_ SG_ 272 ChargeState "Aktueller Zustand des Lade-Stateflows.";
+CM_ SG_ 272 DrivingModeActive "Zeigt den aktuell aktiven Fahrbetriebsmodus an.";
+CM_ SG_ 272 HvOnInhibitCold "Zeigt eine temperaturbedingte Sperre fuer einen neuen HV-On-Eintritt an.";
+CM_ SG_ 272 BalanceActive "Zeigt an, dass mindestens eine Zelle aktuell zum Balancing angesteuert wird.";
+CM_ SG_ 272 SafeResetAllowed "Zeigt an, dass alle normativen Bedingungen fuer einen Safe-Reset erfuellt sind.";
+CM_ SG_ 272 ChargeModeActive "Zeigt den aktuell aktiven Ladebetriebsmodus an.";
+CM_ SG_ 272 AirNSwitch "Vom Output Arbiter final an den AIR_N-Ausgang geschriebener Sollwert.";
+CM_ SG_ 272 AirNIntended "Vom HV-Stateflow beabsichtigter AIR_N-Zustand vor dem finalen Output-Commit.";
+CM_ SG_ 272 AirNActual "100-ms-bestaetigte Rueckmeldung des negativen Hauptschuetzes.";
+CM_ SG_ 272 PrechargeSwitch "Vom Output Arbiter final an den Precharge-Ausgang geschriebener Sollwert.";
+CM_ SG_ 272 PrechargeActual "100-ms-bestaetigte Rueckmeldung des Precharge-Schuetzes.";
+CM_ SG_ 272 AirPSwitch "Vom Output Arbiter final an den AIR_P-Ausgang geschriebener Sollwert.";
+CM_ SG_ 272 AirPIntended "Vom HV-Stateflow beabsichtigter AIR_P-Zustand vor dem finalen Output-Commit.";
+CM_ SG_ 272 AirPActual "100-ms-bestaetigte Rueckmeldung des positiven Hauptschuetzes.";
+CM_ SG_ 272 DcdcSwitch "Vom Output Arbiter final an den DCDC-Ausgang geschriebener Sollwert.";
+CM_ SG_ 272 DcdcActual "100-ms-bestaetigte Rueckmeldung des DCDC-Schaltzustands.";
+CM_ SG_ 272 PrechargeDone_n "Aktiv-LOW-Eingang nPRCHG_DONE nach 100-ms-Bestaetigung.";
+CM_ SG_ 272 AirError_n "Aktiv-LOW-Eingang nAIR_Error nach 100-ms-Bestaetigung.";
+CM_ SG_ 272 PorState_n "Aktiv-LOW-Sicherheitsfreigabe nPOR_State nach 100-ms-Bestaetigung; HIGH ist gueltig.";
+CM_ SG_ 272 ScLatched "100-ms-bestaetigter Hardware-Safety-Circuit-Latch; HIGH erfordert Power-Cycle.";
+CM_ SG_ 272 DangerVoltage "Bestaetigter Gefahrspannungszustand; aus aktiv-LOW nDangerV in positive Logik umgesetzt.";
+CM_ SG_ 272 TsalGreenActual "Bestaetigte physische Rueckmeldung der gruenen TSAL-Ansteuerung.";
+CM_ SG_ 272 PrimaryFaultId "Fault-ID des nach Severity und Prioritaet ausgewaehlten primaeren Fehlers; 0 bedeutet kein Fault.";
+CM_ SG_ 272 FaultSeverity "Severity des PrimaryFaultId gemaess Fault-Matrix.";
+CM_ SG_ 272 FaultResetPolicy "Resetklasse des PrimaryFaultId gemaess Fault-Matrix.";
+CM_ SG_ 272 TleStackState "Aktueller Kommunikationszustand des TLE9015-Stacks.";
+CM_ SG_ 272 PowerLimitsValid "Gueltigkeit der publizierten Lade- und Entladeleistungsgrenzen.";
+CM_ SG_ 272 ImdState "Dekodierter Zustand des konfigurierten Isolationswaechters.";
+CM_ SG_ 272 LeakageStateMax "Konservativ hoechster Leakage-Zustand aus beiden Messpfaden.";
+CM_ SG_ 272 SocQuality "Qualitaet des publizierten Ladezustands nach der gemeinsamen SignalQuality-Codierung.";
+CM_ SG_ 272 RuntimeSeconds "Laufzeit seit MCU-Reset; beginnt bei 0 s.";
+CM_ SG_ 272 CellVoltageMin "Kleinste gueltige Zellgruppenspannung des aktuellen kohaerenten Samples.";
+CM_ SG_ 272 CellVoltageMax "Groesste gueltige Zellgruppenspannung des aktuellen kohaerenten Samples.";
+CM_ SG_ 272 CellVoltageMinIndex "Globaler Zellgruppenindex des Werts CellVoltageMin.";
+CM_ SG_ 272 CellVoltageMaxIndex "Globaler Zellgruppenindex des Werts CellVoltageMax.";
+CM_ SG_ 272 CellTemperatureMin "Kleinste gueltige NTC-Temperatur des aktuellen Temperatur-Samples.";
+CM_ SG_ 272 CellTemperatureMax "Groesste gueltige NTC-Temperatur des aktuellen Temperatur-Samples.";
+CM_ SG_ 272 CellTemperatureMinIndex "Globaler NTC-Index des Werts CellTemperatureMin.";
+CM_ SG_ 272 CellTemperatureMaxIndex "Globaler NTC-Index des Werts CellTemperatureMax.";
+CM_ SG_ 272 NtcValidCount "Anzahl aktuell gueltiger NTC-Werte im Pack.";
+CM_ SG_ 272 NtcInvalidCount "Anzahl aktuell ungueltiger oder fehlender NTC-Werte im Pack.";
+CM_ SG_ 272 Soc "Geschaetzter Ladezustand des Packs in Prozent.";
+CM_ SG_ 272 Soh "Geschaetzter Gesundheitszustand des Packs in Prozent.";
+CM_ SG_ 272 PDischargeMax "Aktuell freigegebene maximale Entladeleistung des Packs.";
+CM_ SG_ 272 PChargeMax "Aktuell freigegebene maximale Ladeleistung des Packs.";
+CM_ SG_ 272 PackCurrentMeasured "Vom PackController verwendeter gemessener Packstrom; positiv beim Entladen.";
+CM_ SG_ 272 PackPowerMeasured "Aus den gueltigen Messwerten bestimmte aktuelle Packleistung; positiv beim Entladen.";
+CM_ SG_ 272 ImdResistance "Vom IMD dekodierter Isolationswiderstand.";
+CM_ SG_ 272 ImdFrequency "Gemessene Frequenz des IMD-PWM-Signals.";
+CM_ SG_ 272 ImdDutyCycle "Gemessener Tastgrad des IMD-PWM-Signals.";
+CM_ SG_ 272 LeakageResistance1 "Berechneter Isolations- oder Leakage-Widerstand des ersten Messpfads.";
+CM_ SG_ 272 LeakageResistance2 "Berechneter Isolations- oder Leakage-Widerstand des zweiten Messpfads.";
+CM_ SG_ 272 StatusAge "Alter des dem Statusframe zugrunde liegenden konsistenten Anwendungssnapshots.";
+CM_ SG_ 272 DeveloperMode "Aktueller volatile Developer-Modus; in PACK_162S2P immer DEV_DISABLED.";
+CM_ SG_ 272 StatusCrc8 "CRC8 des Statusframes; solange StatusCrcEnabled deaktiviert ist, Wert 0.";
+CM_ BO_ 273 "Zyklisch 100 ms und ereignisgetrieben. FaultId n liegt in Bit n der beiden 64-bit-Bitmaphaelften. DigitalBitmap: bit0 nPRCHG_DONE, 1 PCHRG_ACTUAL, 2 AIR_P_INTENDED, 3 AIR_P_ACTUAL, 4 AIR_N_INTENDED, 5 AIR_N_ACTUAL, 6 nAIR_Error, 7 DCDC_ACTUAL, 8 nDangerV, 9 nPOR_State, 10 SC_Latched, 11 TSAL_GRN_ON, 12 IMD_OK, 13 IMD_STATE level, 14 IMD_SC_CLOSED, 15 ERR_loc_out, 16 ERR_ext_out, 17 ERRQ physical level. Kurze TLE-Fehlerpulse werden bis zur Uebertragung in TleErrorPulseLatched gehalten.";
+CM_ SG_ 273 SafetyAliveCounter "Alive-Counter der Safety-Diagnose; vom PackController je Bus bei jeder Sendung modulo 16 erhoeht.";
+CM_ SG_ 273 SafetyProtocolVersion "Version des Safety-Diagnose-Layouts; aktuell SAFETY_PROTOCOL_V0.";
+CM_ SG_ 273 ResetCause "Bitfeld der beim Boot gesicherten MCU-Resetursachen; keine Enum, da mehrere Ursachen gleichzeitig gesetzt sein koennen.";
+CM_ SG_ 273 Can1State "Zusammengefasster Controllerzustand von FDCAN1 mit Vorrang BUS_OFF vor ERROR_PASSIVE vor ERROR_ACTIVE.";
+CM_ SG_ 273 Can2State "Zusammengefasster Controllerzustand von FDCAN2 mit Vorrang BUS_OFF vor ERROR_PASSIVE vor ERROR_ACTIVE.";
+CM_ SG_ 273 AdcQuality "ADC-Quality: 0 INVALID, 1 VALID, 2 STALE, 3 FAULT.";
+CM_ SG_ 273 SchedulerHealthy "Ergebnis des Scheduler-Health-Gates fuer den aktuellen Ueberwachungszeitraum.";
+CM_ SG_ 273 WatchdogFeedEnabled "Zeigt an, ob alle Health-Gates die externe Watchdog-Bedienung erlauben.";
+CM_ SG_ 273 TsalGreenSoftware "Softwareentscheidung fuer die gruene TSAL-Anzeige vor physischer Rueckmeldung.";
+CM_ SG_ 273 ImdOk "Zusammengefasste IMD-Freigabe fuer die HV-Bereitschaft.";
+CM_ SG_ 273 DigitalRawBitmap "Unbestaetigte logische Pegel der im Message-Kommentar definierten Digitaleingaenge.";
+CM_ SG_ 273 DigitalConfirmedBitmap "Nach 100 ms bestaetigte logische Pegel der im Message-Kommentar definierten Digitaleingaenge.";
+CM_ SG_ 273 FaultActiveBitmapLo "Aktive Fault-IDs 0 bis 63; FaultId n entspricht Bit n.";
+CM_ SG_ 273 FaultActiveBitmapHi "Aktive Fault-IDs 64 bis 127; FaultId n entspricht Bit n minus 64.";
+CM_ SG_ 273 FaultLatchedBitmapLo "Gesetzte Fault-Latches der IDs 0 bis 63; FaultId n entspricht Bit n.";
+CM_ SG_ 273 FaultLatchedBitmapHi "Gesetzte Fault-Latches der IDs 64 bis 127; FaultId n entspricht Bit n minus 64.";
+CM_ SG_ 273 SchedulerLoopLast "Zeit zwischen dem Beginn der letzten beiden Mainloop-Durchlaeufe; kein Task-Laufzeitwert.";
+CM_ SG_ 273 SchedulerLoopMax "Groesste Zeit zwischen zwei Mainloop-Durchlaeufen seit Reset.";
+CM_ SG_ 273 Can1DroppedFrames "Saettigende Summe aus FDCAN1-RX-Ringverlusten sowie erkannten Control- und Service-Alive-Duplikaten oder -Luecken.";
+CM_ SG_ 273 Can2DroppedFrames "Saettigende Summe aus FDCAN2-RX-Ringverlusten sowie erkannten Control- und Service-Alive-Duplikaten oder -Luecken.";
+CM_ SG_ 273 TleValidSlaveCount "Anzahl aktuell erkannter und gueltig kommunizierender TLE-Slaves.";
+CM_ SG_ 273 TleValidNtcCount "Anzahl aktuell gueltiger TLE-NTC-Messwerte.";
+CM_ SG_ 273 BalanceActiveCellCount "Anzahl aktuell zum Balancing angesteuerter Zellgruppen.";
+CM_ SG_ 273 AdcDmaErrorCount "Saettigender Zaehler erkannter ADC-DMA- oder Framefehler seit Reset.";
+CM_ SG_ 273 Can1BusOffCount "Saettigender Zaehler erkannter Bus-Off-Eintritte von FDCAN1 seit Reset.";
+CM_ SG_ 273 Can2BusOffCount "Saettigender Zaehler erkannter Bus-Off-Eintritte von FDCAN2 seit Reset.";
+CM_ SG_ 273 EepromErrorCount "Saettigender Zaehler erkannter EEPROM-/NVM-Kommunikations-, CRC-, Schema- oder Verifikationsfehler seit Reset.";
+CM_ SG_ 273 ImdHardwareType "Konfigurierter IMD-Hardwaretyp fuer die PWM-Dekodierung.";
+CM_ SG_ 273 LeakageLevel1 "Klassifizierter Zustand des ersten Leakage-Messpfads.";
+CM_ SG_ 273 LeakageLevel2 "Klassifizierter Zustand des zweiten Leakage-Messpfads.";
+CM_ SG_ 273 BalanceState "Aktueller Zustand der Balancing-Logik.";
+CM_ SG_ 273 BuzzerState "Aktueller Zustand des Buzzer-Sequencers.";
+CM_ SG_ 273 FanFailsafeActive "Zeigt an, dass die lokale Failsafe-Anforderung den normalen Luefter-Sollwert uebersteuert.";
+CM_ SG_ 273 TleErrqActive "Aktuell ausgewerteter aktiver TLE-ERRQ-Zustand in positiver Logik.";
+CM_ SG_ 273 TleErrorPulseLatched "Bis zur CAN-Uebertragung gespeicherter kurzer TLE-Fehlerpuls.";
+CM_ SG_ 273 SafetyCrc8 "CRC8 des Safety-Diagnoseframes; solange CRC-Pruefung deaktiviert ist, Wert 0.";
+CM_ BO_ 280 "Seitencodierung: cell_index = CellPageIndex*24 + slot = slave_index*9 + local_cell. Seiten 0..6; auf Seite 6 sind nur Slots 0..17 belegt. Alle sieben Seiten tragen denselben CellSampleCounter und werden innerhalb eines 20-ms-Zyklus gesendet. Ein ungueltiger Slot hat ValidBit=0 und Rohwert 0xFFFF.";
+CM_ SG_ 280 CellPageAliveCounter "Alive-Counter der Zellseite; vom PackController je Bus und gesendeter Seite modulo 16 erhoeht.";
+CM_ SG_ 280 CellPageIndex "Nullbasierter Seitenindex; globaler Zellgruppenindex ist CellPageIndex mal 24 plus Slot.";
+CM_ SG_ 280 CellPageCount "Konstante Anzahl der Zellseiten pro vollstaendigem Pack-Snapshot; Wert 7.";
+CM_ SG_ 280 CellSampleCounter "Gemeinsamer Sample-Counter aller sieben Seiten eines kohaerenten Zellspannungs-Snapshots.";
+CM_ SG_ 280 CellSampleTimestamp "Monotoner Erfassungszeitstempel des Zellspannungs-Snapshots in Millisekunden.";
+CM_ SG_ 280 CellVoltageSlot00 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 0.";
+CM_ SG_ 280 CellVoltageSlot01 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 1.";
+CM_ SG_ 280 CellVoltageSlot02 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 2.";
+CM_ SG_ 280 CellVoltageSlot03 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 3.";
+CM_ SG_ 280 CellVoltageSlot04 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 4.";
+CM_ SG_ 280 CellVoltageSlot05 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 5.";
+CM_ SG_ 280 CellVoltageSlot06 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 6.";
+CM_ SG_ 280 CellVoltageSlot07 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 7.";
+CM_ SG_ 280 CellVoltageSlot08 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 8.";
+CM_ SG_ 280 CellVoltageSlot09 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 9.";
+CM_ SG_ 280 CellVoltageSlot10 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 10.";
+CM_ SG_ 280 CellVoltageSlot11 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 11.";
+CM_ SG_ 280 CellVoltageSlot12 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 12.";
+CM_ SG_ 280 CellVoltageSlot13 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 13.";
+CM_ SG_ 280 CellVoltageSlot14 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 14.";
+CM_ SG_ 280 CellVoltageSlot15 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 15.";
+CM_ SG_ 280 CellVoltageSlot16 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 16.";
+CM_ SG_ 280 CellVoltageSlot17 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 17.";
+CM_ SG_ 280 CellVoltageSlot18 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 18.";
+CM_ SG_ 280 CellVoltageSlot19 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 19.";
+CM_ SG_ 280 CellVoltageSlot20 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 20.";
+CM_ SG_ 280 CellVoltageSlot21 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 21.";
+CM_ SG_ 280 CellVoltageSlot22 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 22.";
+CM_ SG_ 280 CellVoltageSlot23 "Zellgruppenspannung fuer globalen Index CellPageIndex mal 24 plus 23.";
+CM_ SG_ 280 CellValidBitmap "24-bit-Gueltigkeitsmaske; Bit n kennzeichnet CellVoltageSlot n als gueltig.";
+CM_ SG_ 280 CellBalanceBitmap "24-bit-Balancingmaske; Bit n kennzeichnet aktives Balancing fuer CellVoltageSlot n.";
+CM_ SG_ 280 CellFrameCoherent "Zeigt an, dass Counter, Zeitstempel und alle gueltigen Slots zur selben Erfassung gehoeren.";
+CM_ SG_ 280 CellPageCrc8 "CRC8 der Zellseite; solange CRC-Pruefung deaktiviert ist, Wert 0.";
+CM_ BO_ 281 "Seitencodierung: ntc_index = TemperaturePageIndex*24 + slot = slave_index*12 + local_ntc. Seiten 0..8 bilden exakt 216 NTCs ab. local_ntc 0..8 gehoert zur gleichnamigen Zellgruppe, 9..11 ist generisch. Alle neun Seiten tragen denselben SampleCounter. Jeder NTC wird mindestens alle 500 ms gesendet. Ungueltig: ValidBit=0 und Rohwert 0x8000.";
+CM_ SG_ 281 TemperaturePageAliveCounter "Alive-Counter der Temperaturseite; vom PackController je Bus und gesendeter Seite modulo 16 erhoeht.";
+CM_ SG_ 281 TemperaturePageIndex "Nullbasierter Seitenindex; globaler NTC-Index ist TemperaturePageIndex mal 24 plus Slot.";
+CM_ SG_ 281 TemperaturePageCount "Konstante Anzahl der Temperaturseiten pro vollstaendigem Pack-Snapshot; Wert 9.";
+CM_ SG_ 281 TemperatureSampleCounter "Gemeinsamer Sample-Counter aller neun Seiten eines kohaerenten Temperatur-Snapshots.";
+CM_ SG_ 281 TemperatureSampleTimestamp "Monotoner Erfassungszeitstempel des Temperatur-Snapshots in Millisekunden.";
+CM_ SG_ 281 TemperatureSlot00 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 0.";
+CM_ SG_ 281 TemperatureSlot01 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 1.";
+CM_ SG_ 281 TemperatureSlot02 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 2.";
+CM_ SG_ 281 TemperatureSlot03 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 3.";
+CM_ SG_ 281 TemperatureSlot04 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 4.";
+CM_ SG_ 281 TemperatureSlot05 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 5.";
+CM_ SG_ 281 TemperatureSlot06 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 6.";
+CM_ SG_ 281 TemperatureSlot07 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 7.";
+CM_ SG_ 281 TemperatureSlot08 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 8.";
+CM_ SG_ 281 TemperatureSlot09 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 9.";
+CM_ SG_ 281 TemperatureSlot10 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 10.";
+CM_ SG_ 281 TemperatureSlot11 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 11.";
+CM_ SG_ 281 TemperatureSlot12 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 12.";
+CM_ SG_ 281 TemperatureSlot13 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 13.";
+CM_ SG_ 281 TemperatureSlot14 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 14.";
+CM_ SG_ 281 TemperatureSlot15 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 15.";
+CM_ SG_ 281 TemperatureSlot16 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 16.";
+CM_ SG_ 281 TemperatureSlot17 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 17.";
+CM_ SG_ 281 TemperatureSlot18 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 18.";
+CM_ SG_ 281 TemperatureSlot19 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 19.";
+CM_ SG_ 281 TemperatureSlot20 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 20.";
+CM_ SG_ 281 TemperatureSlot21 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 21.";
+CM_ SG_ 281 TemperatureSlot22 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 22.";
+CM_ SG_ 281 TemperatureSlot23 "NTC-Temperatur fuer globalen Index TemperaturePageIndex mal 24 plus 23.";
+CM_ SG_ 281 TemperatureValidBitmap "24-bit-Gueltigkeitsmaske; Bit n kennzeichnet TemperatureSlot n als gueltig.";
+CM_ SG_ 281 TemperatureFaultBitmap "24-bit-Fehlermaske; Bit n kennzeichnet einen diagnostizierten Fehler fuer TemperatureSlot n.";
+CM_ SG_ 281 TemperatureFrameCoherent "Zeigt an, dass Counter, Zeitstempel und alle gueltigen Slots zur selben Erfassung gehoeren.";
+CM_ SG_ 281 TemperatureAverageValid "Zeigt an, dass das fortgeschriebene 1-s-Temperaturmittel gueltig ist.";
+CM_ SG_ 281 TemperaturePageCrc8 "CRC8 der Temperaturseite; solange CRC-Pruefung deaktiviert ist, Wert 0.";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_ "BusType" STRING;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "BusType" "CAN";
+BA_ "BusType" "CAN FD";
+BA_ "VFrameFormat" BO_ 256 14;
+BA_ "VFrameFormat" BO_ 257 14;
+BA_ "VFrameFormat" BO_ 258 14;
+BA_ "VFrameFormat" BO_ 274 14;
+BA_ "VFrameFormat" BO_ 272 14;
+BA_ "VFrameFormat" BO_ 273 14;
+BA_ "VFrameFormat" BO_ 280 14;
+BA_ "VFrameFormat" BO_ 281 14;
+BA_ "VFrameFormat" BO_ 288 14;
+BA_ "VFrameFormat" BO_ 289 14;
+BA_ "CANFD_BRS" BO_ 256 1;
+BA_ "CANFD_BRS" BO_ 257 1;
+BA_ "CANFD_BRS" BO_ 258 1;
+BA_ "CANFD_BRS" BO_ 274 1;
+BA_ "CANFD_BRS" BO_ 272 1;
+BA_ "CANFD_BRS" BO_ 273 1;
+BA_ "CANFD_BRS" BO_ 280 1;
+BA_ "CANFD_BRS" BO_ 281 1;
+BA_ "CANFD_BRS" BO_ 288 1;
+BA_ "CANFD_BRS" BO_ 289 1;
+BA_ "GenMsgCycleTime" BO_ 256 100;
+BA_ "GenMsgCycleTime" BO_ 257 20;
+BA_ "GenMsgCycleTime" BO_ 258 20;
+BA_ "GenMsgCycleTime" BO_ 274 20;
+BA_ "GenMsgCycleTime" BO_ 272 20;
+BA_ "GenMsgCycleTime" BO_ 273 100;
+BA_ "GenMsgCycleTime" BO_ 280 20;
+BA_ "GenMsgCycleTime" BO_ 281 500;
+BA_ "GenMsgCycleTime" BO_ 288 0;
+BA_ "GenMsgCycleTime" BO_ 289 0;
+
+VAL_ 272 AuthoritativeCanBus 0 "CAN_SOURCE_NONE" 1 "CAN_SOURCE_MAIN" 2 "CAN_SOURCE_BACKUP" ;
+VAL_ 272 HvState 0 "HV_BOOT" 1 "HV_SELF_TEST" 2 "HV_NOT_READY" 3 "HV_OFF" 4 "HV_NEG_WAIT_SD" 5 "HV_PRECHARGE" 6 "HV_POS_WAIT" 7 "HV_ON" 8 "HV_SAFE_PENDING" 9 "HV_SAFE" 10 "HV_DEVELOPER_OUTPUT_TEST" ;
+VAL_ 272 DcdcState 0 "DCDC_OFF" 1 "DCDC_PRECHARGE" 2 "DCDC_ON" 3 "DCDC_FAULT" 4 "DCDC_DEVELOPER" ;
+VAL_ 272 DeveloperMode 0 "DEV_DISABLED" 1 "DEV_OUTPUT_TEST" 2 "DEV_COMMISSIONING" ;
+VAL_ 272 ChargeState 0 "CHARGE_OFF" 1 "CHARGE_READY" 2 "CHARGE_ACTIVE" 3 "CHARGE_TAPER" 4 "CHARGE_FULL" ;
+VAL_ 272 FaultSeverity 0 "FAULT_NONE" 1 "FAULT_WARNING" 2 "FAULT_CONTROLLED_CRITICAL" 3 "FAULT_STM_HARDFAULT" 4 "FAULT_HV_HARDFAULT" ;
+VAL_ 272 FaultResetPolicy 0 "FAULT_AUTO_CLEAR" 1 "FAULT_CAN_RESETTABLE" 2 "FAULT_POWER_CYCLE" ;
+VAL_ 272 TleStackState 0 "TLE_STACK_INIT" 1 "TLE_STACK_RING_OK" 2 "TLE_STACK_TWO_LINES" 3 "TLE_STACK_COMM_FAULT" ;
+VAL_ 272 ImdState 0 "IMD_INIT" 1 "IMD_NO_SIGNAL" 2 "IMD_NORMAL" 3 "IMD_UNDERVOLTAGE" 4 "IMD_SPEED_START_GOOD" 5 "IMD_SPEED_START_BAD" 6 "IMD_DEVICE_ERROR" 7 "IMD_EARTH_CONNECTION_FAULT" 8 "IMD_INVALID" ;
+VAL_ 272 LeakageStateMax 0 "LEAK_SUMMARY_OK" 1 "LEAK_SUMMARY_WARNING" 2 "LEAK_SUMMARY_LEAK" 3 "LEAK_SUMMARY_SEVERE" ;
+VAL_ 256 ControlProtocolVersion 0 "CONTROL_PROTOCOL_V0" ;
+VAL_ 256 HVOnRequest 0 "HV_OFF_REQUESTED" 1 "HV_ON_REQUESTED" ;
+VAL_ 256 DcdcEnableRequest 0 "DCDC_DISABLED_REQUESTED" 1 "DCDC_ENABLED_REQUESTED" ;
+VAL_ 256 BalanceEnable 0 "BALANCE_DISABLED" 1 "BALANCE_ENABLED" ;
+VAL_ 256 SafeResetRequest 0 "SAFE_RESET_NOT_REQUESTED" 1 "SAFE_RESET_REQUESTED" ;
+VAL_ 256 ChargeModeRequest 0 "CHARGE_MODE_NOT_REQUESTED" 1 "CHARGE_MODE_REQUESTED" ;
+VAL_ 256 DriveModeRequest 0 "DRIVE_MODE_NOT_REQUESTED" 1 "DRIVE_MODE_REQUESTED" ;
+VAL_ 256 BeepShutoffOverride 0 "BEEP_OVERRIDE_INACTIVE" 1 "BEEP_OVERRIDE_ACTIVE" ;
+VAL_ 256 PrepareShutdownRequest 0 "SHUTDOWN_NOT_REQUESTED" 1 "SHUTDOWN_REQUESTED" ;
+VAL_ 257 CurrentProtocolVersion 0 "CURRENT_PROTOCOL_V0" ;
+VAL_ 257 CurrentQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 258 InverterProtocolVersion 0 "INVERTER_PROTOCOL_V0" ;
+VAL_ 258 InverterQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 258 BmsLimitsAccepted 0 "BMS_LIMITS_NOT_ACCEPTED" 1 "BMS_LIMITS_ACCEPTED" ;
+VAL_ 288 ServiceRequestProtocolVersion 0 "SERVICE_REQUEST_PROTOCOL_V0" ;
+VAL_ 288 ServiceCommitRequest 0 "COMMIT_NOT_REQUESTED" 1 "COMMIT_REQUESTED" ;
+VAL_ 288 ServiceTarget 0 "NVM_TARGET_NONE" 1 "SYSTEM_CONFIG" 2 "CELL_PROFILE_CONFIG" 3 "HV_CONFIG" 4 "CHARGE_CONFIG" 5 "IMD_CONFIG" 6 "LEAKAGE_CONFIG" 7 "ADC_CALIBRATION" ;
+VAL_ 289 ServiceResponseProtocolVersion 0 "SERVICE_RESPONSE_PROTOCOL_V0" ;
+VAL_ 289 ServiceResponseTarget 0 "NVM_TARGET_NONE" 1 "SYSTEM_CONFIG" 2 "CELL_PROFILE_CONFIG" 3 "HV_CONFIG" 4 "CHARGE_CONFIG" 5 "IMD_CONFIG" 6 "LEAKAGE_CONFIG" 7 "ADC_CALIBRATION" ;
+VAL_ 274 AnalogProtocolVersion 0 "ANALOG_PROTOCOL_V0" ;
+VAL_ 274 AnalogFrameCoherent 0 "ANALOG_FRAME_INCOHERENT" 1 "ANALOG_FRAME_COHERENT" ;
+VAL_ 274 AnalogQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 RLeak1Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 VVehiQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 Tntc4Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 VrefIntQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 RLeak2Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 Tntc1Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 Tntc5Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 VBattQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 VAccuQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 VDcdcQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 Tntc3Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 274 Tntc2Quality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 272 StatusCrcEnabled 0 "STATUS_CRC_DISABLED" 1 "STATUS_CRC_ENABLED" ;
+VAL_ 272 CriticalErrorActive 0 "NO_CRITICAL_ERROR" 1 "CRITICAL_ERROR_ACTIVE" ;
+VAL_ 272 HvReady 0 "HV_NOT_READY" 1 "HV_READY" ;
+VAL_ 272 DrivingModeActive 0 "DRIVING_MODE_INACTIVE" 1 "DRIVING_MODE_ACTIVE" ;
+VAL_ 272 HvOnInhibitCold 0 "HV_COLD_INHIBIT_INACTIVE" 1 "HV_COLD_INHIBIT_ACTIVE" ;
+VAL_ 272 BalanceActive 0 "BALANCE_INACTIVE" 1 "BALANCE_ACTIVE" ;
+VAL_ 272 SafeResetAllowed 0 "SAFE_RESET_NOT_ALLOWED" 1 "SAFE_RESET_ALLOWED" ;
+VAL_ 272 ChargeModeActive 0 "CHARGE_MODE_INACTIVE" 1 "CHARGE_MODE_ACTIVE" ;
+VAL_ 272 AirNSwitch 0 "AIR_N_SWITCH_OPEN" 1 "AIR_N_SWITCH_CLOSED" ;
+VAL_ 272 AirNIntended 0 "AIR_N_INTENDED_OPEN" 1 "AIR_N_INTENDED_CLOSED" ;
+VAL_ 272 AirNActual 0 "AIR_N_ACTUAL_OPEN" 1 "AIR_N_ACTUAL_CLOSED" ;
+VAL_ 272 PrechargeSwitch 0 "PRECHARGE_SWITCH_OPEN" 1 "PRECHARGE_SWITCH_CLOSED" ;
+VAL_ 272 PrechargeActual 0 "PRECHARGE_ACTUAL_OPEN" 1 "PRECHARGE_ACTUAL_CLOSED" ;
+VAL_ 272 AirPSwitch 0 "AIR_P_SWITCH_OPEN" 1 "AIR_P_SWITCH_CLOSED" ;
+VAL_ 272 AirPIntended 0 "AIR_P_INTENDED_OPEN" 1 "AIR_P_INTENDED_CLOSED" ;
+VAL_ 272 AirPActual 0 "AIR_P_ACTUAL_OPEN" 1 "AIR_P_ACTUAL_CLOSED" ;
+VAL_ 272 DcdcSwitch 0 "DCDC_SWITCH_OPEN" 1 "DCDC_SWITCH_CLOSED" ;
+VAL_ 272 DcdcActual 0 "DCDC_ACTUAL_OPEN" 1 "DCDC_ACTUAL_CLOSED" ;
+VAL_ 272 PrechargeDone_n 0 "PRECHARGE_DONE" 1 "PRECHARGE_NOT_DONE" ;
+VAL_ 272 AirError_n 0 "AIR_ERROR_ACTIVE" 1 "AIR_ERROR_CLEAR" ;
+VAL_ 272 PorState_n 0 "POR_STATE_INVALID" 1 "POR_STATE_VALID" ;
+VAL_ 272 ScLatched 0 "SC_NOT_LATCHED" 1 "SC_LATCHED" ;
+VAL_ 272 DangerVoltage 0 "DANGER_VOLTAGE_CLEAR" 1 "DANGER_VOLTAGE_PRESENT" ;
+VAL_ 272 TsalGreenActual 0 "TSAL_NOT_GREEN" 1 "TSAL_GREEN" ;
+VAL_ 272 PowerLimitsValid 0 "POWER_LIMITS_INVALID" 1 "POWER_LIMITS_VALID" ;
+VAL_ 272 SocQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 272 PrimaryFaultId 0 "FAULT_NONE" 1 "STM_HARDFAULT" 2 "CLOCK_FAILURE" 3 "SCHEDULER_HEALTH_LOSS" 4 "SCHEDULER_TASK_OVERRUN" 5 "WATCHDOG_RESET_DETECTED" 6 "UNEXPECTED_RESET_CAUSE" 7 "PLATFORM_INIT_FAILED" 8 "CONFIG_INVALID" 9 "CELL_PROFILE_INVALID" 10 "IMD_TYPE_UNSET" 11 "EEPROM_COMMUNICATION" 12 "EEPROM_RECORD_CRC" 13 "EEPROM_WRITE_VERIFY" 14 "EEPROM_SELFTEST_FAILED" 15 "NVM_SCHEMA_MISMATCH" 16 "CAN1_BUS_OFF" 17 "CAN2_BUS_OFF" 18 "CAN1_COMMAND_STALE" 19 "CAN2_COMMAND_STALE" 20 "CAN_COMMAND_LOSS" 21 "CAN_COUNTER_DISCONTINUITY" 22 "CAN_RX_OVERFLOW" 23 "CAN_TX_OVERFLOW" 24 "AIR_ERROR_ACTIVE" 25 "POR_STATE_INVALID" 26 "SC_LATCHED" 27 "AIR_N_INTENDED_MISMATCH" 28 "AIR_P_INTENDED_MISMATCH" 29 "PCHARGE_ACTUAL_TIMEOUT" 30 "AIR_P_CLOSE_TIMEOUT" 31 "PRECHARGE_DONE_TIMEOUT" 32 "PRECHARGE_VOLTAGE_TIMEOUT" 33 "AIR_N_STUCK_CLOSED" 34 "PCHARGE_STUCK_CLOSED" 35 "AIR_P_STUCK_CLOSED" 36 "DCDC_ACTUAL_TIMEOUT" 37 "DCDC_VOLTAGE_TIMEOUT" 38 "DCDC_STUCK_CLOSED" 39 "PACK_VOLTAGE_PLAUSIBILITY" 40 "DANGER_V_FALSE_NEGATIVE" 41 "DANGER_V_FALSE_POSITIVE" 42 "TSAL_UNSAFE_GREEN" 43 "TSAL_CONSERVATIVE_RED" 44 "CONTACTOR_SEQUENCE_ILLEGAL" 45 "ACTUATOR_OUTPUT_CONFLICT" 46 "HV_MEASUREMENT_STALE" 47 "SAFE_OPEN_FEEDBACK_FAILED" 48 "ADC_PIPELINE_INVALID" 49 "ADC_REFERENCE_INVALID" 50 "VACCU_MEAS_INVALID" 51 "VVEHI_MEAS_INVALID" 52 "VDCDC_MEAS_INVALID" 53 "VBATT_MEAS_INVALID" 54 "LEAKAGE_WARNING" 55 "LEAKAGE_DETECTED" 56 "LEAKAGE_SEVERE" 57 "IMD_NOT_READY" 58 "IMD_CONFIG_MISMATCH" 59 "IMD_ISOLATION_CRITICAL" 60 "IMD_SPEED_START_BAD" 61 "IMD_DEVICE_ERROR" 62 "IMD_EARTH_FAULT" 63 "IMD_SIGNAL_INVALID" 64 "IMD_UNDERVOLTAGE" 65 "TLE_TRANSCEIVER_COMM" 66 "TLE_SLAVE_COUNT" 67 "TLE_RING_DEGRADED" 68 "TLE_STACK_COMM_LOSS" 69 "TLE_REFERENCE_WARNING" 70 "TLE_REFERENCE_FAULT" 71 "TLE_CELL_DATA_STALE" 72 "TLE_TEMP_DATA_STALE" 73 "NTC_COVERAGE_CRITICAL" 74 "NTC_COLD_INHIBIT" 75 "CELL_UNDERVOLTAGE" 76 "CELL_OVERVOLTAGE" 77 "CELL_OVERTEMPERATURE" 78 "CELL_VOLTAGE_SPREAD" 79 "BALANCING_DIAGNOSTIC" 80 "PACK_CURRENT_INVALID" 81 "INVERTER_POWER_INVALID" 82 "POWER_LIMIT_VIOLATION" 83 "POWER_PLAUSIBILITY" 84 "SOC_FALLBACK_LOW" 85 "SOC_QUALITY_INVALID" 86 "DEVELOPER_SESSION_LOSS" ;
+VAL_ 273 ImdHardwareType 0 "IMD_TYPE_UNSET" 1 "IR155_3203_MLS" 2 "IR155_3204_MHS" ;
+VAL_ 273 LeakageLevel1 0 "LEAKAGE_INVALID" 1 "LEAKAGE_OPEN_WIRE" 2 "LEAKAGE_DRY" 3 "LEAKAGE_WARNING" 4 "LEAKAGE_LEAK" 5 "LEAKAGE_SEVERE" ;
+VAL_ 273 LeakageLevel2 0 "LEAKAGE_INVALID" 1 "LEAKAGE_OPEN_WIRE" 2 "LEAKAGE_DRY" 3 "LEAKAGE_WARNING" 4 "LEAKAGE_LEAK" 5 "LEAKAGE_SEVERE" ;
+VAL_ 273 BalanceState 0 "BALANCE_OFF" 1 "BALANCE_ARMED" 2 "BALANCE_ACTIVE" 3 "BALANCE_INHIBITED" 4 "BALANCE_FAULT" ;
+VAL_ 273 BuzzerState 0 "BUZZER_OFF" 1 "BUZZER_HELLO" 2 "BUZZER_DRIVING" 3 "BUZZER_HV_HARDFAULT" ;
+VAL_ 273 AdcQuality 0 "SIGNAL_INVALID" 1 "SIGNAL_VALID" 2 "SIGNAL_STALE" 3 "SIGNAL_FAULT" ;
+VAL_ 273 SafetyProtocolVersion 0 "SAFETY_PROTOCOL_V0" ;
+VAL_ 273 Can1State 0 "CAN_NOT_STARTED" 1 "CAN_ERROR_ACTIVE" 2 "CAN_ERROR_PASSIVE" 3 "CAN_BUS_OFF" ;
+VAL_ 273 Can2State 0 "CAN_NOT_STARTED" 1 "CAN_ERROR_ACTIVE" 2 "CAN_ERROR_PASSIVE" 3 "CAN_BUS_OFF" ;
+VAL_ 273 SchedulerHealthy 0 "SCHEDULER_UNHEALTHY" 1 "SCHEDULER_HEALTHY" ;
+VAL_ 273 WatchdogFeedEnabled 0 "WATCHDOG_FEED_DISABLED" 1 "WATCHDOG_FEED_ENABLED" ;
+VAL_ 273 TsalGreenSoftware 0 "TSAL_SOFTWARE_NOT_GREEN" 1 "TSAL_SOFTWARE_GREEN" ;
+VAL_ 273 ImdOk 0 "IMD_NOT_OK" 1 "IMD_OK" ;
+VAL_ 273 FanFailsafeActive 0 "FAN_FAILSAFE_INACTIVE" 1 "FAN_FAILSAFE_ACTIVE" ;
+VAL_ 273 TleErrqActive 0 "TLE_ERRQ_INACTIVE" 1 "TLE_ERRQ_ACTIVE" ;
+VAL_ 273 TleErrorPulseLatched 0 "TLE_ERROR_PULSE_NOT_LATCHED" 1 "TLE_ERROR_PULSE_LATCHED" ;
+VAL_ 280 CellFrameCoherent 0 "CELL_FRAME_INCOHERENT" 1 "CELL_FRAME_COHERENT" ;
+VAL_ 281 TemperatureFrameCoherent 0 "TEMPERATURE_FRAME_INCOHERENT" 1 "TEMPERATURE_FRAME_COHERENT" ;
+VAL_ 281 TemperatureAverageValid 0 "TEMPERATURE_AVERAGE_INVALID" 1 "TEMPERATURE_AVERAGE_VALID" ;
+VAL_ 288 ServiceCommand 0 "SERVICE_NONE" 1 "CONFIG_READ" 2 "CONFIG_STAGE" 3 "CONFIG_COMMIT" 4 "EEPROM_SELFTEST" 5 "SOC_SERVICE_SET" 6 "DIAGNOSTIC_CLEAR" 7 "DEV_MODE_ENTER" 8 "DEV_OUTPUT_SET" 9 "DEV_MODE_EXIT" ;
+VAL_ 289 ServiceResponseCommand 0 "SERVICE_NONE" 1 "CONFIG_READ" 2 "CONFIG_STAGE" 3 "CONFIG_COMMIT" 4 "EEPROM_SELFTEST" 5 "SOC_SERVICE_SET" 6 "DIAGNOSTIC_CLEAR" 7 "DEV_MODE_ENTER" 8 "DEV_OUTPUT_SET" 9 "DEV_MODE_EXIT" ;
+VAL_ 289 ServiceResult 0 "SERVICE_OK" 1 "SERVICE_BUSY" 2 "SERVICE_DENIED_STATE" 3 "SERVICE_INVALID_TARGET" 4 "SERVICE_INVALID_VALUE" 5 "SERVICE_CRC_ERROR" 6 "SERVICE_NVM_ERROR" 7 "SERVICE_SEQUENCE_ERROR" ;

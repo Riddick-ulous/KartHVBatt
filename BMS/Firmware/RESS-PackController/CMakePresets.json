@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "PACKCONTROLLER_BUILD_PROFILE": "BOARD_BRINGUP"
+      }
+    },
+    {
+      "name": "host-debug",
+      "displayName": "Host Debug",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/build/host-debug",
+      "cacheVariables": {
+        "BUILD_TESTING": "ON",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "target-debug",
+      "displayName": "STM32 Target Debug",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/build/target-debug",
+      "toolchainFile": "${sourceDir}/cmake/toolchains/arm-none-eabi.cmake",
+      "cacheVariables": {
+        "BUILD_TESTING": "OFF",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "target-release",
+      "displayName": "STM32 Target Release",
+      "inherits": "base",
+      "binaryDir": "${sourceDir}/build/target-release",
+      "toolchainFile": "${sourceDir}/cmake/toolchains/arm-none-eabi.cmake",
+      "cacheVariables": {
+        "BUILD_TESTING": "OFF",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "host-debug",
+      "configurePreset": "host-debug"
+    },
+    {
+      "name": "target-debug",
+      "configurePreset": "target-debug"
+    },
+    {
+      "name": "target-release",
+      "configurePreset": "target-release"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "host-debug",
+      "configurePreset": "host-debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

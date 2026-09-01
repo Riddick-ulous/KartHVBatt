@@ -1,0 +1,4 @@
+add_library(packcontroller_drivers INTERFACE)
+target_link_libraries(packcontroller_drivers INTERFACE
+  packcontroller_platform
+  packcontroller_project_options)

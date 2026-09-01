@@ -1,0 +1,6 @@
+add_library(packcontroller_hardfault_record STATIC
+  hardfault_record.c)
+
+target_include_directories(packcontroller_hardfault_record PUBLIC include)
+target_link_libraries(packcontroller_hardfault_record PRIVATE
+  packcontroller_project_options)

@@ -1,0 +1,3 @@
+add_library(packcontroller_can STATIC pack_controller.c)
+target_include_directories(packcontroller_can PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_link_libraries(packcontroller_can PRIVATE packcontroller_project_options)

@@ -1,0 +1,68 @@
+# ---------------------------------------------------------------------------
+# KiCad
+# ---------------------------------------------------------------------------
+# KiCad auto-zip backups
+*-backups/
+# per-user local project settings
+*.kicad_prl
+# footprint cache
+fp-info-cache
+_autosave-*
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.000
+*.net-bak
+.history
+
+# ---------------------------------------------------------------------------
+# FreeCAD
+# ---------------------------------------------------------------------------
+# FreeCAD backup copy of previous save
+*.FCStd1
+*.FCBak
+.FCStd.lock
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+.python-version
+.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# Build / scratch output (regenerate, never commit)
+# ---------------------------------------------------------------------------
+build/
+out/
+tmp/
+scratch/
+
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+~$*
+*.bak
+*.orig
+.idea/
+
+# ---------------------------------------------------------------------------
+# .vscode: settings.json + extensions.json + launch.json ARE shared, the
+# rest is personal
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
